@@ -1,0 +1,8 @@
+{
+  "stays": [
+    {"id": 1, "name": "Grand Hotel", "location": "New York", "price": 250},
+    {"id": 2, "name": "Seaside Resort", "location": "Miami", "price": 180},
+    {"id": 3, "name": "Mountain Lodge", "location": "Aspen", "price": 300},
+    {"id": 4, "name": "City Center Apartment", "location": "San Francisco", "price": 220}
+  ]
+}

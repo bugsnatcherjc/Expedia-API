@@ -1,0 +1,8 @@
+{
+  "cars": [
+    {"id": 1, "brand": "Toyota", "model": "Camry", "price_per_day": 50},
+    {"id": 2, "brand": "Ford", "model": "Explorer", "price_per_day": 80},
+    {"id": 3, "brand": "Tesla", "model": "Model S", "price_per_day": 100},
+    {"id": 4, "brand": "Chevrolet", "model": "Tahoe", "price_per_day": 90}
+  ]
+}
