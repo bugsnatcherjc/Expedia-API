@@ -1,0 +1,8 @@
+{
+  "trips": [
+    {"id": 1, "destination": "Tokyo", "duration": "7 days", "price": 2000},
+    {"id": 2, "destination": "Rome", "duration": "5 days", "price": 1500},
+    {"id": 3, "destination": "Paris", "duration": "6 days", "price": 1800},
+    {"id": 4, "destination": "London", "duration": "4 days", "price": 1200}
+  ]
+}

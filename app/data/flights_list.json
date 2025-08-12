@@ -1,0 +1,8 @@
+{
+  "flights": [
+    {"id": 1, "airline": "Delta", "from": "JFK", "to": "LAX", "price": 350},
+    {"id": 2, "airline": "United", "from": "SFO", "to": "ORD", "price": 280},
+    {"id": 3, "airline": "American", "from": "LAX", "to": "DFW", "price": 300},
+    {"id": 4, "airline": "Southwest", "from": "MDW", "to": "LAS", "price": 200}
+  ]
+}

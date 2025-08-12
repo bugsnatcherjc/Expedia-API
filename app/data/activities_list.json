@@ -1,0 +1,8 @@
+{
+  "activities": [
+    {"id": 1, "name": "City Tour", "location": "Paris", "price": 120},
+    {"id": 2, "name": "Snorkeling", "location": "Hawaii", "price": 90},
+    {"id": 3, "name": "Museum Visit", "location": "London", "price": 30},
+    {"id": 4, "name": "Wine Tasting", "location": "Napa Valley", "price": 150}
+  ]
+}
