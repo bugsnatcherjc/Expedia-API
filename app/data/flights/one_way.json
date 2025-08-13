@@ -1,0 +1,64 @@
+[
+  {
+    "id": 201,
+    "trip_type": "one_way",
+    "airline": { "code": "EK", "name": "Emirates", "logo": "https://via.placeholder.com/80x40" },
+    "stops": 1,
+    "seat_classes": ["economy", "business", "first"],
+    "price": { "total": 780, "currency": "USD" },
+    "duration_total_minutes": 1100,
+    "baggage": { "carry_on": "7kg", "checked": "25kg" },
+    "legs": [
+      {
+        "direction": "outbound",
+        "segments": [
+          {
+            "flight_number": "EK 623",
+            "airline": "EK",
+            "from": { "code": "LHE", "name": "Allama Iqbal Intl", "city": "Lahore", "country": "PK" },
+            "to":   { "code": "DXB", "name": "Dubai Intl", "city": "Dubai", "country": "AE" },
+            "depart_utc": "2025-09-01T01:40:00Z",
+            "arrive_utc": "2025-09-01T03:40:00Z",
+            "duration_minutes": 120
+          },
+          {
+            "flight_number": "EK 215",
+            "airline": "EK",
+            "from": { "code": "DXB", "name": "Dubai Intl", "city": "Dubai", "country": "AE" },
+            "to":   { "code": "LAX", "name": "Los Angeles Intl", "city": "Los Angeles", "country": "US" },
+            "depart_utc": "2025-09-01T08:15:00Z",
+            "arrive_utc": "2025-09-01T18:00:00Z",
+            "duration_minutes": 705,
+            "layover_city": "Dubai"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 202,
+    "trip_type": "one_way",
+    "airline": { "code": "PK", "name": "PIA", "logo": "https://via.placeholder.com/80x40" },
+    "stops": 0,
+    "seat_classes": ["economy"],
+    "price": { "total": 620, "currency": "USD" },
+    "duration_total_minutes": 980,
+    "baggage": { "carry_on": "7kg", "checked": "20kg" },
+    "legs": [
+      {
+        "direction": "outbound",
+        "segments": [
+          {
+            "flight_number": "PK 701",
+            "airline": "PK",
+            "from": { "code": "LHE", "name": "Allama Iqbal Intl", "city": "Lahore", "country": "PK" },
+            "to":   { "code": "LHR", "name": "Heathrow", "city": "London", "country": "GB" },
+            "depart_utc": "2025-09-01T05:00:00Z",
+            "arrive_utc": "2025-09-01T10:20:00Z",
+            "duration_minutes": 320
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "stay_id": 1,
+    "place": "Miami Beach Boardwalk",
+    "type": "Attraction",
+    "distance_km": 0.5
+  },
+  {
+    "stay_id": 1,
+    "place": "Lincoln Road Mall",
+    "type": "Shopping",
+    "distance_km": 1.2
+  },
+  {
+    "stay_id": 2,
+    "place": "Santa Monica Pier",
+    "type": "Attraction",
+    "distance_km": 0.8
+  }
+]

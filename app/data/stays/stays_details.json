@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Grand Beach Resort",
+    "location": "Miami, Florida",
+    "address": "123 Beachfront Ave, Miami, FL",
+    "description": "Located right on Miami Beach, the Grand Beach Resort offers stunning ocean views, luxury rooms, and world-class service.",
+    "stars": 5,
+    "rating": 4.5,
+    "reviews_count": 432,
+    "coordinates": {"lat": 25.790654, "lng": -80.1300455},
+    "photos": [
+      "https://via.placeholder.com/800x600",
+      "https://via.placeholder.com/800x600",
+      "https://via.placeholder.com/800x600"
+    ],
+    "rooms": [
+      {
+        "type": "Deluxe King Room",
+        "price_per_night": 220.0,
+        "currency": "USD",
+        "max_occupancy": 2,
+        "amenities": ["WiFi", "Air Conditioning", "Balcony"],
+        "availability": true
+      },
+      {
+        "type": "Suite with Ocean View",
+        "price_per_night": 350.0,
+        "currency": "USD",
+        "max_occupancy": 4,
+        "amenities": ["WiFi", "Kitchen", "Balcony", "Jacuzzi"],
+        "availability": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Ocean View Inn",
+    "location": "Los Angeles, California",
+    "address": "456 Sunset Blvd, Los Angeles, CA",
+    "description": "A charming inn with breathtaking ocean views and close proximity to Los Angeles attractions.",
+    "stars": 4,
+    "rating": 4.0,
+    "reviews_count": 210,
+    "coordinates": {"lat": 34.0195, "lng": -118.4912},
+    "photos": [
+      "https://via.placeholder.com/800x600",
+      "https://via.placeholder.com/800x600",
+      "https://via.placeholder.com/800x600"
+    ],
+    "rooms": [
+      {
+        "type": "Standard Room",
+        "price_per_night": 150.0,
+        "currency": "USD",
+        "max_occupancy": 2,
+        "amenities": ["WiFi", "Air Conditioning"],
+        "availability": true
+      }
+    ]
+  }
+]

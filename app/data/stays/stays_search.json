@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Grand Beach Resort",
+    "location": "Miami, Florida",
+    "price": 220.0,
+    "currency": "USD",
+    "rating": 4.5,
+    "reviews_count": 432,
+    "stars": 5,
+    "thumbnail": "https://via.placeholder.com/300x200",
+    "amenities": ["Pool", "WiFi", "Parking"],
+    "coordinates": {"lat": 25.790654, "lng": -80.1300455},
+    "cancellation_policy": "Free cancellation until 24h before check-in"
+  },
+  {
+    "id": 2,
+    "name": "Ocean View Inn",
+    "location": "Los Angeles, California",
+    "price": 150.0,
+    "currency": "USD",
+    "rating": 4.0,
+    "reviews_count": 210,
+    "stars": 4,
+    "thumbnail": "https://via.placeholder.com/300x200",
+    "amenities": ["WiFi", "Gym"],
+    "coordinates": {"lat": 34.0195, "lng": -118.4912},
+    "cancellation_policy": "Non-refundable"
+  }
+]

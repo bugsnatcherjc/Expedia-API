@@ -2,15 +2,15 @@ import json
 from pathlib import Path
 from typing import Optional, List
 
-BASE = Path(__file__).resolve().parents[1] / "data" / "activities"
+BASE = Path(__file__).resolve().parents[1] / "data" / "packages"
 
 def _load(name: str):
     with open(BASE / name, encoding="utf-8") as f:
         return json.load(f)
 
-def _apply_filters(items, category, price_min, price_max, rating_min):
-    if category:
-        items = [i for i in items if i.get("category", "").lower() in {c.lower() for c in category}]
+def _apply_filters(items, package_type, price_min, price_max, rating_min):
+    if package_type:
+        items = [i for i in items if i.get("package_type", "").lower() in {t.lower() for t in package_type}]
     if price_min is not None:
         items = [i for i in items if i.get("price", {}).get("amount", 0) >= price_min]
     if price_max is not None:
@@ -30,15 +30,15 @@ def _apply_sort(items, sort_by):
         return sorted(items, key=lambda x: x.get("popularity", 0), reverse=True)
     return items
 
-def search_activities(location, date, category, price_min, price_max, rating_min, sort_by):
-    data = _load("activities_search.json")
-    if location:
-        location_lower = location.lower()
-        data = [d for d in data if location_lower in d["location"].lower()]
-    data = _apply_filters(data, category, price_min, price_max, rating_min)
+def search_packages(destination, start_date, end_date, package_type, price_min, price_max, rating_min, sort_by):
+    data = _load("packages_search.json")
+    if destination:
+        dest_lower = destination.lower()
+        data = [d for d in data if dest_lower in d["destination"].lower()]
+    data = _apply_filters(data, package_type, price_min, price_max, rating_min)
     data = _apply_sort(data, sort_by)
     return {"count": len(data), "items": data}
 
-def get_activity_details(activity_id: int):
-    details = _load("activity_details.json")
-    return next((d for d in details if d["id"] == activity_id), {})
+def get_package_details(package_id: int):
+    details = _load("package_details.json")
+    return next((d for d in details if d["id"] == package_id), {})

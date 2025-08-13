@@ -1,0 +1,23 @@
+[
+  {
+    "stay_id": 1,
+    "user": "John Doe",
+    "rating": 5,
+    "comment": "Amazing stay! The ocean view was breathtaking.",
+    "date": "2024-07-15"
+  },
+  {
+    "stay_id": 1,
+    "user": "Jane Smith",
+    "rating": 4,
+    "comment": "Great location, but the breakfast could be better.",
+    "date": "2024-06-05"
+  },
+  {
+    "stay_id": 2,
+    "user": "Alex Johnson",
+    "rating": 4,
+    "comment": "Nice rooms and friendly staff.",
+    "date": "2024-05-22"
+  }
+]
