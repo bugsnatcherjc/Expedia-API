@@ -1,0 +1,28 @@
+[
+  {
+    "id": 801,
+    "title": "Miami Beach Jet Ski Adventure",
+    "description": "Enjoy an exhilarating jet ski ride in Miami Beach with full safety briefing.",
+    "duration": "2 hours",
+    "category": "adventure",
+    "location": "Miami, USA",
+    "price": { "amount": 120, "currency": "USD" },
+    "rating": 4.7,
+    "highlights": ["Jet ski rental", "Safety equipment included", "Professional guide"],
+    "photos": ["https://via.placeholder.com/1024x640"],
+    "terms": "Must be 18+ with valid ID."
+  },
+  {
+    "id": 802,
+    "title": "Los Angeles City Tour",
+    "description": "Explore LA's landmarks including Hollywood and Santa Monica Pier.",
+    "duration": "5 hours",
+    "category": "cultural",
+    "location": "Los Angeles, USA",
+    "price": { "amount": 85, "currency": "USD" },
+    "rating": 4.5,
+    "highlights": ["Hotel pickup", "Professional guide", "Snacks included"],
+    "photos": ["https://via.placeholder.com/1024x640"],
+    "terms": "Bookings must be made at least 24h in advance."
+  }
+]

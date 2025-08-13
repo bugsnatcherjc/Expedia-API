@@ -1,0 +1,122 @@
+[
+  {
+    "id": 101,
+    "trip_type": "round_trip",
+    "airline": { "code": "QR", "name": "Qatar Airways", "logo": "https://via.placeholder.com/80x40" },
+    "stops": 1,
+    "seat_classes": ["economy", "business"],
+    "price": { "total": 1450, "currency": "USD" },
+    "duration_total_minutes": 1320,
+    "baggage": { "carry_on": "7kg", "checked": "23kg" },
+    "legs": [
+      {
+        "direction": "outbound",
+        "segments": [
+          {
+            "flight_number": "QR 621",
+            "airline": "QR",
+            "from": { "code": "LHE", "name": "Allama Iqbal Intl", "city": "Lahore", "country": "PK" },
+            "to":   { "code": "DOH", "name": "Hamad Intl", "city": "Doha", "country": "QA" },
+            "depart_utc": "2025-09-01T02:30:00Z",
+            "arrive_utc": "2025-09-01T04:20:00Z",
+            "duration_minutes": 170
+          },
+          {
+            "flight_number": "QR 739",
+            "airline": "QR",
+            "from": { "code": "DOH", "name": "Hamad Intl", "city": "Doha", "country": "QA" },
+            "to":   { "code": "LAX", "name": "Los Angeles Intl", "city": "Los Angeles", "country": "US" },
+            "depart_utc": "2025-09-01T07:45:00Z",
+            "arrive_utc": "2025-09-01T17:45:00Z",
+            "duration_minutes": 720,
+            "layover_city": "Doha"
+          }
+        ]
+      },
+      {
+        "direction": "return",
+        "segments": [
+          {
+            "flight_number": "QR 740",
+            "airline": "QR",
+            "from": { "code": "LAX", "name": "Los Angeles Intl", "city": "Los Angeles", "country": "US" },
+            "to":   { "code": "DOH", "name": "Hamad Intl", "city": "Doha", "country": "QA" },
+            "depart_utc": "2025-09-10T08:30:00Z",
+            "arrive_utc": "2025-09-10T18:00:00Z",
+            "duration_minutes": 690
+          },
+          {
+            "flight_number": "QR 620",
+            "airline": "QR",
+            "from": { "code": "DOH", "name": "Hamad Intl", "city": "Doha", "country": "QA" },
+            "to":   { "code": "LHE", "name": "Allama Iqbal Intl", "city": "Lahore", "country": "PK" },
+            "depart_utc": "2025-09-11T01:00:00Z",
+            "arrive_utc": "2025-09-11T05:00:00Z",
+            "duration_minutes": 240,
+            "layover_city": "Doha"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "trip_type": "round_trip",
+    "airline": { "code": "TK", "name": "Turkish Airlines", "logo": "https://via.placeholder.com/80x40" },
+    "stops": 2,
+    "seat_classes": ["economy", "premium_economy", "business"],
+    "price": { "total": 1180, "currency": "USD" },
+    "duration_total_minutes": 1505,
+    "baggage": { "carry_on": "8kg", "checked": "30kg" },
+    "legs": [
+      {
+        "direction": "outbound",
+        "segments": [
+          {
+            "flight_number": "TK 715",
+            "airline": "TK",
+            "from": { "code": "LHE", "name": "Allama Iqbal Intl", "city": "Lahore", "country": "PK" },
+            "to":   { "code": "IST", "name": "Istanbul Airport", "city": "Istanbul", "country": "TR" },
+            "depart_utc": "2025-09-01T03:10:00Z",
+            "arrive_utc": "2025-09-01T07:15:00Z",
+            "duration_minutes": 365
+          },
+          {
+            "flight_number": "TK 9",
+            "airline": "TK",
+            "from": { "code": "IST", "name": "Istanbul Airport", "city": "Istanbul", "country": "TR" },
+            "to":   { "code": "LAX", "name": "Los Angeles Intl", "city": "Los Angeles", "country": "US" },
+            "depart_utc": "2025-09-01T12:40:00Z",
+            "arrive_utc": "2025-09-01T22:40:00Z",
+            "duration_minutes": 720,
+            "layover_city": "Istanbul"
+          }
+        ]
+      },
+      {
+        "direction": "return",
+        "segments": [
+          {
+            "flight_number": "TK 10",
+            "airline": "TK",
+            "from": { "code": "LAX", "name": "Los Angeles Intl", "city": "Los Angeles", "country": "US" },
+            "to":   { "code": "IST", "name": "Istanbul Airport", "city": "Istanbul", "country": "TR" },
+            "depart_utc": "2025-09-10T06:30:00Z",
+            "arrive_utc": "2025-09-10T16:00:00Z",
+            "duration_minutes": 630
+          },
+          {
+            "flight_number": "TK 714",
+            "airline": "TK",
+            "from": { "code": "IST", "name": "Istanbul Airport", "city": "Istanbul", "country": "TR" },
+            "to":   { "code": "LHE", "name": "Allama Iqbal Intl", "city": "Lahore", "country": "PK" },
+            "depart_utc": "2025-09-11T00:15:00Z",
+            "arrive_utc": "2025-09-11T04:45:00Z",
+            "duration_minutes": 270,
+            "layover_city": "Istanbul"
+          }
+        ]
+      }
+    ]
+  }
+]

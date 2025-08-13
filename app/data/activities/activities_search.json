@@ -1,0 +1,22 @@
+[
+  {
+    "id": 801,
+    "title": "Miami Beach Jet Ski Adventure",
+    "location": "Miami, USA",
+    "category": "adventure",
+    "price": { "amount": 120, "currency": "USD" },
+    "rating": 4.7,
+    "popularity": 850,
+    "thumbnail": "https://via.placeholder.com/640x360"
+  },
+  {
+    "id": 802,
+    "title": "Los Angeles City Tour",
+    "location": "Los Angeles, USA",
+    "category": "cultural",
+    "price": { "amount": 85, "currency": "USD" },
+    "rating": 4.5,
+    "popularity": 620,
+    "thumbnail": "https://via.placeholder.com/640x360"
+  }
+]

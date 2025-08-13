@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routers import home, stays, flights, cars, activities, trips, checkout, auth
+from app.routers import home, stays, flights, cars, activities, trips, checkout, auth,packages, meta_ui
 
 app = FastAPI(title="Expedia Inspired API", version="1.0.0")
 
@@ -19,8 +19,10 @@ app.include_router(flights.router)
 app.include_router(cars.router)
 app.include_router(activities.router)
 app.include_router(trips.router)
+app.include_router(packages.router)
 app.include_router(checkout.router)
 app.include_router(auth.router)
+app.include_router(meta_ui.router)
 
 @app.get("/")
 async def root():

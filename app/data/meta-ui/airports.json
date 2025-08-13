@@ -1,0 +1,4 @@
+[
+  {"code": "MIA", "name": "Miami International Airport", "city": "Miami", "country": "USA", "lat": 25.7959, "lng": -80.2870},
+  {"code": "LAX", "name": "Los Angeles International Airport", "city": "Los Angeles", "country": "USA", "lat": 33.9416, "lng": -118.4085}
+]

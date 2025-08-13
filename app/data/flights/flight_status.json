@@ -1,0 +1,5 @@
+[
+  { "flight_number": "QR 739", "status": "on_time", "gate": "B12", "terminal": "HIA", "estimated_depart_utc": "2025-09-01T07:45:00Z" },
+  { "flight_number": "EK 215", "status": "delayed", "gate": "A3", "terminal": "DXB T3", "estimated_depart_utc": "2025-09-01T09:05:00Z", "delay_minutes": 50 },
+  { "flight_number": "BA 283", "status": "scheduled", "gate": null, "terminal": "LHR T5", "estimated_depart_utc": "2025-09-03T10:40:00Z" }
+]

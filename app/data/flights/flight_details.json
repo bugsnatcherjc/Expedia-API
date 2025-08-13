@@ -1,0 +1,29 @@
+[
+  {
+    "id": 101,
+    "fare_rules": {
+      "cancellation": "Refundable with $200 fee before departure.",
+      "changes": "Changes allowed with fare difference.",
+      "no_show": "Non-refundable."
+    },
+    "aircraft": ["B77W", "A350"],
+    "meals": ["Dinner", "Breakfast"],
+    "wifi": true,
+    "seat_map_available": true
+  },
+  {
+    "id": 102,
+    "fare_rules": {
+      "cancellation": "Refundable with $180 fee before departure.",
+      "changes": "Changes allowed with fare difference.",
+      "no_show": "Non-refundable."
+    },
+    "aircraft": ["B789"],
+    "meals": ["Dinner"],
+    "wifi": true,
+    "seat_map_available": false
+  },
+  { "id": 201, "fare_rules": { "cancellation": "Non-refundable.", "changes": "Allowed + difference.", "no_show": "Non-refundable." }, "aircraft": ["A380"], "meals": ["Lunch"], "wifi": true, "seat_map_available": true },
+  { "id": 202, "fare_rules": { "cancellation": "Non-refundable.", "changes": "Not allowed.", "no_show": "Non-refundable." }, "aircraft": ["A320"], "meals": ["Snack"], "wifi": false, "seat_map_available": false },
+  { "id": 301, "fare_rules": { "cancellation": "Refundable before segment start.", "changes": "Allowed + difference.", "no_show": "Non-refundable." }, "aircraft": ["A321", "B789"], "meals": ["Snack", "Dinner"], "wifi": true, "seat_map_available": false }
+]
