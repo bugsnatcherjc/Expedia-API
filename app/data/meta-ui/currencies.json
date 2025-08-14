@@ -1,4 +1,4 @@
 [
-  {"code": "USD", "symbol": "$", "name": "US Dollar"},
-  {"code": "EUR", "symbol": "€", "name": "Euro"}
+  {"id": "curr-usd", "code": "USD", "symbol": "$", "name": "US Dollar"},
+  {"id": "curr-eur", "code": "EUR", "symbol": "€", "name": "Euro"}
 ]

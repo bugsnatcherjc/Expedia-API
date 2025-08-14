@@ -1,5 +1,5 @@
 [
-  {"city": "Miami", "state": "Florida", "country": "USA"},
-  {"city": "Los Angeles", "state": "California", "country": "USA"},
-  {"city": "New York", "state": "New York", "country": "USA"}
+  {"id": "stay-loc-mia", "city": "Miami", "state": "Florida", "country": "USA"},
+  {"id": "stay-loc-lax", "city": "Los Angeles", "state": "California", "country": "USA"},
+  {"id": "stay-loc-nyc", "city": "New York", "state": "New York", "country": "USA"}
 ]

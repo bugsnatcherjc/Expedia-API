@@ -1,4 +1,4 @@
 [
-  {"code": "AA", "name": "American Airlines", "logo": "https://via.placeholder.com/100x50"},
-  {"code": "DL", "name": "Delta Airlines", "logo": "https://via.placeholder.com/100x50"}
+  {"id": "aln-aa", "code": "AA", "name": "American Airlines", "logo": "https://via.placeholder.com/100x50"},
+  {"id": "aln-dl", "code": "DL", "name": "Delta Airlines", "logo": "https://via.placeholder.com/100x50"}
 ]

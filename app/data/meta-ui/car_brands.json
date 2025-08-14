@@ -1,4 +1,4 @@
 [
-  {"name": "Toyota", "logo": "https://via.placeholder.com/100x50", "country": "Japan"},
-  {"name": "Ford", "logo": "https://via.placeholder.com/100x50", "country": "USA"}
+  {"id": "brand-toyota", "name": "Toyota", "logo": "https://via.placeholder.com/100x50", "country": "Japan"},
+  {"id": "brand-ford", "name": "Ford", "logo": "https://via.placeholder.com/100x50", "country": "USA"}
 ]
