@@ -1,4 +1,4 @@
 [
-  {"city": "Miami", "state": "Florida", "country": "USA"},
-  {"city": "Los Angeles", "state": "California", "country": "USA"}
+  {"id": "loc-mia", "city": "Miami", "state": "Florida", "country": "USA"},
+  {"id": "loc-lax", "city": "Los Angeles", "state": "California", "country": "USA"}
 ]

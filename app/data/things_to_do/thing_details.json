@@ -1,0 +1,48 @@
+{
+    "activity_details": {
+        "id": "ttd-1",
+        "name": "Universal Studios Hollywood Skip-the-Line Ticket",
+        "location": "Los Angeles, California",
+        "address": "100 Universal City Plaza, Universal City, CA 91608",
+        "category": "Theme Parks",
+        "price": 109.99,
+        "rating": 4.7,
+        "reviews_count": 2845,
+        "duration": "1 day",
+        "highlights": [
+            "Skip-the-line admission",
+            "Access to all rides and attractions",
+            "Live shows and entertainment",
+            "The Wizarding World of Harry Potter™",
+            "Studio Tour"
+        ],
+        "description": "Skip the regular lines and head straight to the fun with this admission ticket to Universal Studios Hollywood. The ticket gives you access to all rides, shows, and attractions at one of Los Angeles' most exciting theme parks.",
+        "included": [
+            "Skip-the-line park admission",
+            "Access to all rides and attractions",
+            "Live shows and entertainment"
+        ],
+        "not_included": [
+            "Food and drinks",
+            "Parking fees",
+            "Express Pass upgrades",
+            "Souvenir photos"
+        ],
+        "important_info": [
+            "Children aged 2 and under enter free",
+            "The park is wheelchair accessible",
+            "Outside food and drinks are not permitted",
+            "Some rides have height and age restrictions"
+        ],
+        "available_times": [
+            "09:00",
+            "10:00",
+            "11:00",
+            "12:00"
+        ],
+        "cancellation_policy": {
+            "free_cancellation_before": "24h",
+            "refund_percentage": 100
+        }
+    }
+}
