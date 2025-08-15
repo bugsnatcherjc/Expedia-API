@@ -1,1 +1,65 @@
-["Pool", "WiFi", "Parking", "Gym", "Spa", "Restaurant", "Bar", "Airport Shuttle"]
+{
+  "categories": [
+    {
+      "name": "General",
+      "amenities": [
+        "Free WiFi",
+        "Parking",
+        "24-hour front desk",
+        "Concierge service",
+        "Luggage storage",
+        "Currency exchange",
+        "Pet Friendly"
+      ]
+    },
+    {
+      "name": "Activities & Wellness",
+      "amenities": [
+        "Pool",
+        "Infinity Pool",
+        "Spa",
+        "Gym",
+        "Fitness center",
+        "Massage",
+        "Ski-in/Ski-out",
+        "Private Beach",
+        "Water Sports"
+      ]
+    },
+    {
+      "name": "Food & Drink",
+      "amenities": [
+        "Restaurant",
+        "Michelin Restaurant",
+        "Bar",
+        "Room service",
+        "Breakfast available",
+        "Fine Dining",
+        "Underwater Restaurant"
+      ]
+    },
+    {
+      "name": "Entertainment",
+      "amenities": [
+        "Casino",
+        "Shows",
+        "Shopping",
+        "Luxury Shopping",
+        "Garden",
+        "Gondola Rides"
+      ]
+    },
+    {
+      "name": "Room Features",
+      "amenities": [
+        "City Views",
+        "Ocean Views",
+        "Balcony",
+        "Air Conditioning",
+        "Mini Bar",
+        "Flat-screen TV",
+        "Butler Service"
+      ]
+    }
+  ]
+}

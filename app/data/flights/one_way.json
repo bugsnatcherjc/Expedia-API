@@ -1,61 +1,259 @@
 [
   {
-    "id": 201,
+    "id": "flt-ow-001",
     "trip_type": "one_way",
-    "airline": { "code": "EK", "name": "Emirates", "logo": "https://via.placeholder.com/80x40" },
-    "stops": 1,
+    "airline": { "code": "AA", "name": "American Airlines", "logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=80&h=40&fit=crop" },
+    "stops": 0,
     "seat_classes": ["economy", "business", "first"],
-    "price": { "total": 780, "currency": "USD" },
-    "duration_total_minutes": 1100,
-    "baggage": { "carry_on": "7kg", "checked": "25kg" },
+    "price": { "total": 299, "currency": "USD" },
+    "duration_total_minutes": 360,
+    "baggage": { "carry_on": "10kg", "checked": "23kg" },
     "legs": [
       {
         "direction": "outbound",
         "segments": [
           {
-            "flight_number": "EK 623",
-            "airline": "EK",
-            "from": { "code": "LHE", "name": "Allama Iqbal Intl", "city": "Lahore", "country": "PK" },
-            "to":   { "code": "DXB", "name": "Dubai Intl", "city": "Dubai", "country": "AE" },
-            "depart_utc": "2025-09-01T01:40:00Z",
-            "arrive_utc": "2025-09-01T03:40:00Z",
-            "duration_minutes": 120
-          },
-          {
-            "flight_number": "EK 215",
-            "airline": "EK",
-            "from": { "code": "DXB", "name": "Dubai Intl", "city": "Dubai", "country": "AE" },
-            "to":   { "code": "LAX", "name": "Los Angeles Intl", "city": "Los Angeles", "country": "US" },
-            "depart_utc": "2025-09-01T08:15:00Z",
-            "arrive_utc": "2025-09-01T18:00:00Z",
-            "duration_minutes": 705,
-            "layover_city": "Dubai"
+            "flight_number": "AA 100",
+            "airline": "AA",
+            "from": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "to":   { "code": "LAX", "name": "Los Angeles International", "city": "Los Angeles", "country": "USA" },
+            "depart_utc": "2025-08-17T10:00:00Z",
+            "arrive_utc": "2025-08-17T13:40:00Z",
+            "duration_minutes": 360
           }
         ]
       }
     ]
   },
   {
-    "id": 202,
+    "id": "flt-ow-002",
     "trip_type": "one_way",
-    "airline": { "code": "PK", "name": "PIA", "logo": "https://via.placeholder.com/80x40" },
+    "airline": { "code": "EK", "name": "Emirates", "logo": "https://images.unsplash.com/photo-1540339832862-44088e611536?w=80&h=40&fit=crop" },
     "stops": 0,
-    "seat_classes": ["economy"],
-    "price": { "total": 620, "currency": "USD" },
-    "duration_total_minutes": 980,
-    "baggage": { "carry_on": "7kg", "checked": "20kg" },
+    "seat_classes": ["economy", "business", "first"],
+    "price": { "total": 850, "currency": "USD" },
+    "duration_total_minutes": 840,
+    "baggage": { "carry_on": "8kg", "checked": "30kg" },
     "legs": [
       {
         "direction": "outbound",
         "segments": [
           {
-            "flight_number": "PK 701",
-            "airline": "PK",
-            "from": { "code": "LHE", "name": "Allama Iqbal Intl", "city": "Lahore", "country": "PK" },
-            "to":   { "code": "LHR", "name": "Heathrow", "city": "London", "country": "GB" },
-            "depart_utc": "2025-09-01T05:00:00Z",
-            "arrive_utc": "2025-09-01T10:20:00Z",
-            "duration_minutes": 320
+            "flight_number": "EK 202",
+            "airline": "EK",
+            "from": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "to": { "code": "DXB", "name": "Dubai International", "city": "Dubai", "country": "UAE" },
+            "depart_utc": "2025-08-17T22:00:00Z",
+            "arrive_utc": "2025-08-18T18:00:00Z",
+            "duration_minutes": 840
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flt-ow-003",
+    "trip_type": "one_way",
+    "airline": { "code": "BA", "name": "British Airways", "logo": "https://images.unsplash.com/photo-1601821326018-d949a54b6402?w=80&h=40&fit=crop" },
+    "stops": 0,
+    "seat_classes": ["economy", "premium_economy", "business"],
+    "price": { "total": 450, "currency": "GBP" },
+    "duration_total_minutes": 480,
+    "baggage": { "carry_on": "10kg", "checked": "23kg" },
+    "legs": [
+      {
+        "direction": "outbound",
+        "segments": [
+          {
+            "flight_number": "BA 178",
+            "airline": "BA",
+            "from": { "code": "LHR", "name": "London Heathrow", "city": "London", "country": "UK" },
+            "to": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "depart_utc": "2025-08-17T09:00:00Z",
+            "arrive_utc": "2025-08-17T17:00:00Z",
+            "duration_minutes": 480
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flt-ow-004",
+    "trip_type": "one_way",
+    "airline": { "code": "LH", "name": "Lufthansa", "logo": "https://images.unsplash.com/photo-1611174797136-5d7a47d04dfa?w=80&h=40&fit=crop" },
+    "stops": 1,
+    "seat_classes": ["economy", "premium_economy", "business", "first"],
+    "price": { "total": 580, "currency": "EUR" },
+    "duration_total_minutes": 720,
+    "baggage": { "carry_on": "8kg", "checked": "23kg" },
+    "legs": [
+      {
+        "direction": "outbound",
+        "segments": [
+          {
+            "flight_number": "LH 400",
+            "airline": "LH",
+            "from": { "code": "FRA", "name": "Frankfurt Airport", "city": "Frankfurt", "country": "Germany" },
+            "to": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "depart_utc": "2025-08-17T11:00:00Z",
+            "arrive_utc": "2025-08-17T23:00:00Z",
+            "duration_minutes": 720
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flt-ow-005",
+    "trip_type": "one_way",
+    "airline": { "code": "SQ", "name": "Singapore Airlines", "logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=80&h=40&fit=crop" },
+    "stops": 0,
+    "seat_classes": ["economy", "premium_economy", "business", "first"],
+    "price": { "total": 750, "currency": "SGD" },
+    "duration_total_minutes": 1080,
+    "baggage": { "carry_on": "7kg", "checked": "30kg" },
+    "legs": [
+      {
+        "direction": "outbound",
+        "segments": [
+          {
+            "flight_number": "SQ 21",
+            "airline": "SQ",
+            "from": { "code": "SIN", "name": "Changi Airport", "city": "Singapore", "country": "Singapore" },
+            "to": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "depart_utc": "2025-08-17T23:00:00Z",
+            "arrive_utc": "2025-08-18T21:00:00Z",
+            "duration_minutes": 1080
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flt-ow-006",
+    "trip_type": "one_way",
+    "airline": { "code": "QF", "name": "Qantas", "logo": "https://images.unsplash.com/photo-1521727857535-28d2047314ac?w=80&h=40&fit=crop" },
+    "stops": 1,
+    "seat_classes": ["economy", "premium_economy", "business"],
+    "price": { "total": 980, "currency": "AUD" },
+    "duration_total_minutes": 1260,
+    "baggage": { "carry_on": "7kg", "checked": "30kg" },
+    "legs": [
+      {
+        "direction": "outbound",
+        "segments": [
+          {
+            "flight_number": "QF 11",
+            "airline": "QF",
+            "from": { "code": "SYD", "name": "Kingsford Smith Airport", "city": "Sydney", "country": "Australia" },
+            "to": { "code": "LAX", "name": "Los Angeles International", "city": "Los Angeles", "country": "USA" },
+            "depart_utc": "2025-08-17T09:00:00Z",
+            "arrive_utc": "2025-08-18T06:00:00Z",
+            "duration_minutes": 1260
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flt-ow-007",
+    "trip_type": "one_way",
+    "airline": { "code": "AF", "name": "Air France", "logo": "https://images.unsplash.com/photo-1597340595281-3fd177219e3c?w=80&h=40&fit=crop" },
+    "stops": 0,
+    "seat_classes": ["economy", "premium_economy", "business", "first"],
+    "price": { "total": 490, "currency": "EUR" },
+    "duration_total_minutes": 440,
+    "baggage": { "carry_on": "12kg", "checked": "23kg" },
+    "legs": [
+      {
+        "direction": "outbound",
+        "segments": [
+          {
+            "flight_number": "AF 22",
+            "airline": "AF",
+            "from": { "code": "CDG", "name": "Charles de Gaulle Airport", "city": "Paris", "country": "France" },
+            "to": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "depart_utc": "2025-08-17T13:00:00Z",
+            "arrive_utc": "2025-08-17T20:20:00Z",
+            "duration_minutes": 440
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flt-ow-008",
+    "trip_type": "one_way",
+    "airline": { "code": "TK", "name": "Turkish Airlines", "logo": "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?w=80&h=40&fit=crop" },
+    "stops": 1,
+    "seat_classes": ["economy", "business"],
+    "price": { "total": 620, "currency": "USD" },
+    "duration_total_minutes": 840,
+    "baggage": { "carry_on": "8kg", "checked": "30kg" },
+    "legs": [
+      {
+        "direction": "outbound",
+        "segments": [
+          {
+            "flight_number": "TK 84",
+            "airline": "TK",
+            "from": { "code": "IST", "name": "Istanbul Airport", "city": "Istanbul", "country": "Turkey" },
+            "to": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "depart_utc": "2025-08-17T15:00:00Z",
+            "arrive_utc": "2025-08-18T05:00:00Z",
+            "duration_minutes": 840
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flt-ow-009",
+    "trip_type": "one_way",
+    "airline": { "code": "CX", "name": "Cathay Pacific", "logo": "https://images.unsplash.com/photo-1579965342575-16428a7c8881?w=80&h=40&fit=crop" },
+    "stops": 0,
+    "seat_classes": ["economy", "premium_economy", "business", "first"],
+    "price": { "total": 780, "currency": "HKD" },
+    "duration_total_minutes": 960,
+    "baggage": { "carry_on": "7kg", "checked": "30kg" },
+    "legs": [
+      {
+        "direction": "outbound",
+        "segments": [
+          {
+            "flight_number": "CX 840",
+            "airline": "CX",
+            "from": { "code": "HKG", "name": "Hong Kong International", "city": "Hong Kong", "country": "China" },
+            "to": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "depart_utc": "2025-08-17T09:00:00Z",
+            "arrive_utc": "2025-08-18T01:00:00Z",
+            "duration_minutes": 960
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flt-ow-010",
+    "trip_type": "one_way",
+    "airline": { "code": "ANA", "name": "All Nippon Airways", "logo": "https://images.unsplash.com/photo-1521727857535-28d2047314ac?w=80&h=40&fit=crop" },
+    "stops": 0,
+    "seat_classes": ["economy", "premium_economy", "business", "first"],
+    "price": { "total": 890, "currency": "JPY" },
+    "duration_total_minutes": 780,
+    "baggage": { "carry_on": "7kg", "checked": "23kg" },
+    "legs": [
+      {
+        "direction": "outbound",
+        "segments": [
+          {
+            "flight_number": "NH 110",
+            "airline": "ANA",
+            "from": { "code": "HND", "name": "Haneda Airport", "city": "Tokyo", "country": "Japan" },
+            "to": { "code": "LAX", "name": "Los Angeles International", "city": "Los Angeles", "country": "USA" },
+            "depart_utc": "2025-08-17T17:00:00Z",
+            "arrive_utc": "2025-08-18T06:00:00Z",
+            "duration_minutes": 780
           }
         ]
       }

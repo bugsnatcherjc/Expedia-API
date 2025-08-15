@@ -1,4 +1,12 @@
 [
-  {"id": "curr-usd", "code": "USD", "symbol": "$", "name": "US Dollar"},
-  {"id": "curr-eur", "code": "EUR", "symbol": "€", "name": "Euro"}
+  {"id": "curr-usd", "code": "USD", "symbol": "$", "name": "US Dollar", "default": true},
+  {"id": "curr-eur", "code": "EUR", "symbol": "€", "name": "Euro"},
+  {"id": "curr-gbp", "code": "GBP", "symbol": "£", "name": "British Pound"},
+  {"id": "curr-jpy", "code": "JPY", "symbol": "¥", "name": "Japanese Yen"},
+  {"id": "curr-aud", "code": "AUD", "symbol": "A$", "name": "Australian Dollar"},
+  {"id": "curr-sgd", "code": "SGD", "symbol": "S$", "name": "Singapore Dollar"},
+  {"id": "curr-aed", "code": "AED", "symbol": "د.إ", "name": "UAE Dirham"},
+  {"id": "curr-cad", "code": "CAD", "symbol": "C$", "name": "Canadian Dollar"},
+  {"id": "curr-cny", "code": "CNY", "symbol": "¥", "name": "Chinese Yuan"},
+  {"id": "curr-chf", "code": "CHF", "symbol": "CHF", "name": "Swiss Franc"}
 ]

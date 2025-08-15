@@ -1,35 +1,25 @@
 [
   {
-    "id": 101,
+    "id": "flt-rt-001",
     "trip_type": "round_trip",
-    "airline": { "code": "QR", "name": "Qatar Airways", "logo": "https://via.placeholder.com/80x40" },
-    "stops": 1,
-    "seat_classes": ["economy", "business"],
-    "price": { "total": 1450, "currency": "USD" },
-    "duration_total_minutes": 1320,
-    "baggage": { "carry_on": "7kg", "checked": "23kg" },
+    "airline": { "code": "UA", "name": "United Airlines", "logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=80&h=40&fit=crop" },
+    "stops": 0,
+    "seat_classes": ["economy", "premium_economy", "business", "first"],
+    "price": { "total": 598, "currency": "USD" },
+    "duration_total_minutes": 360,
+    "baggage": { "carry_on": "10kg", "checked": "23kg" },
     "legs": [
       {
         "direction": "outbound",
         "segments": [
           {
-            "flight_number": "QR 621",
-            "airline": "QR",
-            "from": { "code": "LHE", "name": "Allama Iqbal Intl", "city": "Lahore", "country": "PK" },
-            "to":   { "code": "DOH", "name": "Hamad Intl", "city": "Doha", "country": "QA" },
-            "depart_utc": "2025-09-01T02:30:00Z",
-            "arrive_utc": "2025-09-01T04:20:00Z",
-            "duration_minutes": 170
-          },
-          {
-            "flight_number": "QR 739",
-            "airline": "QR",
-            "from": { "code": "DOH", "name": "Hamad Intl", "city": "Doha", "country": "QA" },
-            "to":   { "code": "LAX", "name": "Los Angeles Intl", "city": "Los Angeles", "country": "US" },
-            "depart_utc": "2025-09-01T07:45:00Z",
-            "arrive_utc": "2025-09-01T17:45:00Z",
-            "duration_minutes": 720,
-            "layover_city": "Doha"
+            "flight_number": "UA 2345",
+            "airline": "UA",
+            "from": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "to":   { "code": "LAX", "name": "Los Angeles International", "city": "Los Angeles", "country": "USA" },
+            "depart_utc": "2025-08-20T10:00:00Z",
+            "arrive_utc": "2025-08-20T16:00:00Z",
+            "duration_minutes": 360
           }
         ]
       },
@@ -37,65 +27,181 @@
         "direction": "return",
         "segments": [
           {
-            "flight_number": "QR 740",
-            "airline": "QR",
-            "from": { "code": "LAX", "name": "Los Angeles Intl", "city": "Los Angeles", "country": "US" },
-            "to":   { "code": "DOH", "name": "Hamad Intl", "city": "Doha", "country": "QA" },
-            "depart_utc": "2025-09-10T08:30:00Z",
-            "arrive_utc": "2025-09-10T18:00:00Z",
-            "duration_minutes": 690
-          },
-          {
-            "flight_number": "QR 620",
-            "airline": "QR",
-            "from": { "code": "DOH", "name": "Hamad Intl", "city": "Doha", "country": "QA" },
-            "to":   { "code": "LHE", "name": "Allama Iqbal Intl", "city": "Lahore", "country": "PK" },
-            "depart_utc": "2025-09-11T01:00:00Z",
-            "arrive_utc": "2025-09-11T05:00:00Z",
-            "duration_minutes": 240,
-            "layover_city": "Doha"
+            "flight_number": "UA 2346",
+            "airline": "UA",
+            "from": { "code": "LAX", "name": "Los Angeles International", "city": "Los Angeles", "country": "USA" },
+            "to":   { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "depart_utc": "2025-08-27T14:00:00Z",
+            "arrive_utc": "2025-08-27T22:00:00Z",
+            "duration_minutes": 360
           }
         ]
       }
     ]
   },
   {
-    "id": 102,
+    "id": "flt-rt-002",
     "trip_type": "round_trip",
-    "airline": { "code": "TK", "name": "Turkish Airlines", "logo": "https://via.placeholder.com/80x40" },
-    "stops": 2,
-    "seat_classes": ["economy", "premium_economy", "business"],
-    "price": { "total": 1180, "currency": "USD" },
-    "duration_total_minutes": 1505,
-    "baggage": { "carry_on": "8kg", "checked": "30kg" },
+    "airline": { "code": "BA", "name": "British Airways", "logo": "https://images.unsplash.com/photo-1601821326018-d949a54b6402?w=80&h=40&fit=crop" },
+    "stops": 0,
+    "seat_classes": ["economy", "premium_economy", "business", "first"],
+    "price": { "total": 750, "currency": "GBP" },
+    "duration_total_minutes": 480,
+    "baggage": { "carry_on": "10kg", "checked": "23kg" },
     "legs": [
       {
         "direction": "outbound",
         "segments": [
           {
-            "flight_number": "TK 715",
-            "airline": "TK",
-            "from": { "code": "LHE", "name": "Allama Iqbal Intl", "city": "Lahore", "country": "PK" },
-            "to":   { "code": "IST", "name": "Istanbul Airport", "city": "Istanbul", "country": "TR" },
-            "depart_utc": "2025-09-01T03:10:00Z",
-            "arrive_utc": "2025-09-01T07:15:00Z",
-            "duration_minutes": 365
-          },
-          {
-            "flight_number": "TK 9",
-            "airline": "TK",
-            "from": { "code": "IST", "name": "Istanbul Airport", "city": "Istanbul", "country": "TR" },
-            "to":   { "code": "LAX", "name": "Los Angeles Intl", "city": "Los Angeles", "country": "US" },
-            "depart_utc": "2025-09-01T12:40:00Z",
-            "arrive_utc": "2025-09-01T22:40:00Z",
-            "duration_minutes": 720,
-            "layover_city": "Istanbul"
+            "flight_number": "BA 178",
+            "airline": "BA",
+            "from": { "code": "LHR", "name": "London Heathrow", "city": "London", "country": "UK" },
+            "to":   { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "depart_utc": "2025-08-20T13:00:00Z",
+            "arrive_utc": "2025-08-20T21:00:00Z",
+            "duration_minutes": 480
           }
         ]
       },
       {
         "direction": "return",
         "segments": [
+          {
+            "flight_number": "BA 179",
+            "airline": "BA",
+            "from": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "to":   { "code": "LHR", "name": "London Heathrow", "city": "London", "country": "UK" },
+            "depart_utc": "2025-08-27T23:00:00Z",
+            "arrive_utc": "2025-08-28T11:00:00Z",
+            "duration_minutes": 480
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flt-rt-003",
+    "trip_type": "round_trip",
+    "airline": { "code": "LH", "name": "Lufthansa", "logo": "https://images.unsplash.com/photo-1611174797136-5d7a47d04dfa?w=80&h=40&fit=crop" },
+    "stops": 0,
+    "seat_classes": ["economy", "premium_economy", "business", "first"],
+    "price": { "total": 820, "currency": "EUR" },
+    "duration_total_minutes": 520,
+    "baggage": { "carry_on": "8kg", "checked": "23kg" },
+    "legs": [
+      {
+        "direction": "outbound",
+        "segments": [
+          {
+            "flight_number": "LH 400",
+            "airline": "LH",
+            "from": { "code": "FRA", "name": "Frankfurt Airport", "city": "Frankfurt", "country": "Germany" },
+            "to":   { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "depart_utc": "2025-08-20T14:00:00Z",
+            "arrive_utc": "2025-08-20T22:40:00Z",
+            "duration_minutes": 520
+          }
+        ]
+      },
+      {
+        "direction": "return",
+        "segments": [
+          {
+            "flight_number": "LH 401",
+            "airline": "LH",
+            "from": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "to":   { "code": "FRA", "name": "Frankfurt Airport", "city": "Frankfurt", "country": "Germany" },
+            "depart_utc": "2025-08-27T17:30:00Z",
+            "arrive_utc": "2025-08-28T07:50:00Z",
+            "duration_minutes": 520
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flt-rt-004",
+    "trip_type": "round_trip",
+    "airline": { "code": "QF", "name": "Qantas", "logo": "https://images.unsplash.com/photo-1521727857535-28d2047314ac?w=80&h=40&fit=crop" },
+    "stops": 1,
+    "seat_classes": ["economy", "premium_economy", "business"],
+    "price": { "total": 1750, "currency": "AUD" },
+    "duration_total_minutes": 1260,
+    "baggage": { "carry_on": "7kg", "checked": "30kg" },
+    "legs": [
+      {
+        "direction": "outbound",
+        "segments": [
+          {
+            "flight_number": "QF 11",
+            "airline": "QF",
+            "from": { "code": "SYD", "name": "Kingsford Smith Airport", "city": "Sydney", "country": "Australia" },
+            "to": { "code": "LAX", "name": "Los Angeles International", "city": "Los Angeles", "country": "USA" },
+            "depart_utc": "2025-08-20T10:30:00Z",
+            "arrive_utc": "2025-08-21T07:30:00Z",
+            "duration_minutes": 1260
+          }
+        ]
+      },
+      {
+        "direction": "return",
+        "segments": [
+          {
+            "flight_number": "QF 12",
+            "airline": "QF",
+            "from": { "code": "LAX", "name": "Los Angeles International", "city": "Los Angeles", "country": "USA" },
+            "to": { "code": "SYD", "name": "Kingsford Smith Airport", "city": "Sydney", "country": "Australia" },
+            "depart_utc": "2025-08-27T22:30:00Z",
+            "arrive_utc": "2025-08-29T06:30:00Z",
+            "duration_minutes": 1260
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flt-rt-005",
+    "trip_type": "round_trip",
+    "airline": { "code": "SQ", "name": "Singapore Airlines", "logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=80&h=40&fit=crop" },
+    "stops": 0,
+    "seat_classes": ["economy", "premium_economy", "business", "first"],
+    "price": { "total": 1200, "currency": "SGD" },
+    "duration_total_minutes": 1080,
+    "baggage": { "carry_on": "7kg", "checked": "30kg" },
+    "legs": [
+      {
+        "direction": "outbound",
+        "segments": [
+          {
+            "flight_number": "SQ 25",
+            "airline": "SQ",
+            "from": { "code": "SIN", "name": "Changi Airport", "city": "Singapore", "country": "Singapore" },
+            "to": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "depart_utc": "2025-08-20T23:55:00Z",
+            "arrive_utc": "2025-08-21T17:55:00Z",
+            "duration_minutes": 1080
+          }
+        ]
+      },
+      {
+        "direction": "return",
+        "segments": [
+          {
+            "flight_number": "SQ 26",
+            "airline": "SQ",
+            "from": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "to": { "code": "SIN", "name": "Changi Airport", "city": "Singapore", "country": "Singapore" },
+            "depart_utc": "2025-08-27T20:15:00Z",
+            "arrive_utc": "2025-08-28T14:15:00Z",
+            "duration_minutes": 1080
+          }
+        ]
+      }
+    ]
+  }
+]
+]
+
           {
             "flight_number": "TK 10",
             "airline": "TK",

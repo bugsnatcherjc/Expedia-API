@@ -1,23 +1,145 @@
-[
-  {
-    "id": 1,
-    "name": "Grand Beach Resort",
-    "location": "Miami, Florida",
-    "address": "123 Beachfront Ave, Miami, FL",
-    "description": "Located right on Miami Beach, the Grand Beach Resort offers stunning ocean views, luxury rooms, and world-class service.",
-    "stars": 5,
-    "rating": 4.5,
-    "reviews_count": 432,
-    "coordinates": {"lat": 25.790654, "lng": -80.1300455},
-    "photos": [
-      "https://via.placeholder.com/800x600",
-      "https://via.placeholder.com/800x600",
-      "https://via.placeholder.com/800x600"
-    ],
-    "rooms": [
-      {
-        "type": "Deluxe King Room",
-        "price_per_night": 220.0,
+{
+  "stays": [
+    {
+      "id": "stay-001",
+      "name": "Grand Hyatt New York",
+      "location": "New York, USA",
+      "address": "109 East 42nd Street at Grand Central Terminal, New York, NY 10017",
+      "description": "Located in the heart of Manhattan, adjacent to Grand Central Terminal, this luxury hotel offers world-class amenities and spectacular city views. Perfect for both business and leisure travelers.",
+      "stars": 5,
+      "rating": 4.5,
+      "reviews_count": 5423,
+      "coordinates": {"lat": 40.7527, "lng": -73.9772},
+      "is_cancellable": true,
+      "cancellation_policy": "Free cancellation until 3 days before check-in",
+      "photos": [
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&h=600&fit=crop"
+      ],
+      "rooms": [
+        {
+          "id": "room-001",
+          "type": "Standard King Room",
+          "price_per_night": 250.0,
+          "currency": "USD",
+          "max_occupancy": 2,
+          "bed_type": "1 King Bed",
+          "amenities": [
+            "City View",
+            "Air Conditioning",
+            "Mini Bar",
+            "Free WiFi",
+            "Flat-screen TV"
+          ],
+          "photos": ["https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&h=600&fit=crop"],
+          "cancellation": "Free cancellation until 3 days before check-in",
+          "available": true
+        },
+        {
+          "id": "room-002",
+          "type": "Grand Club King",
+          "price_per_night": 350.0,
+          "currency": "USD",
+          "max_occupancy": 2,
+          "bed_type": "1 King Bed",
+          "amenities": [
+            "Club Lounge Access",
+            "City View",
+            "Air Conditioning",
+            "Mini Bar",
+            "Free WiFi",
+            "Flat-screen TV"
+          ],
+          "photos": ["https://via.placeholder.com/800x600"],
+          "cancellation": "Free cancellation until 3 days before check-in",
+          "available": true
+        }
+      ],
+      "amenities": [
+        {
+          "category": "General",
+          "items": [
+            "24-hour front desk",
+            "Concierge service",
+            "Luggage storage",
+            "Currency exchange"
+          ]
+        },
+        {
+          "category": "Activities",
+          "items": [
+            "Fitness center",
+            "Spa",
+            "Massage"
+          ]
+        },
+        {
+          "category": "Food & Drink",
+          "items": [
+            "Restaurant",
+            "Bar",
+            "Breakfast available",
+            "Room service"
+          ]
+        },
+        {
+          "category": "Internet",
+          "items": [
+            "Free WiFi",
+            "Business center"
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "id": "rev-001",
+          "author": "Michael R.",
+          "rating": 5,
+          "date": "2025-08-01",
+          "title": "Perfect location and service",
+          "comment": "Excellent stay! The location next to Grand Central is perfect for getting around NYC. Staff was incredibly helpful and the room was spotless.",
+          "trip_type": "Business",
+          "photos": ["https://via.placeholder.com/800x600"]
+        },
+        {
+          "id": "rev-002",
+          "author": "Sarah K.",
+          "rating": 4,
+          "date": "2025-07-28",
+          "title": "Great hotel, but noisy",
+          "comment": "The hotel is beautiful and the service is excellent. Only downside was street noise, but that's expected in Manhattan.",
+          "trip_type": "Couples",
+          "helpful_votes": 12
+        }
+      ],
+      "policies": {
+        "check_in": "3:00 PM",
+        "check_out": "12:00 PM",
+        "cancellation": "Free cancellation until 3 days before check-in",
+        "children": "Children of all ages are welcome",
+        "pets": "Pets allowed on request. Charges may apply."
+      },
+      "neighborhood": {
+        "name": "Midtown East",
+        "description": "Central location with easy access to attractions",
+        "nearby_attractions": [
+          "Grand Central Terminal",
+          "Chrysler Building",
+          "United Nations Headquarters",
+          "Fifth Avenue Shopping"
+        ],
+        "transport": {
+          "subway": ["4", "5", "6", "7", "S"],
+          "distance_to_airport": {
+            "jfk": "18 miles",
+            "lga": "9 miles",
+            "ewr": "16 miles"
+          }
+        }
+      }
+    }
         "currency": "USD",
         "max_occupancy": 2,
         "amenities": ["WiFi", "Air Conditioning", "Balcony"],

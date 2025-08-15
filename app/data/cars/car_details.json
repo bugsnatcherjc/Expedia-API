@@ -2,7 +2,7 @@
   {
     "id": 501,
     "company": "Hertz",
-    "company_logo": "https://via.placeholder.com/100x40",
+    "company_logo": "https://images.unsplash.com/photo-1592839849852-cdebb38f6d86?w=100&h=40&fit=crop",
     "car_model": "Toyota Corolla",
     "year": 2023,
     "car_type": "economy",
@@ -23,8 +23,9 @@
     "pickup": { "address": "LAX Rental Car Center", "city": "Los Angeles", "lat": 33.9416, "lng": -118.4085 },
     "dropoff": { "address": "Same as pickup", "city": "Los Angeles", "lat": 33.9416, "lng": -118.4085 },
     "photos": [
-      "https://via.placeholder.com/1024x640",
-      "https://via.placeholder.com/1024x640"
+      "https://images.unsplash.com/photo-1590362891991-f776e747a588?w=1024&h=640&fit=crop",
+      "https://images.unsplash.com/photo-1589974725932-171b6cb613ec?w=1024&h=640&fit=crop",
+      "https://images.unsplash.com/photo-1581465706166-4bf9c2a02c16?w=1024&h=640&fit=crop"
     ],
     "price": { "per_day": 45.0, "days": 3, "total": 135.0, "currency": "USD" },
     "cancellation_policy": "Free cancellation up to 24h before pickup"
@@ -32,7 +33,7 @@
   {
     "id": 502,
     "company": "Avis",
-    "company_logo": "https://via.placeholder.com/100x40",
+    "company_logo": "https://images.unsplash.com/photo-1589658981402-1e89618aeb87?w=100&h=40&fit=crop",
     "car_model": "Honda CR-V",
     "year": 2022,
     "car_type": "suv",

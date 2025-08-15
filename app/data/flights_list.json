@@ -1,8 +1,119 @@
 {
   "flights": [
-    {"id": 1, "airline": "Delta", "from": "JFK", "to": "LAX", "price": 350},
-    {"id": 2, "airline": "United", "from": "SFO", "to": "ORD", "price": 280},
-    {"id": 3, "airline": "American", "from": "LAX", "to": "DFW", "price": 300},
-    {"id": 4, "airline": "Southwest", "from": "MDW", "to": "LAS", "price": 200}
+    {
+      "id": "flt-rt-001",
+      "type": "round_trip",
+      "airline": {
+        "code": "UA",
+        "name": "United Airlines",
+        "logo": "https://via.placeholder.com/80x40"
+      },
+      "from": {
+        "code": "JFK",
+        "name": "John F. Kennedy International",
+        "city": "New York",
+        "country": "USA"
+      },
+      "to": {
+        "code": "LAX",
+        "name": "Los Angeles International",
+        "city": "Los Angeles",
+        "country": "USA"
+      },
+      "departure_date": "2025-09-01",
+      "return_date": "2025-09-08",
+      "price": {
+        "amount": 598,
+        "currency": "USD"
+      },
+      "duration": "6h",
+      "stops": 0
+    },
+    {
+      "id": "flt-rt-002",
+      "type": "round_trip",
+      "airline": {
+        "code": "BA",
+        "name": "British Airways",
+        "logo": "https://via.placeholder.com/80x40"
+      },
+      "from": {
+        "code": "JFK",
+        "name": "John F. Kennedy International",
+        "city": "New York",
+        "country": "USA"
+      },
+      "to": {
+        "code": "LHR",
+        "name": "London Heathrow",
+        "city": "London",
+        "country": "UK"
+      },
+      "departure_date": "2025-09-01",
+      "return_date": "2025-09-08",
+      "price": {
+        "amount": 998,
+        "currency": "USD"
+      },
+      "duration": "7h 30m",
+      "stops": 0
+    },
+    {
+      "id": "flt-rt-003",
+      "type": "round_trip",
+      "airline": {
+        "code": "DL",
+        "name": "Delta Air Lines",
+        "logo": "https://via.placeholder.com/80x40"
+      },
+      "from": {
+        "code": "JFK",
+        "name": "John F. Kennedy International",
+        "city": "New York",
+        "country": "USA"
+      },
+      "to": {
+        "code": "MIA",
+        "name": "Miami International",
+        "city": "Miami",
+        "country": "USA"
+      },
+      "departure_date": "2025-09-01",
+      "return_date": "2025-09-08",
+      "price": {
+        "amount": 398,
+        "currency": "USD"
+      },
+      "duration": "2h 30m",
+      "stops": 0
+    },
+    {
+      "id": "flt-ow-001",
+      "type": "one_way",
+      "airline": {
+        "code": "AA",
+        "name": "American Airlines",
+        "logo": "https://via.placeholder.com/80x40"
+      },
+      "from": {
+        "code": "JFK",
+        "name": "John F. Kennedy International",
+        "city": "New York",
+        "country": "USA"
+      },
+      "to": {
+        "code": "LAX",
+        "name": "Los Angeles International",
+        "city": "Los Angeles",
+        "country": "USA"
+      },
+      "departure_date": "2025-09-01",
+      "price": {
+        "amount": 299,
+        "currency": "USD"
+      },
+      "duration": "6h",
+      "stops": 0
+    }
   ]
 }

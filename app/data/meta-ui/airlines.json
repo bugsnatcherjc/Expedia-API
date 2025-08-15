@@ -1,4 +1,13 @@
 [
-  {"id": "aln-aa", "code": "AA", "name": "American Airlines", "logo": "https://via.placeholder.com/100x50"},
-  {"id": "aln-dl", "code": "DL", "name": "Delta Airlines", "logo": "https://via.placeholder.com/100x50"}
+  {"id": "aln-aa", "code": "AA", "name": "American Airlines", "logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=100&h=50&fit=crop", "alliance": "Oneworld"},
+  {"id": "aln-ua", "code": "UA", "name": "United Airlines", "logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=100&h=50&fit=crop", "alliance": "Star Alliance"},
+  {"id": "aln-ba", "code": "BA", "name": "British Airways", "logo": "https://images.unsplash.com/photo-1601821326018-d949a54b6402?w=100&h=50&fit=crop", "alliance": "Oneworld"},
+  {"id": "aln-af", "code": "AF", "name": "Air France", "logo": "https://images.unsplash.com/photo-1597340595281-3fd177219e3c?w=100&h=50&fit=crop", "alliance": "SkyTeam"},
+  {"id": "aln-lh", "code": "LH", "name": "Lufthansa", "logo": "https://images.unsplash.com/photo-1611174797136-5d7a47d04dfa?w=100&h=50&fit=crop", "alliance": "Star Alliance"},
+  {"id": "aln-ek", "code": "EK", "name": "Emirates", "logo": "https://images.unsplash.com/photo-1540339832862-44088e611536?w=100&h=50&fit=crop", "alliance": null},
+  {"id": "aln-sq", "code": "SQ", "name": "Singapore Airlines", "logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=100&h=50&fit=crop", "alliance": "Star Alliance"},
+  {"id": "aln-cx", "code": "CX", "name": "Cathay Pacific", "logo": "https://images.unsplash.com/photo-1579965342575-16428a7c8881?w=100&h=50&fit=crop", "alliance": "Oneworld"},
+  {"id": "aln-qf", "code": "QF", "name": "Qantas", "logo": "https://images.unsplash.com/photo-1521727857535-28d2047314ac?w=100&h=50&fit=crop", "alliance": "Oneworld"},
+  {"id": "aln-tk", "code": "TK", "name": "Turkish Airlines", "logo": "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?w=100&h=50&fit=crop", "alliance": "Star Alliance"},
+  {"id": "aln-ana", "code": "ANA", "name": "All Nippon Airways", "logo": "https://images.unsplash.com/photo-1521727857535-28d2047314ac?w=100&h=50&fit=crop", "alliance": "Star Alliance"}
 ]

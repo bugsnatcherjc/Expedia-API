@@ -1,29 +1,244 @@
-[
-  {
-    "id": 101,
-    "fare_rules": {
-      "cancellation": "Refundable with $200 fee before departure.",
-      "changes": "Changes allowed with fare difference.",
-      "no_show": "Non-refundable."
+{
+  "flights": [
+    {
+      "id": "flt-rt-001",
+      "airline_details": {
+        "name": "United Airlines",
+        "alliance": "Star Alliance",
+        "rating": 4.2,
+        "reviews_count": 15234
+      },
+      "fare_details": {
+        "economy": {
+          "base_fare": 498,
+          "taxes": 100,
+          "total": 598,
+          "baggage": {
+            "carry_on": "10kg included",
+            "checked": "First bag 23kg included, second bag $35"
+          },
+          "seat_selection": "Available from $12",
+          "changes": "Changes allowed with $200 fee + fare difference",
+          "cancellation": "Refundable with $200 fee before departure",
+          "miles_earned": "100% of miles flown"
+        },
+        "premium_economy": {
+          "base_fare": 798,
+          "taxes": 120,
+          "total": 918,
+          "baggage": {
+            "carry_on": "12kg included",
+            "checked": "Two bags 23kg each included"
+          },
+          "seat_selection": "Included",
+          "changes": "Changes allowed with $150 fee + fare difference",
+          "cancellation": "Refundable with $150 fee before departure",
+          "miles_earned": "125% of miles flown"
+        },
+        "business": {
+          "base_fare": 2498,
+          "taxes": 200,
+          "total": 2698,
+          "baggage": {
+            "carry_on": "15kg included",
+            "checked": "Two bags 32kg each included"
+          },
+          "seat_selection": "Included",
+          "changes": "Changes allowed with fare difference only",
+          "cancellation": "Fully refundable",
+          "miles_earned": "150% of miles flown"
+        },
+        "first": {
+          "base_fare": 4998,
+          "taxes": 300,
+          "total": 5298,
+          "baggage": {
+            "carry_on": "20kg included",
+            "checked": "Three bags 32kg each included"
+          },
+          "seat_selection": "Included",
+          "changes": "Flexible changes without fees",
+          "cancellation": "Fully refundable",
+          "miles_earned": "200% of miles flown"
+        }
+      },
+      "amenities": {
+        "wifi": {
+          "available": true,
+          "price": "$8/hour or $20/flight"
+        },
+        "entertainment": {
+          "available": true,
+          "type": "Personal TV",
+          "features": ["Movies", "TV Shows", "Live TV", "Games"]
+        },
+        "power": {
+          "available": true,
+          "type": "110V + USB"
+        },
+        "seat_pitch": {
+          "economy": "31-32 inches",
+          "premium_economy": "38 inches",
+          "business": "60 inches"
+        }
+      },
+      "aircraft_details": {
+        "type": "Boeing 787-9",
+        "seat_map": true,
+        "layout": {
+          "economy": "3-3-3",
+          "premium_economy": "2-3-2",
+          "business": "1-2-1"
+        }
+      }
     },
-    "aircraft": ["B77W", "A350"],
-    "meals": ["Dinner", "Breakfast"],
-    "wifi": true,
-    "seat_map_available": true
-  },
-  {
-    "id": 102,
-    "fare_rules": {
-      "cancellation": "Refundable with $180 fee before departure.",
-      "changes": "Changes allowed with fare difference.",
-      "no_show": "Non-refundable."
+    {
+      "id": "flt-rt-002",
+      "fare_details": {
+        "economy": {
+          "base_fare": 848,
+          "taxes": 150,
+          "total": 998,
+          "baggage": {
+            "carry_on": "10kg included",
+            "checked": "First bag 23kg included, second bag £45"
+          },
+          "seat_selection": "Available from £15",
+          "changes": "Changes allowed with £200 fee + fare difference",
+          "cancellation": "Refundable with £200 fee before departure",
+          "miles_earned": "100% of miles flown"
+        },
+        "premium_economy": {
+          "base_fare": 1498,
+          "taxes": 200,
+          "total": 1698,
+          "baggage": {
+            "carry_on": "12kg included",
+            "checked": "Two bags 23kg each included"
+          },
+          "seat_selection": "Included",
+          "changes": "Changes allowed with £150 fee + fare difference",
+          "cancellation": "Refundable with £150 fee before departure",
+          "miles_earned": "125% of miles flown"
+        },
+        "business": {
+          "base_fare": 3498,
+          "taxes": 300,
+          "total": 3798,
+          "baggage": {
+            "carry_on": "15kg included",
+            "checked": "Three bags 32kg each included"
+          },
+          "seat_selection": "Included",
+          "changes": "Changes allowed with fare difference only",
+          "cancellation": "Fully refundable",
+          "miles_earned": "150% of miles flown"
+        }
+      },
+      "amenities": {
+        "wifi": {
+          "available": true,
+          "price": "£5/hour or £15/flight"
+        },
+        "entertainment": {
+          "available": true,
+          "type": "Personal TV",
+          "features": ["Movies", "TV Shows", "Live TV", "Games", "Moving Map"]
+        },
+        "power": {
+          "available": true,
+          "type": "110V + USB + Wireless Charging"
+        },
+        "seat_pitch": {
+          "economy": "31 inches",
+          "premium_economy": "38 inches",
+          "business": "72 inches"
+        }
+      },
+      "aircraft_details": {
+        "type": "Boeing 777-300ER",
+        "seat_map": true,
+        "layout": {
+          "economy": "3-4-3",
+          "premium_economy": "2-4-2",
+          "business": "1-2-1",
+          "first": "1-1-1"
+        }
+      }
     },
-    "aircraft": ["B789"],
-    "meals": ["Dinner"],
-    "wifi": true,
-    "seat_map_available": false
-  },
-  { "id": 201, "fare_rules": { "cancellation": "Non-refundable.", "changes": "Allowed + difference.", "no_show": "Non-refundable." }, "aircraft": ["A380"], "meals": ["Lunch"], "wifi": true, "seat_map_available": true },
-  { "id": 202, "fare_rules": { "cancellation": "Non-refundable.", "changes": "Not allowed.", "no_show": "Non-refundable." }, "aircraft": ["A320"], "meals": ["Snack"], "wifi": false, "seat_map_available": false },
-  { "id": 301, "fare_rules": { "cancellation": "Refundable before segment start.", "changes": "Allowed + difference.", "no_show": "Non-refundable." }, "aircraft": ["A321", "B789"], "meals": ["Snack", "Dinner"], "wifi": true, "seat_map_available": false }
-]
+    {
+      "id": "flt-rt-002",
+      "airline_details": {
+        "name": "British Airways",
+        "alliance": "Oneworld",
+        "rating": 4.3,
+        "reviews_count": 12567
+      },
+      "fare_details": {
+        "economy": {
+          "base_fare": 650,
+          "taxes": 100,
+          "total": 750,
+          "baggage": {
+            "carry_on": "10kg included",
+            "checked": "First bag 23kg included, second bag £45"
+          },
+          "seat_selection": "Available from £15",
+          "changes": "Changes allowed with £150 fee + fare difference",
+          "cancellation": "Refundable with £150 fee before departure",
+          "miles_earned": "100% of miles flown"
+        },
+        "premium_economy": {
+          "base_fare": 1100,
+          "taxes": 150,
+          "total": 1250,
+          "baggage": {
+            "carry_on": "12kg included",
+            "checked": "Two bags 23kg each included"
+          },
+          "seat_selection": "Included",
+          "changes": "Changes allowed with £100 fee + fare difference",
+          "cancellation": "Refundable with £100 fee before departure",
+          "miles_earned": "125% of miles flown"
+        },
+        "business": {
+          "base_fare": 2800,
+          "taxes": 200,
+          "total": 3000,
+          "baggage": {
+            "carry_on": "15kg included",
+            "checked": "Two bags 32kg each included"
+          },
+          "seat_selection": "Included",
+          "changes": "Changes allowed with fare difference only",
+          "cancellation": "Fully refundable",
+          "miles_earned": "150% of miles flown"
+        }
+      },
+      "amenities": {
+        "wifi": {
+          "available": true,
+          "price": "£5/hour or £15/flight"
+        },
+        "power": {
+          "available": true,
+          "type": "110V + USB"
+        },
+        "seat_pitch": {
+          "economy": "31 inches",
+          "premium_economy": "38 inches",
+          "business": "72 inches"
+        }
+      },
+      "aircraft_details": {
+        "type": "Airbus A350-1000",
+        "seat_map": true,
+        "layout": {
+          "economy": "3-3-3",
+          "premium_economy": "2-4-2",
+          "business": "1-2-1"
+        }
+      }
+    }
+  ]
+}
