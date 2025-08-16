@@ -65,7 +65,7 @@ async def search_multi_city(
 
 
 @router.get("/details/{flight_id}")
-async def flight_details(flight_id: int):
+async def flight_details(flight_id: str):
     return flights_service.get_flight_details(flight_id)
 
 @router.get("/status/{flight_number}")

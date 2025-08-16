@@ -86,6 +86,6 @@ def search_cars(pickup_location: Optional[str], dropoff_location: Optional[str],
 
     return {"count": len(data), "items": data}
 
-def get_car_details(rental_id: int):
+def get_car_details(rental_id: str):
     details = _load("car_details.json")
     return next((d for d in details if d["id"] == rental_id), {})

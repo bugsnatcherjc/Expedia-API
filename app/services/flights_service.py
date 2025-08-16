@@ -48,17 +48,21 @@ def _apply_sort(results, sort_by: Optional[str]):
 
 def search_round_trip(origin, destination, depart, returnd, passengers, seat_class,
                       stops, airline, price_min, price_max, sort_by):
-    data = _load("round_trip.json")
+    try:
+        data = _load("round_trip.json")
+        
+        filtered = [
+            r for r in data
+            if r["legs"][0]["segments"][0]["from"]["code"] == origin.upper()
+            and r["legs"][-1]["segments"][-1]["to"]["code"] == destination.upper()
+        ]
 
-    filtered = [
-        r for r in data
-        if r["legs"][0]["segments"][0]["from"]["code"] == origin.upper()
-        and r["legs"][-1]["segments"][-1]["to"]["code"] == destination.upper()
-    ]
-
-    filtered = _apply_filters(filtered, seat_class, stops, airline, price_min, price_max)
-    filtered = _apply_sort(filtered, sort_by)
-    return {"trip_type": "round_trip", "count": len(filtered), "items": filtered}
+        filtered = _apply_filters(filtered, seat_class, stops, airline, price_min, price_max)
+        filtered = _apply_sort(filtered, sort_by)
+        return {"trip_type": "round_trip", "count": len(filtered), "items": filtered}
+    except Exception as e:
+        # Log the error here if needed
+        return {"trip_type": "round_trip", "count": 0, "items": [], "error": "No flights found for the specified route"}
 
 def search_one_way(origin, destination, depart, passengers, seat_class,
                    stops, airline, price_min, price_max, sort_by):
@@ -79,9 +83,11 @@ def search_multi_city(passengers, seat_class, stops, airline, price_min, price_m
     return {"trip_type": "multi_city", "count": len(filtered), "items": filtered}
 
 
-def get_flight_details(flight_id: int):
+def get_flight_details(flight_id: str):
     details = _load("flight_details.json")
-    return next((d for d in details if d["id"] == flight_id), {})
+    if isinstance(details, dict) and "flights" in details:
+        flights = details["flights"]
+        return next((d for d in flights if d["id"] == flight_id), {})
 
 def get_flight_status(flight_number: str):
     statuses = _load("flight_status.json")

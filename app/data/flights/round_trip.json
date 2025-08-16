@@ -2,24 +2,33 @@
   {
     "id": "flt-rt-001",
     "trip_type": "round_trip",
-    "airline": { "code": "UA", "name": "United Airlines", "logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=80&h=40&fit=crop" },
-    "stops": 0,
+    "airline": { "code": "EK", "name": "Emirates", "logo": "https://images.unsplash.com/photo-1540339832862-44088e611536?w=100&h=50&fit=crop" },
+    "stops": 1,
     "seat_classes": ["economy", "premium_economy", "business", "first"],
-    "price": { "total": 598, "currency": "USD" },
-    "duration_total_minutes": 360,
-    "baggage": { "carry_on": "10kg", "checked": "23kg" },
+    "price": { "total": 1298, "currency": "USD" },
+    "duration_total_minutes": 1080,
+    "baggage": { "carry_on": "10kg", "checked": "30kg" },
     "legs": [
       {
         "direction": "outbound",
         "segments": [
           {
-            "flight_number": "UA 2345",
-            "airline": "UA",
-            "from": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
-            "to":   { "code": "LAX", "name": "Los Angeles International", "city": "Los Angeles", "country": "USA" },
-            "depart_utc": "2025-08-20T10:00:00Z",
-            "arrive_utc": "2025-08-20T16:00:00Z",
-            "duration_minutes": 360
+            "flight_number": "EK 203",
+            "airline": "EK",
+            "from": { "code": "LHE", "name": "Allama Iqbal International", "city": "Lahore", "country": "Pakistan" },
+            "to": { "code": "DXB", "name": "Dubai International", "city": "Dubai", "country": "UAE" },
+            "depart_utc": "2025-10-10T14:30:00Z",
+            "arrive_utc": "2025-10-10T16:45:00Z",
+            "duration_minutes": 135
+          },
+          {
+            "flight_number": "EK 215",
+            "airline": "EK",
+            "from": { "code": "DXB", "name": "Dubai International", "city": "Dubai", "country": "UAE" },
+            "to": { "code": "LAX", "name": "Los Angeles International", "city": "Los Angeles", "country": "USA" },
+            "depart_utc": "2025-10-10T19:30:00Z",
+            "arrive_utc": "2025-10-11T01:45:00Z",
+            "duration_minutes": 945
           }
         ]
       },
@@ -27,13 +36,22 @@
         "direction": "return",
         "segments": [
           {
-            "flight_number": "UA 2346",
-            "airline": "UA",
+            "flight_number": "EK 216",
+            "airline": "EK",
             "from": { "code": "LAX", "name": "Los Angeles International", "city": "Los Angeles", "country": "USA" },
-            "to":   { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
-            "depart_utc": "2025-08-27T14:00:00Z",
-            "arrive_utc": "2025-08-27T22:00:00Z",
-            "duration_minutes": 360
+            "to": { "code": "DXB", "name": "Dubai International", "city": "Dubai", "country": "UAE" },
+            "depart_utc": "2025-12-10T16:30:00Z",
+            "arrive_utc": "2025-12-11T22:45:00Z",
+            "duration_minutes": 945
+          },
+          {
+            "flight_number": "EK 204",
+            "airline": "EK",
+            "from": { "code": "DXB", "name": "Dubai International", "city": "Dubai", "country": "UAE" },
+            "to": { "code": "LHE", "name": "Allama Iqbal International", "city": "Lahore", "country": "Pakistan" },
+            "depart_utc": "2025-12-12T01:30:00Z",
+            "arrive_utc": "2025-12-12T03:45:00Z",
+            "duration_minutes": 135
           }
         ]
       }
