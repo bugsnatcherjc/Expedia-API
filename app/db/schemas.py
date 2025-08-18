@@ -51,6 +51,15 @@ class OTPResponse(BaseModel):
     email: str
     otp_code: str  # Only for development - remove in production
     expires_in_minutes: int
+    action_type: str = "unified"  # "login", "registration", "unified"
+    user_exists: bool = False
+
+class AuthResponse(BaseModel):
+    access_token: str
+    token_type: str
+    user: dict  # UserResponse data
+    action_type: str  # "login" or "registration"
+    message: str
 
 class BookingCreate(BaseModel):
     booking_type: str  # "flight", "stay", "car", "activity"

@@ -2,6 +2,7 @@ from sqlalchemy.orm import Session
 from app.db import models, schemas
 from fastapi import HTTPException
 from datetime import datetime, timedelta
+from app.core.security import get_password_hash, verify_password, create_access_token
 import random
 import string
 
@@ -13,163 +14,153 @@ def generate_otp():
     """Generate a static OTP for development"""
     return STATIC_OTP
 
-def send_otp_for_signup(db: Session, signup_request: schemas.UserSignupRequest):
-    """Send OTP for new user signup (Expedia-style)"""
-    # Check if email already exists
-    existing_user = db.query(models.User).filter(models.User.email == signup_request.email).first()
-    if existing_user:
-        raise HTTPException(status_code=400, detail="Email already registered. Try logging in instead.")
+# === EXPEDIA-STYLE UNIFIED AUTHENTICATION ===
+
+def send_otp_unified(db: Session, email: str):
+    """
+    Unified OTP sending (Expedia-style)
+    - Checks if user exists
+    - Sends appropriate OTP for login or registration
+    """
+    # Check if user already exists
+    existing_user = db.query(models.User).filter(models.User.email == email).first()
     
-    # Generate OTP
+    # Generate OTP (static for development)
     otp_code = generate_otp()
     expires_at = datetime.utcnow() + timedelta(minutes=OTP_EXPIRY_MINUTES)
     
     # Delete any existing OTP for this email
-    db.query(models.OTPCode).filter(
-        models.OTPCode.email == signup_request.email,
-        models.OTPCode.otp_type == "signup"
-    ).delete()
+    db.query(models.OTPCode).filter(models.OTPCode.email == email).delete()
     
     # Create new OTP record
     otp_record = models.OTPCode(
-        email=signup_request.email,
-        phone=signup_request.phone,
+        email=email,
         otp_code=otp_code,
-        otp_type="signup",
-        expires_at=expires_at
+        expires_at=expires_at,
+        is_used=False,
+        otp_type="unified"
     )
     db.add(otp_record)
     db.commit()
     
-    return {
-        "message": f"OTP sent to {signup_request.email}",
-        "email": signup_request.email,
-        "otp_code": otp_code,  # Static OTP for development
-        "expires_in_minutes": OTP_EXPIRY_MINUTES
-    }
+    # Return appropriate response based on user existence
+    if existing_user:
+        return {
+            "message": f"OTP sent to {email} for login",
+            "email": email,
+            "otp_code": otp_code,  # Remove this in production
+            "expires_in_minutes": OTP_EXPIRY_MINUTES,
+            "action_type": "login",
+            "user_exists": True
+        }
+    else:
+        return {
+            "message": f"OTP sent to {email} for registration",
+            "email": email,
+            "otp_code": otp_code,  # Remove this in production
+            "expires_in_minutes": OTP_EXPIRY_MINUTES,
+            "action_type": "registration",
+            "user_exists": False
+        }
 
-def send_otp_for_login(db: Session, login_request: schemas.LoginRequest):
-    """Send OTP for existing user login (Expedia-style)"""
+def verify_otp_unified(db: Session, email: str, otp_code: str):
+    """
+    Unified OTP verification (Expedia-style)
+    - If user exists: Log them in
+    - If user doesn't exist: Auto-register and log them in
+    Only requires email and OTP
+    """
+    # Verify OTP
+    otp_record = db.query(models.OTPCode).filter(
+        models.OTPCode.email == email,
+        models.OTPCode.otp_code == otp_code,
+        models.OTPCode.is_used == False,
+        models.OTPCode.expires_at > datetime.utcnow()
+    ).first()
+    
+    if not otp_record:
+        raise ValueError("Invalid or expired OTP")
+    
+    # Mark OTP as used
+    otp_record.is_used = True
+    db.commit()
+    
     # Check if user exists
-    user = db.query(models.User).filter(models.User.email == login_request.email).first()
-    if not user:
-        raise HTTPException(status_code=404, detail="Email not found. Please sign up first.")
+    existing_user = db.query(models.User).filter(models.User.email == email).first()
     
-    # Generate OTP
-    otp_code = generate_otp()
-    expires_at = datetime.utcnow() + timedelta(minutes=OTP_EXPIRY_MINUTES)
-    
-    # Delete any existing OTP for this email
-    db.query(models.OTPCode).filter(
-        models.OTPCode.email == login_request.email,
-        models.OTPCode.otp_type == "login"
-    ).delete()
-    
-    # Create new OTP record
-    otp_record = models.OTPCode(
-        email=login_request.email,
-        otp_code=otp_code,
-        otp_type="login",
-        expires_at=expires_at
-    )
-    db.add(otp_record)
-    db.commit()
-    
-    return {
-        "message": f"OTP sent to {login_request.email}",
-        "email": login_request.email,
-        "otp_code": otp_code,  # Static OTP for development
-        "expires_in_minutes": OTP_EXPIRY_MINUTES
-    }
-
-def complete_signup_with_otp(db: Session, signup_data: schemas.CompleteSignupRequest):
-    """Complete user signup after OTP verification"""
-    # Verify OTP
-    otp_record = db.query(models.OTPCode).filter(
-        models.OTPCode.email == signup_data.email,
-        models.OTPCode.otp_code == signup_data.otp_code,
-        models.OTPCode.otp_type == "signup",
-        models.OTPCode.is_used == False,
-        models.OTPCode.expires_at > datetime.utcnow()
-    ).first()
-    
-    if not otp_record:
-        raise HTTPException(status_code=400, detail="Invalid or expired OTP")
-    
-    # Check if email already exists (double check)
-    existing_user = db.query(models.User).filter(models.User.email == signup_data.email).first()
     if existing_user:
-        raise HTTPException(status_code=400, detail="Email already registered")
-    
-    # Create new user
-    new_user = models.User(
-        username=signup_data.username,
-        email=signup_data.email,
-        password=signup_data.password,  # In production, hash this
-        phone=otp_record.phone,
-        is_verified=True
-    )
-    
-    # Mark OTP as used
-    otp_record.is_used = True
-    
-    db.add(new_user)
-    db.commit()
-    db.refresh(new_user)
-    
-    return new_user
-
-def login_with_otp(db: Session, login_data: schemas.LoginWithOTPRequest):
-    """Login user with OTP verification"""
-    # Verify OTP
-    otp_record = db.query(models.OTPCode).filter(
-        models.OTPCode.email == login_data.email,
-        models.OTPCode.otp_code == login_data.otp_code,
-        models.OTPCode.otp_type == "login",
-        models.OTPCode.is_used == False,
-        models.OTPCode.expires_at > datetime.utcnow()
-    ).first()
-    
-    if not otp_record:
-        raise HTTPException(status_code=400, detail="Invalid or expired OTP")
-    
-    # Get user
-    user = db.query(models.User).filter(models.User.email == login_data.email).first()
-    if not user:
-        raise HTTPException(status_code=404, detail="User not found")
-    
-    # Mark OTP as used
-    otp_record.is_used = True
-    db.commit()
-    
-    return {
-        "message": "Login successful",
-        "token": f"mock-token-{user.id}",  # In production, generate JWT
-        "user": user
-    }
-
-# Legacy functions for backward compatibility
-def create_user(db: Session, user: schemas.UserCreate):
-    """Legacy function - use complete_signup_with_otp instead"""
-    existing = db.query(models.User).filter(models.User.email == user.email).first()
-    if existing:
-        raise HTTPException(status_code=400, detail="Email already registered")
-    
-    new_user = models.User(
-        username=user.username,
-        email=user.email,
-        password=user.password,
-        phone=user.phone,
-        is_verified=False  # Not verified through OTP
-    )
-    db.add(new_user)
-    db.commit()
-    db.refresh(new_user)
-    return new_user
-
-def login_user(db: Session, credentials: schemas.UserLogin):
-    """Legacy function - use login_with_otp instead"""
-    user = db.query(models.User).filter(models.User.email == credentials.email).first()
-    if not user or user.password != credentials.password:
-        raise HTTPException(status_code=401, detail="Invalid credentials")
-    return {"token": f"mock-token-{user.id}", "user": user}
+        # User exists - Log them in
+        # Update verification status if not already verified
+        if not existing_user.is_verified:
+            existing_user.is_verified = True
+            db.commit()
+        
+        # Generate access token
+        access_token = create_access_token(data={"sub": existing_user.email})
+        
+        return {
+            "access_token": access_token,
+            "token_type": "bearer",
+            "user": {
+                "id": existing_user.id,
+                "username": existing_user.username,
+                "email": existing_user.email,
+                "phone": existing_user.phone,
+                "is_verified": existing_user.is_verified
+            },
+            "action_type": "login",
+            "message": "Login successful"
+        }
+    else:
+        # User doesn't exist - Auto-register them
+        # Generate username from email
+        email_username = email.split('@')[0]
+        final_username = email_username
+        
+        # Make username unique if needed
+        counter = 1
+        while db.query(models.User).filter(models.User.username == final_username).first():
+            final_username = f"{email_username}_{counter}"
+            counter += 1
+        
+        # Create new user with auto-generated data
+        new_user = models.User(
+            username=final_username,
+            email=email,
+            password=get_password_hash("temp_password"),  # Temporary password since only OTP is used
+            phone=None,
+            is_verified=True,  # Auto-verify since they completed OTP
+            created_at=datetime.utcnow()
+        )
+        
+        try:
+            db.add(new_user)
+            db.commit()
+            db.refresh(new_user)
+        except Exception as e:
+            db.rollback()
+            # If there's still a conflict, use timestamp-based username
+            timestamp = str(int(datetime.utcnow().timestamp()))
+            fallback_username = f"{email_username}_{timestamp}"
+            
+            new_user.username = fallback_username
+            db.add(new_user)
+            db.commit()
+            db.refresh(new_user)
+        
+        # Generate access token
+        access_token = create_access_token(data={"sub": new_user.email})
+        
+        return {
+            "access_token": access_token,
+            "token_type": "bearer",
+            "user": {
+                "id": new_user.id,
+                "username": new_user.username,
+                "email": new_user.email,
+                "phone": new_user.phone,
+                "is_verified": new_user.is_verified
+            },
+            "action_type": "registration",
+            "message": "Auto-registration and login successful"
+        }

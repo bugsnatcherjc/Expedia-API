@@ -1,0 +1,278 @@
+{
+  "base_url": "http://localhost:8000",
+  "endpoints": {
+    "one_way": {
+      "endpoint": "/flights/search/one-way",
+      "method": "GET",
+      "test_cases": [
+        {
+          "name": "JFK to FLL - American Airlines",
+          "params": {
+            "origin": "JFK",
+            "destination": "FLL",
+            "depart": "2025-08-17",
+            "passengers": 1,
+            "seat_class": "economy"
+          }
+        },
+        {
+          "name": "LAX to JFK - Delta Airlines with Business Class",
+          "params": {
+            "origin": "LAX",
+            "destination": "JFK",
+            "depart": "2025-08-20",
+            "passengers": 2,
+            "seat_class": "business"
+          }
+        },
+        {
+          "name": "SIN to JFK - Singapore Airlines Business",
+          "params": {
+            "origin": "SIN",
+            "destination": "JFK",
+            "depart": "2025-08-17",
+            "passengers": 1,
+            "seat_class": "business",
+            "stops": 0
+          }
+        },
+        {
+          "name": "NRT to HND - Japan Airlines Premium Economy",
+          "params": {
+            "origin": "NRT",
+            "destination": "HND",
+            "depart": "2025-08-20",
+            "seat_class": "premium_economy",
+            "airline": "JL"
+          }
+        },
+        {
+          "name": "MAD to BCN - Iberia with Price Filter",
+          "params": {
+            "origin": "MAD",
+            "destination": "BCN",
+            "depart": "2025-08-20",
+            "seat_class": "economy",
+            "price_max": 500,
+            "airline": "IB"
+          }
+        },
+        {
+          "name": "SYD to LAX - Qantas with Stops",
+          "params": {
+            "origin": "SYD",
+            "destination": "LAX",
+            "depart": "2025-08-17",
+            "passengers": 1,
+            "stops": 1
+          }
+        },
+        {
+          "name": "CDG to JFK - Air France First Class",
+          "params": {
+            "origin": "CDG",
+            "destination": "JFK",
+            "depart": "2025-08-17",
+            "seat_class": "first",
+            "airline": "AF"
+          }
+        },
+        {
+          "name": "IST to LHR - Turkish Airlines with Stop",
+          "params": {
+            "origin": "IST",
+            "destination": "LHR",
+            "depart": "2025-08-17",
+            "stops": 1,
+            "airline": "TK"
+          }
+        }
+      ]
+    },
+    "round_trip": {
+      "endpoint": "/flights/search/round-trip",
+      "method": "GET",
+      "test_cases": [
+        {
+          "name": "JFK to FLL Round-trip - American Airlines",
+          "params": {
+            "origin": "JFK",
+            "destination": "FLL",
+            "depart": "2025-10-10",
+            "returnd": "2025-10-17",
+            "passengers": 2,
+            "seat_class": "economy"
+          }
+        },
+        {
+          "name": "MAD to BCN Round-trip - Iberia Business",
+          "params": {
+            "origin": "MAD",
+            "destination": "BCN",
+            "depart": "2025-08-20",
+            "returnd": "2025-08-27",
+            "seat_class": "business",
+            "airline": "IB"
+          }
+        },
+        {
+          "name": "NRT to HND Round-trip - Japan Airlines",
+          "params": {
+            "origin": "NRT",
+            "destination": "HND",
+            "depart": "2025-08-20",
+            "returnd": "2025-08-25",
+            "seat_class": "economy"
+          }
+        },
+        {
+          "name": "JFK to FLL with Filters",
+          "params": {
+            "origin": "JFK",
+            "destination": "FLL",
+            "depart": "2025-10-10",
+            "returnd": "2025-10-17",
+            "passengers": 4,
+            "seat_class": "economy",
+            "stops": 0,
+            "sort_by": "price_asc"
+          }
+        }
+      ]
+    },
+    "multi_city": {
+      "endpoint": "/flights/search/multi-city",
+      "method": "GET",
+      "test_cases": [
+        {
+          "name": "US Multi-City - United Airlines",
+          "params": {
+            "passengers": 1,
+            "airline": "UA"
+          }
+        },
+        {
+          "name": "Japan Multi-City - Japan Airlines Business",
+          "params": {
+            "passengers": 2,
+            "seat_class": "business",
+            "airline": "JL"
+          }
+        },
+        {
+          "name": "Multi-City with Filters",
+          "params": {
+            "passengers": 1,
+            "seat_class": "first",
+            "stops": 2,
+            "price_min": 1000,
+            "sort_by": "duration"
+          }
+        },
+        {
+          "name": "Basic Multi-City Search",
+          "params": {
+            "passengers": 1
+          }
+        }
+      ]
+    },
+    "flight_details": {
+      "endpoint": "/flights/details/{flight_id}",
+      "method": "GET",
+      "test_cases": [
+        {
+          "name": "American Airlines JFK to FLL",
+          "flight_id": "flt-ow-001"
+        },
+        {
+          "name": "Delta Airlines LAX to JFK",
+          "flight_id": "flt-ow-002"
+        },
+        {
+          "name": "Japan Airlines NRT to HND",
+          "flight_id": "flt-ow-003"
+        },
+        {
+          "name": "American Airlines Round-trip",
+          "flight_id": "flt-rt-001"
+        },
+        {
+          "name": "United Airlines Multi-city",
+          "flight_id": "flt-mc-001"
+        }
+      ]
+    },
+    "flight_status": {
+      "endpoint": "/flights/status/{flight_number}",
+      "method": "GET",
+      "test_cases": [
+        {
+          "name": "American Airlines Flight",
+          "flight_number": "AA100"
+        },
+        {
+          "name": "Delta Airlines Flight",
+          "flight_number": "DL1501"
+        },
+        {
+          "name": "Japan Airlines Flight",
+          "flight_number": "JL205"
+        },
+        {
+          "name": "Singapore Airlines Flight",
+          "flight_number": "SQ21"
+        },
+        {
+          "name": "United Airlines Flight",
+          "flight_number": "UA2345"
+        }
+      ]
+    }
+  },
+  "sample_filters": {
+    "passengers": [1, 2, 4, 6],
+    "seat_classes": ["economy", "premium_economy", "business", "first"],
+    "stops": [0, 1, 2],
+    "airlines": ["AA", "UA", "BA", "AF", "LH", "EK", "SQ", "CX", "QF", "TK", "JL", "IB"],
+    "sort_options": ["price_asc", "price_desc", "duration", "departure_time"],
+    "price_ranges": {
+      "budget": {"price_max": 500},
+      "mid_range": {"price_min": 500, "price_max": 1500},
+      "premium": {"price_min": 1500}
+    }
+  },
+  "available_routes": {
+    "domestic_us": [
+      {"origin": "JFK", "destination": "FLL", "airline": "AA"},
+      {"origin": "LAX", "destination": "JFK", "airline": "DL"}
+    ],
+    "domestic_japan": [
+      {"origin": "NRT", "destination": "HND", "airline": "JL"}
+    ],
+    "domestic_spain": [
+      {"origin": "MAD", "destination": "BCN", "airline": "IB"}
+    ],
+    "international": [
+      {"origin": "SIN", "destination": "JFK", "airline": "SQ"},
+      {"origin": "SYD", "destination": "LAX", "airline": "QF"},
+      {"origin": "CDG", "destination": "JFK", "airline": "AF"},
+      {"origin": "IST", "destination": "LHR", "airline": "TK"}
+    ]
+  },
+  "test_dates": {
+    "valid_dates": [
+      "2025-08-17",
+      "2025-08-20",
+      "2025-10-10",
+      "2025-10-17",
+      "2025-08-25",
+      "2025-08-27"
+    ],
+    "date_ranges": {
+      "short_trip": {"depart": "2025-08-17", "return": "2025-08-20"},
+      "week_trip": {"depart": "2025-10-10", "return": "2025-10-17"},
+      "weekend_trip": {"depart": "2025-08-20", "return": "2025-08-25"}
+    }
+  }
+}
