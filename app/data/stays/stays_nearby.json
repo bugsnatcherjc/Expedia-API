@@ -1,20 +1,232 @@
 [
   {
-    "stay_id": 1,
-    "place": "Miami Beach Boardwalk",
-    "type": "Attraction",
-    "distance_km": 0.5
+    "stay_id": "stay-001",
+    "nearby": [
+      {
+        "name": "Grand Central Terminal",
+        "type": "Transportation",
+        "distance_km": 0.1,
+        "coordinates": {"lat": 40.7527, "lng": -73.9772}
+      },
+      {
+        "name": "Times Square",
+        "type": "Attraction",
+        "distance_km": 0.8,
+        "coordinates": {"lat": 40.7580, "lng": -73.9855}
+      },
+      {
+        "name": "Empire State Building",
+        "type": "Attraction",
+        "distance_km": 1.0,
+        "coordinates": {"lat": 40.7484, "lng": -73.9857}
+      }
+    ]
   },
   {
-    "stay_id": 1,
-    "place": "Lincoln Road Mall",
-    "type": "Shopping",
-    "distance_km": 1.2
+    "stay_id": "stay-002",
+    "nearby": [
+      {
+        "name": "Miami Beach Boardwalk",
+        "type": "Attraction",
+        "distance_km": 0.2,
+        "coordinates": {"lat": 25.7947, "lng": -80.1280}
+      },
+      {
+        "name": "Lincoln Road Mall",
+        "type": "Shopping",
+        "distance_km": 1.2,
+        "coordinates": {"lat": 25.7906, "lng": -80.1401}
+      },
+      {
+        "name": "Ocean Drive",
+        "type": "Entertainment",
+        "distance_km": 0.5,
+        "coordinates": {"lat": 25.7826, "lng": -80.1298}
+      }
+    ]
   },
   {
-    "stay_id": 2,
-    "place": "Santa Monica Pier",
-    "type": "Attraction",
-    "distance_km": 0.8
+    "stay_id": "stay-003",
+    "nearby": [
+      {
+        "name": "Tokyo Metropolitan Government Building",
+        "type": "Landmark",
+        "distance_km": 0.3,
+        "coordinates": {"lat": 35.6894, "lng": 139.6917}
+      },
+      {
+        "name": "Shinjuku Gyoen National Garden",
+        "type": "Park",
+        "distance_km": 1.0,
+        "coordinates": {"lat": 35.6851, "lng": 139.7100}
+      },
+      {
+        "name": "Shinjuku Station",
+        "type": "Transportation",
+        "distance_km": 0.5,
+        "coordinates": {"lat": 35.6896, "lng": 139.7006}
+      }
+    ]
+  },
+  {
+    "stay_id": "stay-004",
+    "nearby": [
+      {
+        "name": "Jumeirah Beach",
+        "type": "Beach",
+        "distance_km": 0.1,
+        "coordinates": {"lat": 25.1417, "lng": 55.1849}
+      },
+      {
+        "name": "Wild Wadi Waterpark",
+        "type": "Entertainment",
+        "distance_km": 0.3,
+        "coordinates": {"lat": 25.1392, "lng": 55.1859}
+      },
+      {
+        "name": "Madinat Jumeirah",
+        "type": "Shopping",
+        "distance_km": 0.5,
+        "coordinates": {"lat": 25.1333, "lng": 55.1851}
+      }
+    ]
+  },
+  {
+    "stay_id": "stay-005",
+    "nearby": [
+      {
+        "name": "Arc de Triomphe",
+        "type": "Landmark",
+        "distance_km": 0.4,
+        "coordinates": {"lat": 48.8738, "lng": 2.2950}
+      },
+      {
+        "name": "Champs-Élysées",
+        "type": "Shopping",
+        "distance_km": 0.3,
+        "coordinates": {"lat": 48.8695, "lng": 2.3076}
+      },
+      {
+        "name": "Eiffel Tower",
+        "type": "Landmark",
+        "distance_km": 1.5,
+        "coordinates": {"lat": 48.8584, "lng": 2.2945}
+      }
+    ]
+  },
+  {
+    "stay_id": "stay-006",
+    "nearby": [
+      {
+        "name": "Gardens by the Bay",
+        "type": "Attraction",
+        "distance_km": 0.3,
+        "coordinates": {"lat": 1.2816, "lng": 103.8636}
+      },
+      {
+        "name": "ArtScience Museum",
+        "type": "Museum",
+        "distance_km": 0.2,
+        "coordinates": {"lat": 1.2860, "lng": 103.8593}
+      },
+      {
+        "name": "The Shoppes at Marina Bay Sands",
+        "type": "Shopping",
+        "distance_km": 0.1,
+        "coordinates": {"lat": 1.2834, "lng": 103.8607}
+      }
+    ]
+  },
+  {
+    "stay_id": "stay-007",
+    "nearby": [
+      {
+        "name": "Casa Batlló",
+        "type": "Landmark",
+        "distance_km": 0.2,
+        "coordinates": {"lat": 41.3917, "lng": 2.1700}
+      },
+      {
+        "name": "Passeig de Gràcia",
+        "type": "Shopping",
+        "distance_km": 0.1,
+        "coordinates": {"lat": 41.3916, "lng": 2.1715}
+      },
+      {
+        "name": "Plaza Catalunya",
+        "type": "Landmark",
+        "distance_km": 0.5,
+        "coordinates": {"lat": 41.3874, "lng": 2.1686}
+      }
+    ]
+  },
+  {
+    "stay_id": "stay-008",
+    "nearby": [
+      {
+        "name": "Tsim Sha Tsui Promenade",
+        "type": "Attraction",
+        "distance_km": 0.2,
+        "coordinates": {"lat": 22.2931, "lng": 114.1694}
+      },
+      {
+        "name": "Star Ferry Terminal",
+        "type": "Transportation",
+        "distance_km": 0.3,
+        "coordinates": {"lat": 22.2932, "lng": 114.1692}
+      },
+      {
+        "name": "Canton Road",
+        "type": "Shopping",
+        "distance_km": 0.4,
+        "coordinates": {"lat": 22.2950, "lng": 114.1687}
+      }
+    ]
+  },
+  {
+    "stay_id": "stay-009",
+    "nearby": [
+      {
+        "name": "Atlantis Aquaventure Waterpark",
+        "type": "Entertainment",
+        "distance_km": 0.2,
+        "coordinates": {"lat": 25.1304, "lng": 55.1466}
+      },
+      {
+        "name": "The Palm Jumeirah Boardwalk",
+        "type": "Attraction",
+        "distance_km": 0.3,
+        "coordinates": {"lat": 25.1307, "lng": 55.1477}
+      },
+      {
+        "name": "The Pointe",
+        "type": "Entertainment",
+        "distance_km": 1.0,
+        "coordinates": {"lat": 25.1166, "lng": 55.1388}
+      }
+    ]
+  },
+  {
+    "stay_id": "stay-010",
+    "nearby": [
+      {
+        "name": "Imperial Palace",
+        "type": "Landmark",
+        "distance_km": 1.0,
+        "coordinates": {"lat": 35.6852, "lng": 139.7528}
+      },
+      {
+        "name": "Ginza Shopping District",
+        "type": "Shopping",
+        "distance_km": 0.8,
+        "coordinates": {"lat": 35.6721, "lng": 139.7636}
+      },
+      {
+        "name": "Tsukiji Outer Market",
+        "type": "Attraction",
+        "distance_km": 1.5,
+        "coordinates": {"lat": 35.6654, "lng": 139.7707}
+      }
+    ]
   }
 ]

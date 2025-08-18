@@ -3,10 +3,10 @@
     {
       "id": "flt-rt-001",
       "airline_details": {
-        "name": "United Airlines",
-        "alliance": "Star Alliance",
+        "name": "American Airlines",
+        "alliance": "Oneworld",
         "rating": 4.2,
-        "reviews_count": 15234
+        "reviews_count": 32145
       },
       "fare_details": {
         "economy": {
@@ -94,6 +94,12 @@
     },
     {
       "id": "flt-rt-002",
+      "airline_details": {
+        "name": "Iberia",
+        "alliance": "Oneworld",
+        "rating": 4.1,
+        "reviews_count": 15678
+      },
       "fare_details": {
         "economy": {
           "base_fare": 848,
@@ -167,44 +173,44 @@
       }
     },
     {
-      "id": "flt-rt-002",
+      "id": "flt-rt-003",
       "airline_details": {
-        "name": "British Airways",
+        "name": "Japan Airlines",
         "alliance": "Oneworld",
-        "rating": 4.3,
-        "reviews_count": 12567
+        "rating": 4.7,
+        "reviews_count": 28945
       },
       "fare_details": {
         "economy": {
-          "base_fare": 650,
-          "taxes": 100,
-          "total": 750,
+          "base_fare": 85000,
+          "taxes": 15000,
+          "total": 100000,
           "baggage": {
             "carry_on": "10kg included",
-            "checked": "First bag 23kg included, second bag £45"
+            "checked": "First bag 23kg included, second bag ¥6000"
           },
-          "seat_selection": "Available from £15",
-          "changes": "Changes allowed with £150 fee + fare difference",
-          "cancellation": "Refundable with £150 fee before departure",
+          "seat_selection": "Available from ¥2000",
+          "changes": "Changes allowed with ¥20000 fee + fare difference", 
+          "cancellation": "Refundable with ¥20000 fee before departure",
           "miles_earned": "100% of miles flown"
         },
         "premium_economy": {
-          "base_fare": 1100,
-          "taxes": 150,
-          "total": 1250,
+          "base_fare": 140000,
+          "taxes": 20000,
+          "total": 160000,
           "baggage": {
             "carry_on": "12kg included",
             "checked": "Two bags 23kg each included"
           },
           "seat_selection": "Included",
-          "changes": "Changes allowed with £100 fee + fare difference",
-          "cancellation": "Refundable with £100 fee before departure",
+          "changes": "Changes allowed with ¥15000 fee + fare difference",
+          "cancellation": "Refundable with ¥15000 fee before departure",
           "miles_earned": "125% of miles flown"
         },
         "business": {
-          "base_fare": 2800,
-          "taxes": 200,
-          "total": 3000,
+          "base_fare": 380000,
+          "taxes": 30000,
+          "total": 410000,
           "baggage": {
             "carry_on": "15kg included",
             "checked": "Two bags 32kg each included"
@@ -218,7 +224,7 @@
       "amenities": {
         "wifi": {
           "available": true,
-          "price": "£5/hour or £15/flight"
+          "price": "¥700/hour or ¥2000/flight"
         },
         "power": {
           "available": true,

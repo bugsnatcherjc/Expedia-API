@@ -11,5 +11,9 @@
   {"id": "apt-syd", "code": "SYD", "name": "Kingsford Smith", "city": "Sydney", "country": "Australia", "lat": -33.9399, "lng": 151.1753},
   {"id": "apt-fra", "code": "FRA", "name": "Frankfurt", "city": "Frankfurt", "country": "Germany", "lat": 50.0379, "lng": 8.5622},
   {"id": "apt-hkg", "code": "HKG", "name": "Hong Kong International", "city": "Hong Kong", "country": "China", "lat": 22.3080, "lng": 113.9185},
-  {"id": "apt-ist", "code": "IST", "name": "Istanbul", "city": "Istanbul", "country": "Turkey", "lat": 41.2751, "lng": 28.7519}
+  {"id": "apt-ist", "code": "IST", "name": "Istanbul", "city": "Istanbul", "country": "Turkey", "lat": 41.2751, "lng": 28.7519},
+  {"id": "apt-bcn", "code": "BCN", "name": "Barcelona-El Prat", "city": "Barcelona", "country": "Spain", "lat": 41.2974, "lng": 2.0833},
+  {"id": "apt-nrt", "code": "NRT", "name": "Narita International", "city": "Tokyo", "country": "Japan", "lat": 35.7720, "lng": 140.3929},
+  {"id": "apt-lga", "code": "LGA", "name": "LaGuardia", "city": "New York", "country": "USA", "lat": 40.7769, "lng": -73.8740},
+  {"id": "apt-fll", "code": "FLL", "name": "Fort Lauderdale-Hollywood International", "city": "Fort Lauderdale", "country": "USA", "lat": 26.0742, "lng": -80.1506}
 ]

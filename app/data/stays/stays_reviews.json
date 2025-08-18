@@ -1,23 +1,34 @@
 [
   {
-    "stay_id": 1,
-    "user": "John Doe",
+    "stay_id": "stay-001",
+    "user": "John D.",
     "rating": 5,
-    "comment": "Amazing stay! The ocean view was breathtaking.",
-    "date": "2024-07-15"
+    "comment": "Perfect location next to Grand Central. Luxurious rooms and excellent service.",
+    "date": "2025-07-15",
+    "trip_type": "Business"
   },
   {
-    "stay_id": 1,
-    "user": "Jane Smith",
+    "stay_id": "stay-001",
+    "user": "Sarah M.",
     "rating": 4,
-    "comment": "Great location, but the breakfast could be better.",
-    "date": "2024-06-05"
+    "comment": "Great city views and comfortable beds. Spa services were excellent.",
+    "date": "2025-06-05",
+    "trip_type": "Couples"
   },
   {
-    "stay_id": 2,
-    "user": "Alex Johnson",
+    "stay_id": "stay-002",
+    "user": "Michael R.",
+    "rating": 5,
+    "comment": "Amazing beachfront location! The pools and restaurants were outstanding.",
+    "date": "2025-07-22",
+    "trip_type": "Family"
+  },
+  {
+    "stay_id": "stay-002",
+    "user": "Emma T.",
     "rating": 4,
-    "comment": "Nice rooms and friendly staff.",
-    "date": "2024-05-22"
+    "comment": "Beautiful property with great amenities. Service was top-notch.",
+    "date": "2025-06-18",
+    "trip_type": "Friends"
   }
 ]

@@ -1,25 +1,25 @@
 [
   {
-    "id": 301,
+    "id": "flt-mc-001",
     "trip_type": "multi_city",
-    "airline": { "code": "BA", "name": "British Airways", "logo": "https://via.placeholder.com/80x40" },
+    "airline": { "code": "UA", "name": "United Airlines", "logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=80&h=40&fit=crop" },
     "stops": 2,
-    "seat_classes": ["economy", "business"],
-    "price": { "total": 1680, "currency": "USD" },
-    "duration_total_minutes": 2200,
-    "baggage": { "carry_on": "8kg", "checked": "23kg" },
+    "seat_classes": ["economy", "premium_economy", "business", "first"],
+    "price": { "total": 750, "currency": "USD" },
+    "duration_total_minutes": 460,
+    "baggage": { "carry_on": "10kg", "checked": "23kg" },
     "legs": [
       {
         "direction": "segment_1",
         "segments": [
           {
-            "flight_number": "BA 258",
-            "airline": "BA",
-            "from": { "code": "LHE", "name": "Allama Iqbal Intl", "city": "Lahore", "country": "PK" },
-            "to":   { "code": "LHR", "name": "Heathrow", "city": "London", "country": "GB" },
-            "depart_utc": "2025-09-01T02:00:00Z",
-            "arrive_utc": "2025-09-01T07:30:00Z",
-            "duration_minutes": 330
+            "flight_number": "UA 2345",
+            "airline": "UA",
+            "from": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "to": { "code": "FLL", "name": "Fort Lauderdale-Hollywood International", "city": "Fort Lauderdale", "country": "USA" },
+            "depart_utc": "2025-09-01T10:00:00Z",
+            "arrive_utc": "2025-09-01T12:45:00Z",
+            "duration_minutes": 165
           }
         ]
       },
@@ -27,13 +27,13 @@
         "direction": "segment_2",
         "segments": [
           {
-            "flight_number": "BA 283",
-            "airline": "BA",
-            "from": { "code": "LHR", "name": "Heathrow", "city": "London", "country": "GB" },
-            "to":   { "code": "LAX", "name": "Los Angeles Intl", "city": "Los Angeles", "country": "US" },
-            "depart_utc": "2025-09-03T10:40:00Z",
-            "arrive_utc": "2025-09-03T20:30:00Z",
-            "duration_minutes": 650
+            "flight_number": "UA 2346",
+            "airline": "UA",
+            "from": { "code": "FLL", "name": "Fort Lauderdale-Hollywood International", "city": "Fort Lauderdale", "country": "USA" },
+            "to": { "code": "LGA", "name": "LaGuardia Airport", "city": "New York", "country": "USA" },
+            "depart_utc": "2025-09-03T14:00:00Z",
+            "arrive_utc": "2025-09-03T16:45:00Z",
+            "duration_minutes": 165
           }
         ]
       },
@@ -41,13 +41,67 @@
         "direction": "segment_3",
         "segments": [
           {
-            "flight_number": "BA 268",
-            "airline": "BA",
-            "from": { "code": "LAX", "name": "Los Angeles Intl", "city": "Los Angeles", "country": "US" },
-            "to":   { "code": "LHE", "name": "Allama Iqbal Intl", "city": "Lahore", "country": "PK" },
-            "depart_utc": "2025-09-10T06:00:00Z",
-            "arrive_utc": "2025-09-11T02:00:00Z",
-            "duration_minutes": 1080
+            "flight_number": "UA 2347",
+            "airline": "UA",
+            "from": { "code": "LGA", "name": "LaGuardia Airport", "city": "New York", "country": "USA" },
+            "to": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "depart_utc": "2025-09-10T09:00:00Z",
+            "arrive_utc": "2025-09-10T09:30:00Z",
+            "duration_minutes": 30
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flt-mc-002",
+    "trip_type": "multi_city",
+    "airline": { "code": "JL", "name": "Japan Airlines", "logo": "https://images.unsplash.com/photo-1540339832862-44088e611536?w=80&h=40&fit=crop" },
+    "stops": 2,
+    "seat_classes": ["economy", "premium_economy", "business", "first"],
+    "price": { "total": 2800, "currency": "JPY" },
+    "duration_total_minutes": 330,
+    "baggage": { "carry_on": "10kg", "checked": "23kg" },
+    "legs": [
+      {
+        "direction": "segment_1",
+        "segments": [
+          {
+            "flight_number": "JL 203",
+            "airline": "JL",
+            "from": { "code": "NRT", "name": "Narita International Airport", "city": "Tokyo", "country": "Japan" },
+            "to": { "code": "HND", "name": "Haneda Airport", "city": "Tokyo", "country": "Japan" },
+            "depart_utc": "2025-09-01T14:30:00Z",
+            "arrive_utc": "2025-09-01T16:20:00Z",
+            "duration_minutes": 110
+          }
+        ]
+      },
+      {
+        "direction": "segment_2",
+        "segments": [
+          {
+            "flight_number": "JL 204",
+            "airline": "JL",
+            "from": { "code": "HND", "name": "Haneda Airport", "city": "Tokyo", "country": "Japan" },
+            "to": { "code": "BCN", "name": "Barcelona-El Prat", "city": "Barcelona", "country": "Spain" },
+            "depart_utc": "2025-09-03T00:30:00Z",
+            "arrive_utc": "2025-09-03T08:20:00Z",
+            "duration_minutes": 110
+          }
+        ]
+      },
+      {
+        "direction": "segment_3",
+        "segments": [
+          {
+            "flight_number": "JL 205",
+            "airline": "JL",
+            "from": { "code": "BCN", "name": "Barcelona-El Prat", "city": "Barcelona", "country": "Spain" },
+            "to": { "code": "NRT", "name": "Narita International Airport", "city": "Tokyo", "country": "Japan" },
+            "depart_utc": "2025-09-10T10:30:00Z",
+            "arrive_utc": "2025-09-10T18:20:00Z",
+            "duration_minutes": 110
           }
         ]
       }

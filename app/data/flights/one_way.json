@@ -6,7 +6,7 @@
     "stops": 0,
     "seat_classes": ["economy", "business", "first"],
     "price": { "total": 299, "currency": "USD" },
-    "duration_total_minutes": 360,
+    "duration_total_minutes": 185,
     "baggage": { "carry_on": "10kg", "checked": "23kg" },
     "legs": [
       {
@@ -16,10 +16,10 @@
             "flight_number": "AA 100",
             "airline": "AA",
             "from": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
-            "to":   { "code": "LAX", "name": "Los Angeles International", "city": "Los Angeles", "country": "USA" },
+            "to":   { "code": "FLL", "name": "Fort Lauderdale-Hollywood International", "city": "Fort Lauderdale", "country": "USA" },
             "depart_utc": "2025-08-17T10:00:00Z",
-            "arrive_utc": "2025-08-17T13:40:00Z",
-            "duration_minutes": 360
+            "arrive_utc": "2025-08-17T13:05:00Z",
+            "duration_minutes": 185
           }
         ]
       }
@@ -28,24 +28,24 @@
   {
     "id": "flt-ow-002",
     "trip_type": "one_way",
-    "airline": { "code": "EK", "name": "Emirates", "logo": "https://images.unsplash.com/photo-1540339832862-44088e611536?w=80&h=40&fit=crop" },
+    "airline": { "code": "IB", "name": "Iberia", "logo": "https://images.unsplash.com/photo-1597340595281-3fd177219e3c?w=80&h=40&fit=crop" },
     "stops": 0,
     "seat_classes": ["economy", "business", "first"],
-    "price": { "total": 850, "currency": "USD" },
-    "duration_total_minutes": 840,
-    "baggage": { "carry_on": "8kg", "checked": "30kg" },
+    "price": { "total": 450, "currency": "EUR" },
+    "duration_total_minutes": 105,
+    "baggage": { "carry_on": "10kg", "checked": "23kg" },
     "legs": [
       {
         "direction": "outbound",
         "segments": [
           {
-            "flight_number": "EK 202",
-            "airline": "EK",
-            "from": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
-            "to": { "code": "DXB", "name": "Dubai International", "city": "Dubai", "country": "UAE" },
-            "depart_utc": "2025-08-17T22:00:00Z",
-            "arrive_utc": "2025-08-18T18:00:00Z",
-            "duration_minutes": 840
+            "flight_number": "IB 1349",
+            "airline": "IB",
+            "from": { "code": "MAD", "name": "Adolfo Suárez Madrid–Barajas", "city": "Madrid", "country": "Spain" },
+            "to": { "code": "BCN", "name": "Barcelona-El Prat", "city": "Barcelona", "country": "Spain" },
+            "depart_utc": "2025-08-17T10:00:00Z",
+            "arrive_utc": "2025-08-17T11:45:00Z",
+            "duration_minutes": 105
           }
         ]
       }
@@ -54,24 +54,24 @@
   {
     "id": "flt-ow-003",
     "trip_type": "one_way",
-    "airline": { "code": "BA", "name": "British Airways", "logo": "https://images.unsplash.com/photo-1601821326018-d949a54b6402?w=80&h=40&fit=crop" },
+    "airline": { "code": "JL", "name": "Japan Airlines", "logo": "https://images.unsplash.com/photo-1540339832862-44088e611536?w=80&h=40&fit=crop" },
     "stops": 0,
-    "seat_classes": ["economy", "premium_economy", "business"],
-    "price": { "total": 450, "currency": "GBP" },
-    "duration_total_minutes": 480,
+    "seat_classes": ["economy", "premium_economy", "business", "first"],
+    "price": { "total": 850, "currency": "USD" },
+    "duration_total_minutes": 110,
     "baggage": { "carry_on": "10kg", "checked": "23kg" },
     "legs": [
       {
         "direction": "outbound",
         "segments": [
           {
-            "flight_number": "BA 178",
-            "airline": "BA",
-            "from": { "code": "LHR", "name": "London Heathrow", "city": "London", "country": "UK" },
-            "to": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
-            "depart_utc": "2025-08-17T09:00:00Z",
-            "arrive_utc": "2025-08-17T17:00:00Z",
-            "duration_minutes": 480
+            "flight_number": "JL 203",
+            "airline": "JL",
+            "from": { "code": "NRT", "name": "Narita International Airport", "city": "Tokyo", "country": "Japan" },
+            "to": { "code": "HND", "name": "Haneda Airport", "city": "Tokyo", "country": "Japan" },
+            "depart_utc": "2025-08-17T14:30:00Z",
+            "arrive_utc": "2025-08-17T16:20:00Z",
+            "duration_minutes": 110
           }
         ]
       }
@@ -80,24 +80,24 @@
   {
     "id": "flt-ow-004",
     "trip_type": "one_way",
-    "airline": { "code": "LH", "name": "Lufthansa", "logo": "https://images.unsplash.com/photo-1611174797136-5d7a47d04dfa?w=80&h=40&fit=crop" },
-    "stops": 1,
+    "airline": { "code": "UA", "name": "United Airlines", "logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=80&h=40&fit=crop" },
+    "stops": 0,
     "seat_classes": ["economy", "premium_economy", "business", "first"],
-    "price": { "total": 580, "currency": "EUR" },
-    "duration_total_minutes": 720,
-    "baggage": { "carry_on": "8kg", "checked": "23kg" },
+    "price": { "total": 250, "currency": "USD" },
+    "duration_total_minutes": 165,
+    "baggage": { "carry_on": "10kg", "checked": "23kg" },
     "legs": [
       {
         "direction": "outbound",
         "segments": [
           {
-            "flight_number": "LH 400",
-            "airline": "LH",
-            "from": { "code": "FRA", "name": "Frankfurt Airport", "city": "Frankfurt", "country": "Germany" },
-            "to": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
-            "depart_utc": "2025-08-17T11:00:00Z",
-            "arrive_utc": "2025-08-17T23:00:00Z",
-            "duration_minutes": 720
+            "flight_number": "UA 2345",
+            "airline": "UA",
+            "from": { "code": "LGA", "name": "LaGuardia Airport", "city": "New York", "country": "USA" },
+            "to": { "code": "FLL", "name": "Fort Lauderdale-Hollywood International", "city": "Fort Lauderdale", "country": "USA" },
+            "depart_utc": "2025-08-17T10:00:00Z",
+            "arrive_utc": "2025-08-17T12:45:00Z",
+            "duration_minutes": 165
           }
         ]
       }
