@@ -78,6 +78,262 @@
           "available": true
         }
       ]
+    },
+    {
+      "id": "stay-003",
+      "name": "The Ritz-Carlton Tokyo",
+      "location": "Tokyo, Japan",
+      "address": "Midtown Tower, 9-7-1 Akasaka, Minato-ku, Tokyo 107-6245, Japan",
+      "description": "Experience luxury in the heart of Tokyo with stunning city views, world-class dining, and impeccable service. Perfect for both business and leisure travelers.",
+      "stars": 5,
+      "rating": 4.8,
+      "reviews_count": 3245,
+      "coordinates": {"lat": 35.6669, "lng": 139.7294},
+      "is_cancellable": true,
+      "cancellation_policy": "Free cancellation until 5 days before check-in",
+      "thumbnail": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=300&h=200&fit=crop",
+      "photos": [
+        "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&h=600&fit=crop"
+      ],
+      "rooms": [
+        {
+          "id": "room-003",
+          "type": "Deluxe King Room",
+          "price_per_night": 520.0,
+          "currency": "USD",
+          "max_occupancy": 2,
+          "bed_type": "1 King Bed",
+          "amenities": ["City View", "Air Conditioning", "Mini Bar", "Free WiFi", "Flat-screen TV"],
+          "photos": ["https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&h=600&fit=crop"],
+          "cancellation": "Free cancellation until 5 days before check-in",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stay-004",
+      "name": "Burj Al Arab Jumeirah",
+      "location": "Dubai, UAE",
+      "address": "Jumeirah St - Umm Suqeim 3 - Dubai - United Arab Emirates",
+      "description": "An iconic symbol of luxury, offering unparalleled service, private beaches, and world-class dining. Perfect for an unforgettable stay in Dubai.",
+      "stars": 5,
+      "rating": 4.9,
+      "reviews_count": 2897,
+      "coordinates": {"lat": 25.1412, "lng": 55.1852},
+      "is_cancellable": true,
+      "cancellation_policy": "Free cancellation until 14 days before check-in",
+      "thumbnail": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=300&h=200&fit=crop",
+      "photos": [
+        "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=800&h=600&fit=crop"
+      ],
+      "rooms": [
+        {
+          "id": "room-004",
+          "type": "Royal Suite",
+          "price_per_night": 1200.0,
+          "currency": "USD",
+          "max_occupancy": 4,
+          "bed_type": "2 King Beds",
+          "amenities": ["Ocean View", "Private Pool", "Butler Service", "Free WiFi", "Flat-screen TV"],
+          "photos": ["https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=800&h=600&fit=crop"],
+          "cancellation": "Free cancellation until 14 days before check-in",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stay-005",
+      "name": "Four Seasons Paris",
+      "location": "Paris, France",
+      "address": "31 Avenue George V, 75008 Paris, France",
+      "description": "A luxurious retreat in the heart of Paris, offering Michelin-starred dining, a serene spa, and elegant accommodations. Perfect for a romantic getaway or a cultural escape.",
+      "stars": 5,
+      "rating": 4.8,
+      "reviews_count": 3678,
+      "coordinates": {"lat": 48.8697, "lng": 2.3284},
+      "is_cancellable": true,
+      "cancellation_policy": "Free cancellation until 7 days before check-in",
+      "thumbnail": "https://images.unsplash.com/photo-1549294413-26f195f4d04d?w=300&h=200&fit=crop",
+      "photos": [
+        "https://images.unsplash.com/photo-1549294413-26f195f4d04d?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1549294413-26f195f4d04d?w=800&h=600&fit=crop"
+      ],
+      "rooms": [
+        {
+          "id": "room-005",
+          "type": "Premier Room",
+          "price_per_night": 850.0,
+          "currency": "EUR",
+          "max_occupancy": 2,
+          "bed_type": "1 King Bed",
+          "amenities": ["City View", "Air Conditioning", "Mini Bar", "Free WiFi", "Flat-screen TV"],
+          "photos": ["https://images.unsplash.com/photo-1549294413-26f195f4d04d?w=800&h=600&fit=crop"],
+          "cancellation": "Free cancellation until 7 days before check-in",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stay-006",
+      "name": "Marina Bay Sands",
+      "location": "Singapore",
+      "address": "10 Bayfront Ave, Singapore 018956",
+      "description": "An architectural marvel featuring the world-famous infinity pool, luxury shopping, and fine dining. Perfect for a memorable stay in Singapore.",
+      "stars": 5,
+      "rating": 4.6,
+      "reviews_count": 8934,
+      "coordinates": {"lat": 1.2834, "lng": 103.8607},
+      "is_cancellable": true,
+      "cancellation_policy": "Free cancellation until 3 days before check-in",
+      "thumbnail": "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=300&h=200&fit=crop",
+      "photos": [
+        "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=800&h=600&fit=crop"
+      ],
+      "rooms": [
+        {
+          "id": "room-006",
+          "type": "Skyline Suite",
+          "price_per_night": 450.0,
+          "currency": "SGD",
+          "max_occupancy": 3,
+          "bed_type": "1 King Bed",
+          "amenities": ["Skyline View", "Air Conditioning", "Mini Bar", "Free WiFi", "Flat-screen TV"],
+          "photos": ["https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=800&h=600&fit=crop"],
+          "cancellation": "Free cancellation until 3 days before check-in",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stay-007",
+      "name": "Mandarin Oriental Barcelona",
+      "location": "Barcelona, Spain",
+      "address": "Passeig de Gràcia, 38-40, 08007 Barcelona, Spain",
+      "description": "A luxurious urban retreat offering stunning rooftop views, gourmet dining, and a serene spa. Perfect for exploring the vibrant city of Barcelona.",
+      "stars": 5,
+      "rating": 4.7,
+      "reviews_count": 2456,
+      "coordinates": {"lat": 41.3916, "lng": 2.1715},
+      "is_cancellable": true,
+      "cancellation_policy": "Free cancellation until 5 days before check-in",
+      "thumbnail": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=300&h=200&fit=crop",
+      "photos": [
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&h=600&fit=crop"
+      ],
+      "rooms": [
+        {
+          "id": "room-007",
+          "type": "Deluxe Room",
+          "price_per_night": 420.0,
+          "currency": "EUR",
+          "max_occupancy": 2,
+          "bed_type": "1 King Bed",
+          "amenities": ["City View", "Air Conditioning", "Mini Bar", "Free WiFi", "Flat-screen TV"],
+          "photos": ["https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&h=600&fit=crop"],
+          "cancellation": "Free cancellation until 5 days before check-in",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stay-008",
+      "name": "The Peninsula Hong Kong",
+      "location": "Hong Kong",
+      "address": "Salisbury Rd, Tsim Sha Tsui, Hong Kong",
+      "description": "A legendary hotel offering timeless elegance, harbor views, and exceptional service. Perfect for a luxurious stay in Hong Kong.",
+      "stars": 5,
+      "rating": 4.8,
+      "reviews_count": 3567,
+      "coordinates": {"lat": 22.2945, "lng": 114.1696},
+      "is_cancellable": true,
+      "cancellation_policy": "Free cancellation until 7 days before check-in",
+      "thumbnail": "https://images.unsplash.com/photo-1590073844006-33379778ae09?w=300&h=200&fit=crop",
+      "photos": [
+        "https://images.unsplash.com/photo-1590073844006-33379778ae09?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1590073844006-33379778ae09?w=800&h=600&fit=crop"
+      ],
+      "rooms": [
+        {
+          "id": "room-008",
+          "type": "Harbor View Suite",
+          "price_per_night": 580.0,
+          "currency": "HKD",
+          "max_occupancy": 3,
+          "bed_type": "1 King Bed",
+          "amenities": ["Harbor View", "Air Conditioning", "Mini Bar", "Free WiFi", "Flat-screen TV"],
+          "photos": ["https://images.unsplash.com/photo-1590073844006-33379778ae09?w=800&h=600&fit=crop"],
+          "cancellation": "Free cancellation until 7 days before check-in",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stay-009",
+      "name": "Atlantis The Royal Dubai",
+      "location": "Dubai, UAE",
+      "address": "Crescent Rd - The Palm Jumeirah - Dubai - United Arab Emirates",
+      "description": "A majestic resort offering unparalleled luxury, private beaches, and world-class dining. Perfect for a family vacation or a romantic escape.",
+      "stars": 5,
+      "rating": 4.9,
+      "reviews_count": 1234,
+      "coordinates": {"lat": 25.1304, "lng": 55.1466},
+      "is_cancellable": true,
+      "cancellation_policy": "Free cancellation until 10 days before check-in",
+      "thumbnail": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=300&h=200&fit=crop",
+      "photos": [
+        "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&h=600&fit=crop"
+      ],
+      "rooms": [
+        {
+          "id": "room-009",
+          "type": "Royal Suite",
+          "price_per_night": 890.0,
+          "currency": "USD",
+          "max_occupancy": 4,
+          "bed_type": "2 King Beds",
+          "amenities": ["Ocean View", "Air Conditioning", "Mini Bar", "Free WiFi", "Flat-screen TV"],
+          "photos": ["https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&h=600&fit=crop"],
+          "cancellation": "Free cancellation until 10 days before check-in",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stay-010",
+      "name": "Aman Tokyo",
+      "location": "Tokyo, Japan",
+      "address": "The Otemachi Tower, 1-5-6 Otemachi, Chiyoda City, Tokyo 100-0004, Japan",
+      "description": "A serene sanctuary in the heart of Tokyo, offering traditional Japanese hospitality, stunning city views, and a tranquil spa. Perfect for a peaceful retreat.",
+      "stars": 5,
+      "rating": 4.9,
+      "reviews_count": 1876,
+      "coordinates": {"lat": 35.6854, "lng": 139.7645},
+      "is_cancellable": true,
+      "cancellation_policy": "Free cancellation until 7 days before check-in",
+      "thumbnail": "https://images.unsplash.com/photo-1536693308398-af5c1cbbdec7?w=300&h=200&fit=crop",
+      "photos": [
+        "https://images.unsplash.com/photo-1536693308398-af5c1cbbdec7?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1536693308398-af5c1cbbdec7?w=800&h=600&fit=crop"
+      ],
+      "rooms": [
+        {
+          "id": "room-010",
+          "type": "Garden Suite",
+          "price_per_night": 780.0,
+          "currency": "USD",
+          "max_occupancy": 2,
+          "bed_type": "1 King Bed",
+          "amenities": ["Garden View", "Air Conditioning", "Mini Bar", "Free WiFi", "Flat-screen TV"],
+          "photos": ["https://images.unsplash.com/photo-1536693308398-af5c1cbbdec7?w=800&h=600&fit=crop"],
+          "cancellation": "Free cancellation until 7 days before check-in",
+          "available": true
+        }
+      ]
     }
   ]
 }
