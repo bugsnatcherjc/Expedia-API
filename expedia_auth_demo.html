@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expedia-Style OTP Authentication Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .header {
+            text-align: center;
+            color: #003580;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="email"], input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        input:focus {
+            border-color: #003580;
+            outline: none;
+        }
+        button {
+            background-color: #003580;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        .otp-display {
+            background-color: #e8f4f8;
+            border: 2px solid #003580;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            text-align: center;
+        }
+        .success {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 12px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .error {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 12px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 12px;
+            background-color: #e9ecef;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            border-bottom: none;
+        }
+        .tab.active {
+            background-color: white;
+            border-bottom: 2px solid #003580;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .step {
+            background-color: #f8f9fa;
+            border-left: 4px solid #003580;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .step h4 {
+            margin: 0 0 10px 0;
+            color: #003580;
+        }
+        .user-info {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏨 Expedia-Style OTP Authentication</h1>
+            <p>Experience seamless signup and login with OTP verification</p>
+        </div>
+
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('signup')">📧 Sign Up</div>
+            <div class="tab" onclick="showTab('login')">🔐 Log In</div>
+            <div class="tab" onclick="showTab('dashboard')">🏠 Dashboard</div>
+        </div>
+
+        <!-- SIGNUP TAB -->
+        <div id="signup" class="tab-content active">
+            <h2>Create New Account</h2>
+            
+            <div class="step">
+                <h4>Step 1: Enter your details</h4>
+                <div class="form-group">
+                    <label for="signup-email">Email Address *</label>
+                    <input type="email" id="signup-email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="signup-phone">Phone Number (Optional)</label>
+                    <input type="text" id="signup-phone" placeholder="+1234567890">
+                </div>
+                <button onclick="sendSignupOTP()">Send OTP</button>
+            </div>
+
+            <div id="signup-step2" style="display: none;">
+                <div class="step">
+                    <h4>Step 2: Verify OTP and complete signup</h4>
+                    <div id="signup-otp-display"></div>
+                    <div class="form-group">
+                        <label for="signup-otp">Enter OTP</label>
+                        <input type="text" id="signup-otp" placeholder="123456" maxlength="6">
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-username">Username *</label>
+                        <input type="text" id="signup-username" placeholder="Choose a username">
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password *</label>
+                        <input type="password" id="signup-password" placeholder="Create a password">
+                    </div>
+                    <button onclick="completeSignup()">Complete Signup</button>
+                </div>
+            </div>
+
+            <div id="signup-messages"></div>
+        </div>
+
+        <!-- LOGIN TAB -->
+        <div id="login" class="tab-content">
+            <h2>Welcome Back</h2>
+            
+            <div class="step">
+                <h4>Step 1: Enter your email</h4>
+                <div class="form-group">
+                    <label for="login-email">Email Address</label>
+                    <input type="email" id="login-email" placeholder="Enter your registered email">
+                </div>
+                <button onclick="sendLoginOTP()">Send OTP</button>
+            </div>
+
+            <div id="login-step2" style="display: none;">
+                <div class="step">
+                    <h4>Step 2: Enter OTP to login</h4>
+                    <div id="login-otp-display"></div>
+                    <div class="form-group">
+                        <label for="login-otp">Enter OTP</label>
+                        <input type="text" id="login-otp" placeholder="123456" maxlength="6">
+                    </div>
+                    <button onclick="verifyLoginOTP()">Login</button>
+                </div>
+            </div>
+
+            <div id="login-messages"></div>
+        </div>
+
+        <!-- DASHBOARD TAB -->
+        <div id="dashboard" class="tab-content">
+            <h2>Your Account</h2>
+            <div id="user-info" class="user-info" style="display: none;">
+                <h3>👤 Profile Information</h3>
+                <div id="user-details"></div>
+                <button onclick="logout()" style="background-color: #dc3545;">Logout</button>
+            </div>
+            <div id="login-prompt" style="text-align: center; padding: 40px;">
+                <p>Please log in to view your dashboard.</p>
+                <button onclick="showTab('login')">Go to Login</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3>📋 Development Info</h3>
+        <p><strong>Static OTP:</strong> <code>123456</code></p>
+        <p><strong>API Base URL:</strong> <code>http://127.0.0.1:8000</code></p>
+        <p><strong>OTP Expiry:</strong> 10 minutes</p>
+    </div>
+
+    <script>
+        const BASE_URL = 'http://127.0.0.1:8000';
+        const STATIC_OTP = '123456';
+
+        // Tab management
+        function showTab(tabName) {
+            // Hide all tabs
+            const tabs = document.querySelectorAll('.tab');
+            const contents = document.querySelectorAll('.tab-content');
+            
+            tabs.forEach(tab => tab.classList.remove('active'));
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Show selected tab
+            event.target.classList.add('active');
+            document.getElementById(tabName).classList.add('active');
+
+            // Update dashboard
+            if (tabName === 'dashboard') {
+                updateDashboard();
+            }
+        }
+
+        // Utility functions
+        function showMessage(containerId, message, type = 'success') {
+            const container = document.getElementById(containerId);
+            container.innerHTML = `<div class="${type}">${message}</div>`;
+        }
+
+        function clearMessages(containerId) {
+            document.getElementById(containerId).innerHTML = '';
+        }
+
+        // Signup functions
+        async function sendSignupOTP() {
+            const email = document.getElementById('signup-email').value;
+            const phone = document.getElementById('signup-phone').value;
+
+            if (!email) {
+                showMessage('signup-messages', 'Please enter your email address.', 'error');
+                return;
+            }
+
+            try {
+                const response = await fetch(`${BASE_URL}/auth/signup/send-otp`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, phone: phone || null })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    document.getElementById('signup-otp-display').innerHTML = `
+                        <div class="otp-display">
+                            <h4>📧 OTP Sent!</h4>
+                            <p><strong>Development OTP:</strong> <code>${data.otp_code}</code></p>
+                            <p>Expires in ${data.expires_in_minutes} minutes</p>
+                        </div>
+                    `;
+                    document.getElementById('signup-step2').style.display = 'block';
+                    showMessage('signup-messages', `OTP sent to ${email}`, 'success');
+                } else {
+                    showMessage('signup-messages', data.detail, 'error');
+                }
+            } catch (error) {
+                showMessage('signup-messages', 'Network error. Please try again.', 'error');
+            }
+        }
+
+        async function completeSignup() {
+            const email = document.getElementById('signup-email').value;
+            const username = document.getElementById('signup-username').value;
+            const password = document.getElementById('signup-password').value;
+            const otpCode = document.getElementById('signup-otp').value;
+
+            if (!username || !password || !otpCode) {
+                showMessage('signup-messages', 'Please fill in all required fields.', 'error');
+                return;
+            }
+
+            try {
+                const response = await fetch(`${BASE_URL}/auth/signup/complete`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, username, password, otp_code: otpCode })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    localStorage.setItem('user', JSON.stringify(data));
+                    showMessage('signup-messages', 'Account created successfully! 🎉', 'success');
+                    setTimeout(() => showTab('dashboard'), 2000);
+                } else {
+                    showMessage('signup-messages', data.detail, 'error');
+                }
+            } catch (error) {
+                showMessage('signup-messages', 'Network error. Please try again.', 'error');
+            }
+        }
+
+        // Login functions
+        async function sendLoginOTP() {
+            const email = document.getElementById('login-email').value;
+
+            if (!email) {
+                showMessage('login-messages', 'Please enter your email address.', 'error');
+                return;
+            }
+
+            try {
+                const response = await fetch(`${BASE_URL}/auth/login/send-otp`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    document.getElementById('login-otp-display').innerHTML = `
+                        <div class="otp-display">
+                            <h4>📧 OTP Sent!</h4>
+                            <p><strong>Development OTP:</strong> <code>${data.otp_code}</code></p>
+                            <p>Expires in ${data.expires_in_minutes} minutes</p>
+                        </div>
+                    `;
+                    document.getElementById('login-step2').style.display = 'block';
+                    showMessage('login-messages', `OTP sent to ${email}`, 'success');
+                } else {
+                    showMessage('login-messages', data.detail, 'error');
+                }
+            } catch (error) {
+                showMessage('login-messages', 'Network error. Please try again.', 'error');
+            }
+        }
+
+        async function verifyLoginOTP() {
+            const email = document.getElementById('login-email').value;
+            const otpCode = document.getElementById('login-otp').value;
+
+            if (!otpCode) {
+                showMessage('login-messages', 'Please enter the OTP.', 'error');
+                return;
+            }
+
+            try {
+                const response = await fetch(`${BASE_URL}/auth/login/verify-otp`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, otp_code: otpCode })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    localStorage.setItem('authToken', data.token);
+                    localStorage.setItem('user', JSON.stringify(data.user));
+                    showMessage('login-messages', 'Login successful! 🎉', 'success');
+                    setTimeout(() => showTab('dashboard'), 2000);
+                } else {
+                    showMessage('login-messages', data.detail, 'error');
+                }
+            } catch (error) {
+                showMessage('login-messages', 'Network error. Please try again.', 'error');
+            }
+        }
+
+        // Dashboard functions
+        function updateDashboard() {
+            const user = JSON.parse(localStorage.getItem('user') || 'null');
+            const token = localStorage.getItem('authToken');
+
+            if (user && token) {
+                document.getElementById('user-info').style.display = 'block';
+                document.getElementById('login-prompt').style.display = 'none';
+                
+                document.getElementById('user-details').innerHTML = `
+                    <p><strong>👤 Username:</strong> ${user.username}</p>
+                    <p><strong>📧 Email:</strong> ${user.email}</p>
+                    <p><strong>📱 Phone:</strong> ${user.phone || 'Not provided'}</p>
+                    <p><strong>✅ Verified:</strong> ${user.is_verified ? 'Yes' : 'No'}</p>
+                    <p><strong>📅 Created:</strong> ${new Date(user.created_at).toLocaleDateString()}</p>
+                    <p><strong>🎫 Token:</strong> <code>${token}</code></p>
+                `;
+            } else {
+                document.getElementById('user-info').style.display = 'none';
+                document.getElementById('login-prompt').style.display = 'block';
+            }
+        }
+
+        function logout() {
+            localStorage.removeItem('authToken');
+            localStorage.removeItem('user');
+            showTab('login');
+        }
+
+        // Initialize dashboard on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateDashboard();
+        });
+    </script>
+</body>
+</html>

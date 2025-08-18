@@ -12,7 +12,8 @@ def load_json(filename: str):
 def search_stays(location: Optional[str], price_min: Optional[float], price_max: Optional[float],
                  rating: Optional[float], stars: Optional[int], amenities: Optional[List[str]],
                  sort_by: Optional[str]):
-    stays = load_json("stays_search.json")
+    data = load_json("stays_search.json")
+    stays = data["stays"]  # Access the 'stays' key
 
     # Filters
     if location:
@@ -40,18 +41,19 @@ def search_stays(location: Optional[str], price_min: Optional[float], price_max:
 
     return stays
 
-def get_stay_details(stay_id: int):
+def get_stay_details(stay_id: str):
     details = load_json("stays_details.json")
-    return next((s for s in details if s["id"] == stay_id), {})
+    stays = details["stays"]  # Access the 'stays' key
+    return next((s for s in stays if s["id"] == stay_id), {})
 
-def get_stay_reviews(stay_id: int):
+def get_stay_reviews(stay_id: str):
     reviews = load_json("stays_reviews.json")
     return [r for r in reviews if r["stay_id"] == stay_id]
 
-def get_nearby_places(stay_id: int):
+def get_nearby_places(stay_id: str):
     nearby = load_json("stays_nearby.json")
     return [n for n in nearby if n["stay_id"] == stay_id]
 
-def get_stay_availability(stay_id: int):
+def get_stay_availability(stay_id: str):
     availability = load_json("stays_availability.json")
     return next((a for a in availability if a["stay_id"] == stay_id), {})

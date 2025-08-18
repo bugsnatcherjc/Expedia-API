@@ -198,28 +198,42 @@
         ]
       }
     ]
-  }
-]
-]
-
+  },
+  {
+    "id": "flt-rt-006",
+    "trip_type": "round_trip",
+    "airline": { "code": "JL", "name": "Japan Airlines", "logo": "https://images.unsplash.com/photo-1540339832862-44088e611536?w=80&h=40&fit=crop" },
+    "stops": 0,
+    "seat_classes": ["economy", "premium_economy", "business", "first"],
+    "price": { "total": 1200, "currency": "JPY" },
+    "duration_total_minutes": 110,
+    "baggage": { "carry_on": "10kg", "checked": "23kg" },
+    "legs": [
+      {
+        "direction": "outbound",
+        "segments": [
           {
-            "flight_number": "TK 10",
-            "airline": "TK",
-            "from": { "code": "LAX", "name": "Los Angeles Intl", "city": "Los Angeles", "country": "US" },
-            "to":   { "code": "IST", "name": "Istanbul Airport", "city": "Istanbul", "country": "TR" },
-            "depart_utc": "2025-09-10T06:30:00Z",
-            "arrive_utc": "2025-09-10T16:00:00Z",
-            "duration_minutes": 630
-          },
+            "flight_number": "JL 203",
+            "airline": "JL",
+            "from": { "code": "NRT", "name": "Narita International Airport", "city": "Tokyo", "country": "Japan" },
+            "to": { "code": "HND", "name": "Haneda Airport", "city": "Tokyo", "country": "Japan" },
+            "depart_utc": "2025-08-20T14:30:00Z",
+            "arrive_utc": "2025-08-20T16:20:00Z",
+            "duration_minutes": 110
+          }
+        ]
+      },
+      {
+        "direction": "return",
+        "segments": [
           {
-            "flight_number": "TK 714",
-            "airline": "TK",
-            "from": { "code": "IST", "name": "Istanbul Airport", "city": "Istanbul", "country": "TR" },
-            "to":   { "code": "LHE", "name": "Allama Iqbal Intl", "city": "Lahore", "country": "PK" },
-            "depart_utc": "2025-09-11T00:15:00Z",
-            "arrive_utc": "2025-09-11T04:45:00Z",
-            "duration_minutes": 270,
-            "layover_city": "Istanbul"
+            "flight_number": "JL 204",
+            "airline": "JL",
+            "from": { "code": "HND", "name": "Haneda Airport", "city": "Tokyo", "country": "Japan" },
+            "to": { "code": "NRT", "name": "Narita International Airport", "city": "Tokyo", "country": "Japan" },
+            "depart_utc": "2025-08-27T08:30:00Z",
+            "arrive_utc": "2025-08-27T10:20:00Z",
+            "duration_minutes": 110
           }
         ]
       }

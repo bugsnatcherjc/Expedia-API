@@ -12,6 +12,7 @@
       "coordinates": {"lat": 40.7527, "lng": -73.9772},
       "is_cancellable": true,
       "cancellation_policy": "Free cancellation until 3 days before check-in",
+      "thumbnail": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=300&h=200&fit=crop",
       "photos": [
         "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&h=600&fit=crop",
@@ -36,149 +37,47 @@
           "photos": ["https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&h=600&fit=crop"],
           "cancellation": "Free cancellation until 3 days before check-in",
           "available": true
-        },
+        }
+      ]
+    },
+    {
+      "id": "stay-002",
+      "name": "Fontainebleau Miami Beach",
+      "location": "Miami Beach, USA",
+      "address": "4441 Collins Ave, Miami Beach, FL 33140",
+      "description": "A luxurious beachfront resort offering stunning ocean views, world-class dining, and vibrant nightlife. Perfect for a relaxing getaway or an exciting vacation.",
+      "stars": 5,
+      "rating": 4.7,
+      "reviews_count": 4876,
+      "coordinates": {"lat": 25.7959, "lng": -80.1300455},
+      "is_cancellable": true,
+      "cancellation_policy": "Free cancellation until 7 days before check-in",
+      "thumbnail": "https://images.unsplash.com/photo-1602002418816-5c0aeef426aa?w=300&h=200&fit=crop",
+      "photos": [
+        "https://images.unsplash.com/photo-1602002418816-5c0aeef426aa?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=800&h=600&fit=crop"
+      ],
+      "rooms": [
         {
           "id": "room-002",
-          "type": "Grand Club King",
-          "price_per_night": 350.0,
+          "type": "Oceanfront Suite",
+          "price_per_night": 380.0,
           "currency": "USD",
-          "max_occupancy": 2,
-          "bed_type": "1 King Bed",
+          "max_occupancy": 4,
+          "bed_type": "2 Queen Beds",
           "amenities": [
-            "Club Lounge Access",
-            "City View",
+            "Ocean View",
             "Air Conditioning",
             "Mini Bar",
             "Free WiFi",
             "Flat-screen TV"
           ],
-          "photos": ["https://via.placeholder.com/800x600"],
-          "cancellation": "Free cancellation until 3 days before check-in",
+          "photos": ["https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop"],
+          "cancellation": "Free cancellation until 7 days before check-in",
           "available": true
         }
-      ],
-      "amenities": [
-        {
-          "category": "General",
-          "items": [
-            "24-hour front desk",
-            "Concierge service",
-            "Luggage storage",
-            "Currency exchange"
-          ]
-        },
-        {
-          "category": "Activities",
-          "items": [
-            "Fitness center",
-            "Spa",
-            "Massage"
-          ]
-        },
-        {
-          "category": "Food & Drink",
-          "items": [
-            "Restaurant",
-            "Bar",
-            "Breakfast available",
-            "Room service"
-          ]
-        },
-        {
-          "category": "Internet",
-          "items": [
-            "Free WiFi",
-            "Business center"
-          ]
-        }
-      ],
-      "reviews": [
-        {
-          "id": "rev-001",
-          "author": "Michael R.",
-          "rating": 5,
-          "date": "2025-08-01",
-          "title": "Perfect location and service",
-          "comment": "Excellent stay! The location next to Grand Central is perfect for getting around NYC. Staff was incredibly helpful and the room was spotless.",
-          "trip_type": "Business",
-          "photos": ["https://via.placeholder.com/800x600"]
-        },
-        {
-          "id": "rev-002",
-          "author": "Sarah K.",
-          "rating": 4,
-          "date": "2025-07-28",
-          "title": "Great hotel, but noisy",
-          "comment": "The hotel is beautiful and the service is excellent. Only downside was street noise, but that's expected in Manhattan.",
-          "trip_type": "Couples",
-          "helpful_votes": 12
-        }
-      ],
-      "policies": {
-        "check_in": "3:00 PM",
-        "check_out": "12:00 PM",
-        "cancellation": "Free cancellation until 3 days before check-in",
-        "children": "Children of all ages are welcome",
-        "pets": "Pets allowed on request. Charges may apply."
-      },
-      "neighborhood": {
-        "name": "Midtown East",
-        "description": "Central location with easy access to attractions",
-        "nearby_attractions": [
-          "Grand Central Terminal",
-          "Chrysler Building",
-          "United Nations Headquarters",
-          "Fifth Avenue Shopping"
-        ],
-        "transport": {
-          "subway": ["4", "5", "6", "7", "S"],
-          "distance_to_airport": {
-            "jfk": "18 miles",
-            "lga": "9 miles",
-            "ewr": "16 miles"
-          }
-        }
-      }
+      ]
     }
-        "currency": "USD",
-        "max_occupancy": 2,
-        "amenities": ["WiFi", "Air Conditioning", "Balcony"],
-        "availability": true
-      },
-      {
-        "type": "Suite with Ocean View",
-        "price_per_night": 350.0,
-        "currency": "USD",
-        "max_occupancy": 4,
-        "amenities": ["WiFi", "Kitchen", "Balcony", "Jacuzzi"],
-        "availability": true
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "name": "Ocean View Inn",
-    "location": "Los Angeles, California",
-    "address": "456 Sunset Blvd, Los Angeles, CA",
-    "description": "A charming inn with breathtaking ocean views and close proximity to Los Angeles attractions.",
-    "stars": 4,
-    "rating": 4.0,
-    "reviews_count": 210,
-    "coordinates": {"lat": 34.0195, "lng": -118.4912},
-    "photos": [
-      "https://via.placeholder.com/800x600",
-      "https://via.placeholder.com/800x600",
-      "https://via.placeholder.com/800x600"
-    ],
-    "rooms": [
-      {
-        "type": "Standard Room",
-        "price_per_night": 150.0,
-        "currency": "USD",
-        "max_occupancy": 2,
-        "amenities": ["WiFi", "Air Conditioning"],
-        "availability": true
-      }
-    ]
-  }
-]
+  ]
+}

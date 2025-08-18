@@ -28,6 +28,58 @@
   {
     "id": "flt-ow-002",
     "trip_type": "one_way",
+    "airline": { "code": "DL", "name": "Delta Air Lines", "logo": "/images/airlines/delta.png" },
+    "stops": 0,
+    "seat_classes": ["economy", "business", "first"],
+    "price": { "total": 320, "currency": "USD" },
+    "duration_total_minutes": 180,
+    "baggage": { "carry_on": "10kg", "checked": "23kg" },
+    "legs": [
+      {
+        "direction": "outbound",
+        "segments": [
+          {
+            "flight_number": "DL 1501",
+            "airline": "DL",
+            "from": { "code": "LAX", "name": "Los Angeles International", "city": "Los Angeles", "country": "USA" },
+            "to": { "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA" },
+            "depart_utc": "2025-08-20T08:00:00Z",
+            "arrive_utc": "2025-08-20T16:00:00Z",
+            "duration_minutes": 300
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flt-ow-003",
+    "trip_type": "one_way",
+    "airline": { "code": "JL", "name": "Japan Airlines", "logo": "/images/airlines/jal.png" },
+    "stops": 0,
+    "seat_classes": ["economy", "premium_economy", "business", "first"],
+    "price": { "total": 450, "currency": "USD" },
+    "duration_total_minutes": 110,
+    "baggage": { "carry_on": "10kg", "checked": "23kg" },
+    "legs": [
+      {
+        "direction": "outbound",
+        "segments": [
+          {
+            "flight_number": "JL 205",
+            "airline": "JL",
+            "from": { "code": "NRT", "name": "Narita International Airport", "city": "Tokyo", "country": "Japan" },
+            "to": { "code": "HND", "name": "Haneda Airport", "city": "Tokyo", "country": "Japan" },
+            "depart_utc": "2025-08-20T09:00:00Z",
+            "arrive_utc": "2025-08-20T10:50:00Z",
+            "duration_minutes": 110
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flt-ow-004",
+    "trip_type": "one_way",
     "airline": { "code": "IB", "name": "Iberia", "logo": "https://images.unsplash.com/photo-1597340595281-3fd177219e3c?w=80&h=40&fit=crop" },
     "stops": 0,
     "seat_classes": ["economy", "business", "first"],
@@ -43,61 +95,9 @@
             "airline": "IB",
             "from": { "code": "MAD", "name": "Adolfo Suárez Madrid–Barajas", "city": "Madrid", "country": "Spain" },
             "to": { "code": "BCN", "name": "Barcelona-El Prat", "city": "Barcelona", "country": "Spain" },
-            "depart_utc": "2025-08-17T10:00:00Z",
-            "arrive_utc": "2025-08-17T11:45:00Z",
+            "depart_utc": "2025-08-20T10:00:00Z",
+            "arrive_utc": "2025-08-20T11:45:00Z",
             "duration_minutes": 105
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "flt-ow-003",
-    "trip_type": "one_way",
-    "airline": { "code": "JL", "name": "Japan Airlines", "logo": "https://images.unsplash.com/photo-1540339832862-44088e611536?w=80&h=40&fit=crop" },
-    "stops": 0,
-    "seat_classes": ["economy", "premium_economy", "business", "first"],
-    "price": { "total": 850, "currency": "USD" },
-    "duration_total_minutes": 110,
-    "baggage": { "carry_on": "10kg", "checked": "23kg" },
-    "legs": [
-      {
-        "direction": "outbound",
-        "segments": [
-          {
-            "flight_number": "JL 203",
-            "airline": "JL",
-            "from": { "code": "NRT", "name": "Narita International Airport", "city": "Tokyo", "country": "Japan" },
-            "to": { "code": "HND", "name": "Haneda Airport", "city": "Tokyo", "country": "Japan" },
-            "depart_utc": "2025-08-17T14:30:00Z",
-            "arrive_utc": "2025-08-17T16:20:00Z",
-            "duration_minutes": 110
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "flt-ow-004",
-    "trip_type": "one_way",
-    "airline": { "code": "UA", "name": "United Airlines", "logo": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=80&h=40&fit=crop" },
-    "stops": 0,
-    "seat_classes": ["economy", "premium_economy", "business", "first"],
-    "price": { "total": 250, "currency": "USD" },
-    "duration_total_minutes": 165,
-    "baggage": { "carry_on": "10kg", "checked": "23kg" },
-    "legs": [
-      {
-        "direction": "outbound",
-        "segments": [
-          {
-            "flight_number": "UA 2345",
-            "airline": "UA",
-            "from": { "code": "LGA", "name": "LaGuardia Airport", "city": "New York", "country": "USA" },
-            "to": { "code": "FLL", "name": "Fort Lauderdale-Hollywood International", "city": "Fort Lauderdale", "country": "USA" },
-            "depart_utc": "2025-08-17T10:00:00Z",
-            "arrive_utc": "2025-08-17T12:45:00Z",
-            "duration_minutes": 165
           }
         ]
       }

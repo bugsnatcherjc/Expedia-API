@@ -50,31 +50,62 @@ def search_round_trip(origin, destination, depart, returnd, passengers, seat_cla
                       stops, airline, price_min, price_max, sort_by):
     try:
         data = _load("round_trip.json")
-        
+
+        # Filter by origin and destination
         filtered = [
             r for r in data
             if r["legs"][0]["segments"][0]["from"]["code"] == origin.upper()
-            and r["legs"][-1]["segments"][-1]["to"]["code"] == destination.upper()
+            and r["legs"][0]["segments"][-1]["to"]["code"] == destination.upper()
         ]
 
+        # Filter by departure and return dates
+        if depart:
+            filtered = [
+                r for r in filtered
+                if r["legs"][0]["segments"][0]["depart_utc"].startswith(depart)
+            ]
+        
+        if returnd:
+            filtered = [
+                r for r in filtered
+                if r["legs"][1]["segments"][0]["depart_utc"].startswith(returnd)
+            ]
+
+        # Apply additional filters
         filtered = _apply_filters(filtered, seat_class, stops, airline, price_min, price_max)
+
+        # Apply sorting
         filtered = _apply_sort(filtered, sort_by)
         return {"trip_type": "round_trip", "count": len(filtered), "items": filtered}
+
     except Exception as e:
-        # Log the error here if needed
-        return {"trip_type": "round_trip", "count": 0, "items": [], "error": "No flights found for the specified route"}
+        return {"error": str(e), "trip_type": "round_trip", "count": 0, "items": []}
 
 def search_one_way(origin, destination, depart, passengers, seat_class,
                    stops, airline, price_min, price_max, sort_by):
-    data = _load("one_way.json")
-    filtered = [
-        r for r in data
-        if r["legs"][0]["segments"][0]["from"]["code"] == origin.upper()
-        and r["legs"][0]["segments"][-1]["to"]["code"] == destination.upper()
-    ]
-    filtered = _apply_filters(filtered, seat_class, stops, airline, price_min, price_max)
-    filtered = _apply_sort(filtered, sort_by)
-    return {"trip_type": "one_way", "count": len(filtered), "items": filtered}
+    try:
+        data = _load("one_way.json")
+        
+        # Filter by origin and destination
+        filtered = [
+            r for r in data
+            if r["legs"][0]["segments"][0]["from"]["code"] == origin.upper()
+            and r["legs"][0]["segments"][-1]["to"]["code"] == destination.upper()
+        ]
+        
+        # Filter by departure date
+        if depart:
+            filtered = [
+                r for r in filtered
+                if r["legs"][0]["segments"][0]["depart_utc"].startswith(depart)
+            ]
+        
+        # Apply additional filters
+        filtered = _apply_filters(filtered, seat_class, stops, airline, price_min, price_max)
+        filtered = _apply_sort(filtered, sort_by)
+        return {"trip_type": "one_way", "count": len(filtered), "items": filtered}
+    except Exception as e:
+        return {"error": str(e), "trip_type": "one_way", "count": 0, "items": []}
 
 def search_multi_city(passengers, seat_class, stops, airline, price_min, price_max, sort_by):
     data = _load("multi_city.json")
@@ -85,9 +116,11 @@ def search_multi_city(passengers, seat_class, stops, airline, price_min, price_m
 
 def get_flight_details(flight_id: str):
     details = _load("flight_details.json")
-    if isinstance(details, dict) and "flights" in details:
-        flights = details["flights"]
-        return next((d for d in flights if d["id"] == flight_id), {})
+    if not isinstance(details, dict) or "flights" not in details:
+        return {"error": "Invalid flight details format"}
+
+    flights = details["flights"]
+    return next((d for d in flights if d["id"] == flight_id), {"error": "Flight ID not found"})
 
 def get_flight_status(flight_number: str):
     statuses = _load("flight_status.json")

@@ -3,8 +3,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.routers import home, stays, flights, cars, activities, trips, checkout, auth, packages, meta_ui, cruises, things_to_do, bookings
 from app.db.database import Base, engine, SessionLocal
 from app.db import models
+from app.core.config import settings, print_startup_config
 
-app = FastAPI(title="Expedia Inspired API", version="1.0.0")
+app = FastAPI(title=settings.APP_NAME, version=settings.VERSION)
 Base.metadata.create_all(bind=engine)
 def seed_data():
     db = SessionLocal()
@@ -14,7 +15,9 @@ def seed_data():
             user = models.User(
                 username="testuser",
                 email="test@example.com",
-                password="password123"
+                password="password123",
+                phone="+1234567890",
+                is_verified=True
             )
             db.add(user)
             db.commit()
@@ -32,8 +35,13 @@ def seed_data():
             db.commit()
 
             print("✅ Seed data created: test user & booking")
+            print("📧 OTP System: Static OTP = 123456 (for development)")
         else:
             print("ℹ️ Seed data already exists, skipping...")
+            print("📧 OTP System: Static OTP = 123456 (for development)")
+    except Exception as e:
+        print(f"🔄 Database schema mismatch detected. Please delete expedia_inspired.db and restart.")
+        print(f"Error: {e}")
     finally:
         db.close()
 
