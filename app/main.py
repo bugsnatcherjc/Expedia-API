@@ -2,11 +2,17 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routers import home, stays, flights, cars, activities, trips, checkout, auth, packages, meta_ui, cruises, things_to_do, bookings
 from app.db.database import Base, engine, SessionLocal
+from app.db.migrations import ensure_sqlite_columns
 from app.db import models
 from app.core.config import settings, print_startup_config
 
 app = FastAPI(title=settings.APP_NAME, version=settings.VERSION)
 Base.metadata.create_all(bind=engine)
+# Ensure new columns exist (SQLite auto-migration)
+try:
+    ensure_sqlite_columns(engine)
+except Exception as e:
+    print(f"⚠️ SQLite auto-migration warning: {e}")
 def seed_data():
     db = SessionLocal()
     try:

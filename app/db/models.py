@@ -10,6 +10,8 @@ class User(Base):
     username = Column(String, unique=True, index=True, nullable=False)
     email = Column(String, unique=True, index=True, nullable=False)
     password = Column(String, nullable=False)  # hashed or plain for now
+    first_name = Column(String, nullable=True)
+    last_name = Column(String, nullable=True)
     phone = Column(String, nullable=True)  # For OTP
     is_verified = Column(Boolean, default=False)  # Email/phone verification status
     created_at = Column(DateTime, default=datetime.utcnow)

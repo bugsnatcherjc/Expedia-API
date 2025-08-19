@@ -69,4 +69,24 @@ def verify_otp_unified(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=str(e)
         )
+
+@router.post("/update-user", response_model=schemas.UpdateUserResponse)
+def update_user_profile(
+    payload: schemas.UpdateUserRequest,
+    db: Session = Depends(get_db)
+):
+    """Update user profile fields after OTP flows.
+    - Registration path: first_name, last_name, password
+    - Login path: phone
+    Identifies user by email (already verified via OTP previously).
+    """
+    try:
+        return auth_service.update_user_profile(db, payload)
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=str(e)
+        )
     

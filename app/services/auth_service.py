@@ -105,6 +105,8 @@ def verify_otp_unified(db: Session, email: str, otp_code: str):
                 "id": existing_user.id,
                 "username": existing_user.username,
                 "email": existing_user.email,
+                "first_name": existing_user.first_name,
+                "last_name": existing_user.last_name,
                 "phone": existing_user.phone,
                 "is_verified": existing_user.is_verified
             },
@@ -128,6 +130,8 @@ def verify_otp_unified(db: Session, email: str, otp_code: str):
             username=final_username,
             email=email,
             password=get_password_hash("temp_password"),  # Temporary password since only OTP is used
+            first_name=None,
+            last_name=None,
             phone=None,
             is_verified=True,  # Auto-verify since they completed OTP
             created_at=datetime.utcnow()
@@ -158,9 +162,55 @@ def verify_otp_unified(db: Session, email: str, otp_code: str):
                 "id": new_user.id,
                 "username": new_user.username,
                 "email": new_user.email,
+                "first_name": new_user.first_name,
+                "last_name": new_user.last_name,
                 "phone": new_user.phone,
                 "is_verified": new_user.is_verified
             },
             "action_type": "registration",
             "message": "Auto-registration and login successful"
         }
+
+def update_user_profile(db: Session, payload: schemas.UpdateUserRequest):
+    """Update user profile fields after OTP flows.
+    - Registration flow: set first_name, last_name, password
+    - Login flow: update phone
+    Identifies user by email.
+    """
+    user = db.query(models.User).filter(models.User.email == payload.email).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    updated = False
+    if payload.first_name is not None:
+        user.first_name = payload.first_name.strip() or None
+        updated = True
+    if payload.last_name is not None:
+        user.last_name = payload.last_name.strip() or None
+        updated = True
+    if payload.password is not None and payload.password.strip():
+        user.password = get_password_hash(payload.password)
+        updated = True
+    if payload.phone is not None:
+        user.phone = payload.phone.strip() or None
+        updated = True
+
+    if not updated:
+        raise HTTPException(status_code=400, detail="No fields to update")
+
+    db.commit()
+    db.refresh(user)
+
+    return {
+        "message": "Profile updated",
+        "user": {
+            "id": user.id,
+            "username": user.username,
+            "email": user.email,
+            "first_name": user.first_name,
+            "last_name": user.last_name,
+            "phone": user.phone,
+            "is_verified": user.is_verified,
+            "created_at": user.created_at
+        }
+    }
