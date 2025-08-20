@@ -3,6 +3,27 @@ from sqlalchemy.orm import relationship
 from datetime import datetime
 from app.db.database import Base
 
+# === Traveler Model ===
+class Traveler(Base):
+    __tablename__ = "travelers"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    name = Column(String, nullable=False)
+    frequent_flyer = Column(String, nullable=True)
+    membership = Column(String, nullable=True)
+    personal_info = Column(String, nullable=True)  # JSON string
+    flight_preference = Column(String, nullable=True)  # JSON string
+    passports = Column(String, nullable=True)  # JSON string
+    tsa_info = Column(String, nullable=True)  # JSON string
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+    user = relationship("User")
+from sqlalchemy import Column, Integer, String, Float, ForeignKey, DateTime, Boolean
+from sqlalchemy.orm import relationship
+from datetime import datetime
+from app.db.database import Base
+
 class User(Base):
     __tablename__ = "users"
 
@@ -13,6 +34,13 @@ class User(Base):
     first_name = Column(String, nullable=True)
     last_name = Column(String, nullable=True)
     phone = Column(String, nullable=True)  # For OTP
+    # Profile fields
+    bio = Column(String, nullable=True)
+    dob = Column(String, nullable=True)  # ISO date string (YYYY-MM-DD)
+    gender = Column(String, nullable=True)
+    accessibility_note = Column(String, nullable=True)
+    emergency_contact = Column(String, nullable=True)  # store as plain text for now
+    address = Column(String, nullable=True)  # plain text or JSON string
     is_verified = Column(Boolean, default=False)  # Email/phone verification status
     created_at = Column(DateTime, default=datetime.utcnow)
 
@@ -43,3 +71,19 @@ class Booking(Base):
 
     user_id = Column(Integer, ForeignKey("users.id"), nullable=True)  # Made nullable for guest bookings
     user = relationship("User", back_populates="bookings")
+
+# === Payment Method Model ===
+class PaymentMethod(Base):
+    __tablename__ = "payment_methods"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    card_type = Column(String, nullable=False)  # e.g. Visa, Mastercard
+    cardholder = Column(String, nullable=False)
+    last4 = Column(String, nullable=False)      # last 4 digits
+    exp_month = Column(String, nullable=False)
+    exp_year = Column(String, nullable=False)
+    billing_address = Column(String, nullable=True)
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+    user = relationship("User")
