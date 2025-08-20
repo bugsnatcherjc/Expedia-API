@@ -3,6 +3,7 @@
 # and recreates it with the latest schema and seed data. This ensures all new fields (like 'csc' in PaymentMethod)
 # are present and prevents crashes due to missing columns or stale data.
 import os
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routers import stays, flights, cars, activities, trips, checkout, auth, packages, meta_ui, cruises, things_to_do, bookings
@@ -12,6 +13,11 @@ from app.core.config import settings, print_startup_config
 from app.seed import seed_data  # move seeding into separate file ideally
 
 app = FastAPI(title=settings.APP_NAME, version=settings.VERSION)
+# Delete the database file before any DB operations
+db_path = os.path.join(os.path.dirname(__file__), '..', 'expedia_inspired.db')
+db_path = os.path.abspath(db_path)
+if os.path.exists(db_path):
+    os.remove(db_path)
 
 # DB setup
 Base.metadata.create_all(bind=engine)
@@ -27,17 +33,12 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+)
 # Deployment Note:
 # On every deployment/startup (including Render auto-deploy), this application deletes the existing database file (expedia_inspired.db)
 # and recreates it with the latest schema and seed data. This ensures all new fields (like 'csc' in PaymentMethod)
 # are present and prevents crashes due to missing columns or stale data.
 
-# Delete the database file before any DB operations
-db_path = os.path.join(os.path.dirname(__file__), '..', 'expedia_inspired.db')
-db_path = os.path.abspath(db_path)
-if os.path.exists(db_path):
-    os.remove(db_path)
-)
 
 # Routers
 app.include_router(stays.router)
@@ -67,6 +68,4 @@ async def health():
 @app.on_event("startup")
 def startup_event():
     seed_data()
-    if os.path.exists("expedia_inspired.db"):
-        os.remove("expedia_inspired.db")
     print("✅ Startup tasks complete")
