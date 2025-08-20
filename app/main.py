@@ -14,10 +14,10 @@ from app.seed import seed_data  # move seeding into separate file ideally
 
 app = FastAPI(title=settings.APP_NAME, version=settings.VERSION)
 # Delete the database file before any DB operations
-db_path = os.path.join(os.path.dirname(__file__), '..', 'expedia_inspired.db')
-db_path = os.path.abspath(db_path)
+db_path = './expedia_inspired.db'
 if os.path.exists(db_path):
     os.remove(db_path)
+    print(f"Deleted old database file: {db_path}")
 
 # DB setup
 Base.metadata.create_all(bind=engine)

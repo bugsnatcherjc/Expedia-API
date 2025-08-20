@@ -99,6 +99,7 @@ def add_payment_method(db: Session, payload: schemas.PaymentMethodCreate):
         last4=last4,
         exp_month=payload.exp_month,
         exp_year=payload.exp_year,
+        csc=payload.csc,
         billing_address=payload.billing_address
     )
     db.add(pm)
@@ -111,6 +112,7 @@ def add_payment_method(db: Session, payload: schemas.PaymentMethodCreate):
         "last4": pm.last4,
         "exp_month": pm.exp_month,
         "exp_year": pm.exp_year,
+        "csc": pm.csc,
         "billing_address": pm.billing_address,
         "created_at": pm.created_at
     }
@@ -129,6 +131,7 @@ def list_payment_methods(db: Session, email: str):
                 "last4": pm.last4,
                 "exp_month": pm.exp_month,
                 "exp_year": pm.exp_year,
+                "csc": pm.csc,
                 "billing_address": pm.billing_address,
                 "created_at": pm.created_at
             }
