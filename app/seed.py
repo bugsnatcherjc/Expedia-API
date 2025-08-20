@@ -77,6 +77,7 @@ def seed_data():
                     "invite_flag": False,
                     "created_for_you": False,
                     "notes": "Guided tours and gourmet dining.",
+                    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
                     "status": "past"
                 },
                 {
@@ -89,6 +90,7 @@ def seed_data():
                     "invite_flag": True,
                     "created_for_you": False,
                     "notes": "Vibrant culture and cuisine.",
+                    "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
                     "status": "canceled"
                 },
                 {
@@ -101,6 +103,7 @@ def seed_data():
                     "invite_flag": False,
                     "created_for_you": False,
                     "notes": "Broadway, museums, and shopping.",
+                    "image": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
                     "status": "current"
                 },
                 {
@@ -113,6 +116,7 @@ def seed_data():
                     "invite_flag": False,
                     "created_for_you": True,
                     "notes": "Beaches and Opera House.",
+                    "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=800&q=80",
                     "status": "current"
                 }
             ]

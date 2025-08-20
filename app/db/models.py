@@ -17,6 +17,7 @@ class UserTrip(Base):
     invite_flag = Column(Boolean, default=False)
     created_for_you = Column(Boolean, default=False)
     notes = Column(String, nullable=True)
+    image = Column(String, nullable=True)  # URL to trip image
     status = Column(String, nullable=False, default="current")  # current, past, canceled
     created_at = Column(DateTime, default=datetime.utcnow)
 
