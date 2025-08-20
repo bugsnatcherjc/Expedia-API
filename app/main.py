@@ -1,3 +1,7 @@
+# Deployment Note:
+# On every deployment/startup, this application deletes the existing database file (expedia_inspired.db)
+# and recreates it with the latest schema and seed data. This ensures all new fields (like 'csc' in PaymentMethod)
+# are present and prevents crashes due to missing columns or stale data.
 import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -23,6 +27,16 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+# Deployment Note:
+# On every deployment/startup (including Render auto-deploy), this application deletes the existing database file (expedia_inspired.db)
+# and recreates it with the latest schema and seed data. This ensures all new fields (like 'csc' in PaymentMethod)
+# are present and prevents crashes due to missing columns or stale data.
+
+# Delete the database file before any DB operations
+db_path = os.path.join(os.path.dirname(__file__), '..', 'expedia_inspired.db')
+db_path = os.path.abspath(db_path)
+if os.path.exists(db_path):
+    os.remove(db_path)
 )
 
 # Routers
