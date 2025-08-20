@@ -30,6 +30,7 @@ class UserTripResponse(BaseModel):
     invite_flag: bool
     created_for_you: bool
     notes: Optional[str]
+    image: Optional[str]
     status: str
     created_at: datetime
     class Config:

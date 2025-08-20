@@ -20,7 +20,8 @@ class TripsService:
             trip_type=payload.trip_type,
             invite_flag=payload.invite_flag,
             created_for_you=payload.created_for_you,
-            notes=payload.notes
+            notes=payload.notes,
+            image=getattr(payload, 'image', None)
         )
         db.add(trip)
         db.commit()
