@@ -52,4 +52,6 @@ async def health():
 @app.on_event("startup")
 def startup_event():
     seed_data()
+    if os.path.exists("expedia_inspired.db"):
+        os.remove("expedia_inspired.db")
     print("✅ Startup tasks complete")
