@@ -1,7 +1,44 @@
+# === User Trip Planner Schemas ===
+from typing import Optional, List
+from datetime import datetime
 from pydantic import BaseModel, EmailStr
 from typing import List, Optional
 from datetime import datetime
 import json
+
+class UserTripCreate(BaseModel):
+    email: EmailStr
+    trip_id: int
+    trip_name: str
+    destination: str
+    start_date: str
+    end_date: str
+    trip_type: Optional[str] = None
+    invite_flag: Optional[bool] = False
+    created_for_you: Optional[bool] = False
+    notes: Optional[str] = None
+    status: Optional[str] = "current"  # current, past, canceled
+
+class UserTripResponse(BaseModel):
+    id: int
+    trip_id: int
+    trip_name: str
+    destination: str
+    start_date: str
+    end_date: str
+    trip_type: Optional[str]
+    invite_flag: bool
+    created_for_you: bool
+    notes: Optional[str]
+    status: str
+    created_at: datetime
+    class Config:
+        orm_mode = True
+
+class UserTripListResponse(BaseModel):
+    trips: List[UserTripResponse]
+
+
 
 class TravelerCreate(BaseModel):
     email: EmailStr
@@ -35,6 +72,7 @@ class PaymentMethodCreate(BaseModel):
     card_number: str  # will only store last4
     exp_month: str
     exp_year: str
+    csc: str
     billing_address: Optional[str] = None
 
 class PaymentMethodResponse(BaseModel):
@@ -44,6 +82,7 @@ class PaymentMethodResponse(BaseModel):
     last4: str
     exp_month: str
     exp_year: str
+    csc: str
     billing_address: Optional[str]
     created_at: datetime
 

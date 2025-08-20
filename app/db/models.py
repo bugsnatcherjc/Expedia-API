@@ -2,6 +2,26 @@ from sqlalchemy import Column, Integer, String, Float, ForeignKey, DateTime, Boo
 from sqlalchemy.orm import relationship
 from datetime import datetime
 from app.db.database import Base
+# === UserTrip Model ===
+class UserTrip(Base):
+    __tablename__ = "user_trips"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    trip_id = Column(Integer, nullable=False)  # ID from trips_list.json
+    trip_name = Column(String, nullable=False)
+    destination = Column(String, nullable=False)
+    start_date = Column(String, nullable=False)
+    end_date = Column(String, nullable=False)
+    trip_type = Column(String, nullable=True)  # flight, hotel, etc.
+    invite_flag = Column(Boolean, default=False)
+    created_for_you = Column(Boolean, default=False)
+    notes = Column(String, nullable=True)
+    status = Column(String, nullable=False, default="current")  # current, past, canceled
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+    user = relationship("User")
+
 
 # === Traveler Model ===
 class Traveler(Base):
@@ -83,6 +103,7 @@ class PaymentMethod(Base):
     last4 = Column(String, nullable=False)      # last 4 digits
     exp_month = Column(String, nullable=False)
     exp_year = Column(String, nullable=False)
+    csc = Column(String, nullable=False)  # Card Security Code
     billing_address = Column(String, nullable=True)
     created_at = Column(DateTime, default=datetime.utcnow)
 
