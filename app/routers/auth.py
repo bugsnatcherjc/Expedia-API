@@ -144,7 +144,6 @@ class CompleteAuthRequest(BaseModel):
     email: str
     otp_code: str
 
-# === EXPEDIA-STYLE UNIFIED AUTHENTICATION ===
 
 @router.post("/send-otp", response_model=schemas.OTPResponse)
 def send_otp_unified(
