@@ -1,12 +1,3 @@
-[
-  {"id": "brand-toyota", "name": "Toyota", "logo": "https://images.unsplash.com/photo-1590362891991-f776e747a588?w=100&h=50&fit=crop", "country": "Japan"},
-  {"id": "brand-honda", "name": "Honda", "logo": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=100&h=50&fit=crop", "country": "Japan"},
-  {"id": "brand-bmw", "name": "BMW", "logo": "https://images.unsplash.com/photo-1523983388277-336a66bf9bcd?w=100&h=50&fit=crop", "country": "Germany"},
-  {"id": "brand-mercedes", "name": "Mercedes-Benz", "logo": "https://images.unsplash.com/photo-1563720360172-67b8f3dce741?w=100&h=50&fit=crop", "country": "Germany"},
-  {"id": "brand-audi", "name": "Audi", "logo": "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=100&h=50&fit=crop", "country": "Germany"},
-  {"id": "brand-chevrolet", "name": "Chevrolet", "logo": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=100&h=50&fit=crop", "country": "USA"},
-  {"id": "brand-volkswagen", "name": "Volkswagen", "logo": "https://images.unsplash.com/photo-1471444928139-48c5bf5173f8?w=100&h=50&fit=crop", "country": "Germany"},
-  {"id": "brand-hyundai", "name": "Hyundai", "logo": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=100&h=50&fit=crop", "country": "South Korea"},
-  {"id": "brand-peugeot", "name": "Peugeot", "logo": "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=100&h=50&fit=crop", "country": "France"},
-  {"id": "brand-ford", "name": "Ford", "logo": "https://images.unsplash.com/photo-1584345604476-8ec5e12e42dd?w=100&h=50&fit=crop", "country": "USA"}
-]
+version https://git-lfs.github.com/spec/v1
+oid sha256:c0bffd66179a575945d577e9efcbbc75ea7210ee3335e86d89a29413721b9f71
+size 1579

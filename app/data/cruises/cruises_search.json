@@ -1,22 +1,3 @@
-{
-    "cruises": [
-        {
-            "id": "rc-1",
-            "cruise_line": "Royal Caribbean",
-            "ship_name": "Symphony of the Seas",
-            "destination": "Caribbean",
-            "departure_port": "Miami",
-            "departure_date": "2025-09-15",
-            "nights": 7,
-            "price": 799.99,
-            "cabin_types": ["interior", "ocean_view", "balcony", "suite"],
-            "itinerary": [
-                "Miami, Florida",
-                "Nassau, Bahamas",
-                "Charlotte Amalie, St. Thomas",
-                "Philipsburg, St. Maarten"
-            ],
-            "available_rooms": 45
-        }
-    ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:440d3ef46255fc203dd6c51f5ec1b9037f3f467d75aaf3a77b018cf5cbb52a66
+size 656

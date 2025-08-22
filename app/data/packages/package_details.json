@@ -1,26 +1,3 @@
-[
-  {
-    "id": 901,
-    "title": "Romantic Paris Getaway",
-    "description": "7-night stay in a luxury hotel with Eiffel Tower view, daily breakfast, and Seine River cruise.",
-    "package_type": "honeymoon",
-    "destination": "Paris, France",
-    "price": { "amount": 2500, "currency": "USD" },
-    "rating": 4.9,
-    "inclusions": ["Hotel stay", "Breakfast", "Airport transfers", "Cruise tickets"],
-    "photos": ["https://via.placeholder.com/1024x640"],
-    "terms": "Non-refundable after booking. Passport required."
-  },
-  {
-    "id": 902,
-    "title": "Family Fun in Orlando",
-    "description": "5-night stay near theme parks with park tickets included.",
-    "package_type": "family",
-    "destination": "Orlando, USA",
-    "price": { "amount": 1800, "currency": "USD" },
-    "rating": 4.6,
-    "inclusions": ["Hotel stay", "Theme park tickets", "Breakfast"],
-    "photos": ["https://via.placeholder.com/1024x640"],
-    "terms": "Free cancellation up to 14 days before check-in."
-  }
-]
+version https://git-lfs.github.com/spec/v1
+oid sha256:b764aee6d8076382428e68aff105037d8236c320ab58716dfbdae96bcaf61462
+size 997

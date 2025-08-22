@@ -1,0 +1,904 @@
+{
+  "reviews": [
+    {
+      "id": "review-010001",
+      "stay_id": "stay-10000",
+      "user_name": "Guest7080",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-08-08",
+      "helpful_votes": 9
+    },
+    {
+      "id": "review-010002",
+      "stay_id": "stay-10000",
+      "user_name": "Guest9801",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-02-26",
+      "helpful_votes": 1
+    },
+    {
+      "id": "review-010003",
+      "stay_id": "stay-10000",
+      "user_name": "Guest5594",
+      "rating": 2,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-10-15",
+      "helpful_votes": 8
+    },
+    {
+      "id": "review-010004",
+      "stay_id": "stay-10000",
+      "user_name": "Guest9833",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-02-10",
+      "helpful_votes": 11
+    },
+    {
+      "id": "review-010005",
+      "stay_id": "stay-10000",
+      "user_name": "Guest5857",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-08-18",
+      "helpful_votes": 14
+    },
+    {
+      "id": "review-010006",
+      "stay_id": "stay-10000",
+      "user_name": "Guest8397",
+      "rating": 3,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-03-11",
+      "helpful_votes": 20
+    },
+    {
+      "id": "review-010007",
+      "stay_id": "stay-10000",
+      "user_name": "Guest8620",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-10-03",
+      "helpful_votes": 3
+    },
+    {
+      "id": "review-010008",
+      "stay_id": "stay-10000",
+      "user_name": "Guest4226",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-06-01",
+      "helpful_votes": 19
+    },
+    {
+      "id": "review-010009",
+      "stay_id": "stay-10000",
+      "user_name": "Guest5157",
+      "rating": 3,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-05-28",
+      "helpful_votes": 13
+    },
+    {
+      "id": "review-010010",
+      "stay_id": "stay-10000",
+      "user_name": "Guest3799",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-10-25",
+      "helpful_votes": 15
+    },
+    {
+      "id": "review-010050",
+      "stay_id": "stay-10049",
+      "user_name": "Guest3302",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-08-23",
+      "helpful_votes": 8
+    },
+    {
+      "id": "review-010051",
+      "stay_id": "stay-10049",
+      "user_name": "Guest4183",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-01-16",
+      "helpful_votes": 12
+    },
+    {
+      "id": "review-010052",
+      "stay_id": "stay-10049",
+      "user_name": "Guest7087",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-08-16",
+      "helpful_votes": 17
+    },
+    {
+      "id": "review-010053",
+      "stay_id": "stay-10049",
+      "user_name": "Guest1697",
+      "rating": 2,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-02-23",
+      "helpful_votes": 3
+    },
+    {
+      "id": "review-010054",
+      "stay_id": "stay-10049",
+      "user_name": "Guest2687",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-10-16",
+      "helpful_votes": 10
+    },
+    {
+      "id": "review-010055",
+      "stay_id": "stay-10049",
+      "user_name": "Guest7923",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-08-04",
+      "helpful_votes": 10
+    },
+    {
+      "id": "review-010056",
+      "stay_id": "stay-10049",
+      "user_name": "Guest5852",
+      "rating": 3,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-11-14",
+      "helpful_votes": 2
+    },
+    {
+      "id": "review-010057",
+      "stay_id": "stay-10049",
+      "user_name": "Guest1291",
+      "rating": 2,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-05-17",
+      "helpful_votes": 0
+    },
+    {
+      "id": "review-010058",
+      "stay_id": "stay-10049",
+      "user_name": "Guest9015",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-12-15",
+      "helpful_votes": 16
+    },
+    {
+      "id": "review-010059",
+      "stay_id": "stay-10049",
+      "user_name": "Guest2728",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-11-04",
+      "helpful_votes": 16
+    },
+    {
+      "id": "review-010096",
+      "stay_id": "stay-10095",
+      "user_name": "Guest1118",
+      "rating": 2,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-09-28",
+      "helpful_votes": 6
+    },
+    {
+      "id": "review-010097",
+      "stay_id": "stay-10095",
+      "user_name": "Guest5411",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-02-09",
+      "helpful_votes": 2
+    },
+    {
+      "id": "review-010098",
+      "stay_id": "stay-10095",
+      "user_name": "Guest3410",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-02-15",
+      "helpful_votes": 8
+    },
+    {
+      "id": "review-010099",
+      "stay_id": "stay-10095",
+      "user_name": "Guest7760",
+      "rating": 2,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-04-19",
+      "helpful_votes": 20
+    },
+    {
+      "id": "review-010100",
+      "stay_id": "stay-10095",
+      "user_name": "Guest1896",
+      "rating": 2,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-09-15",
+      "helpful_votes": 14
+    },
+    {
+      "id": "review-010101",
+      "stay_id": "stay-10095",
+      "user_name": "Guest1252",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-12-18",
+      "helpful_votes": 14
+    },
+    {
+      "id": "review-010102",
+      "stay_id": "stay-10095",
+      "user_name": "Guest7039",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-03-02",
+      "helpful_votes": 19
+    },
+    {
+      "id": "review-010103",
+      "stay_id": "stay-10095",
+      "user_name": "Guest9406",
+      "rating": 3,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-07-23",
+      "helpful_votes": 20
+    },
+    {
+      "id": "review-010104",
+      "stay_id": "stay-10095",
+      "user_name": "Guest5841",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-08-20",
+      "helpful_votes": 13
+    },
+    {
+      "id": "review-010105",
+      "stay_id": "stay-10095",
+      "user_name": "Guest2449",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-06-22",
+      "helpful_votes": 9
+    },
+    {
+      "id": "review-010144",
+      "stay_id": "stay-10143",
+      "user_name": "Guest3592",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-01-06",
+      "helpful_votes": 7
+    },
+    {
+      "id": "review-010145",
+      "stay_id": "stay-10143",
+      "user_name": "Guest9788",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-06-09",
+      "helpful_votes": 7
+    },
+    {
+      "id": "review-010146",
+      "stay_id": "stay-10143",
+      "user_name": "Guest5435",
+      "rating": 2,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-02-21",
+      "helpful_votes": 17
+    },
+    {
+      "id": "review-010147",
+      "stay_id": "stay-10143",
+      "user_name": "Guest6009",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-10-09",
+      "helpful_votes": 13
+    },
+    {
+      "id": "review-010148",
+      "stay_id": "stay-10143",
+      "user_name": "Guest5998",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-03-27",
+      "helpful_votes": 15
+    },
+    {
+      "id": "review-010149",
+      "stay_id": "stay-10143",
+      "user_name": "Guest2878",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-12-28",
+      "helpful_votes": 12
+    },
+    {
+      "id": "review-010150",
+      "stay_id": "stay-10143",
+      "user_name": "Guest4742",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-04-25",
+      "helpful_votes": 5
+    },
+    {
+      "id": "review-010151",
+      "stay_id": "stay-10143",
+      "user_name": "Guest8326",
+      "rating": 3,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-08-22",
+      "helpful_votes": 13
+    },
+    {
+      "id": "review-010152",
+      "stay_id": "stay-10143",
+      "user_name": "Guest9480",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-11-06",
+      "helpful_votes": 15
+    },
+    {
+      "id": "review-010153",
+      "stay_id": "stay-10143",
+      "user_name": "Guest3949",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-05-28",
+      "helpful_votes": 16
+    },
+    {
+      "id": "review-010188",
+      "stay_id": "stay-10187",
+      "user_name": "Guest5588",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-01-30",
+      "helpful_votes": 16
+    },
+    {
+      "id": "review-010189",
+      "stay_id": "stay-10187",
+      "user_name": "Guest4242",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-09-25",
+      "helpful_votes": 17
+    },
+    {
+      "id": "review-010190",
+      "stay_id": "stay-10187",
+      "user_name": "Guest1747",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-11-25",
+      "helpful_votes": 16
+    },
+    {
+      "id": "review-010191",
+      "stay_id": "stay-10187",
+      "user_name": "Guest4805",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-04-04",
+      "helpful_votes": 13
+    },
+    {
+      "id": "review-010192",
+      "stay_id": "stay-10187",
+      "user_name": "Guest6954",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-08-31",
+      "helpful_votes": 13
+    },
+    {
+      "id": "review-010193",
+      "stay_id": "stay-10187",
+      "user_name": "Guest3210",
+      "rating": 2,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-02-26",
+      "helpful_votes": 9
+    },
+    {
+      "id": "review-010194",
+      "stay_id": "stay-10187",
+      "user_name": "Guest7450",
+      "rating": 3,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-05-09",
+      "helpful_votes": 1
+    },
+    {
+      "id": "review-010195",
+      "stay_id": "stay-10187",
+      "user_name": "Guest6078",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-10-12",
+      "helpful_votes": 7
+    },
+    {
+      "id": "review-010233",
+      "stay_id": "stay-10232",
+      "user_name": "Guest4494",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-01-29",
+      "helpful_votes": 17
+    },
+    {
+      "id": "review-010234",
+      "stay_id": "stay-10232",
+      "user_name": "Guest9381",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-12-04",
+      "helpful_votes": 5
+    },
+    {
+      "id": "review-010235",
+      "stay_id": "stay-10232",
+      "user_name": "Guest2466",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-03-26",
+      "helpful_votes": 11
+    },
+    {
+      "id": "review-010236",
+      "stay_id": "stay-10232",
+      "user_name": "Guest7109",
+      "rating": 2,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-09-12",
+      "helpful_votes": 19
+    },
+    {
+      "id": "review-010237",
+      "stay_id": "stay-10232",
+      "user_name": "Guest7407",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-02-03",
+      "helpful_votes": 19
+    },
+    {
+      "id": "review-010238",
+      "stay_id": "stay-10232",
+      "user_name": "Guest9696",
+      "rating": 3,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-01-19",
+      "helpful_votes": 1
+    },
+    {
+      "id": "review-010239",
+      "stay_id": "stay-10232",
+      "user_name": "Guest3049",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-01-24",
+      "helpful_votes": 19
+    },
+    {
+      "id": "review-010240",
+      "stay_id": "stay-10232",
+      "user_name": "Guest8072",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-08-11",
+      "helpful_votes": 6
+    },
+    {
+      "id": "review-010241",
+      "stay_id": "stay-10232",
+      "user_name": "Guest3452",
+      "rating": 3,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-08-29",
+      "helpful_votes": 9
+    },
+    {
+      "id": "review-010242",
+      "stay_id": "stay-10232",
+      "user_name": "Guest1052",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-03-01",
+      "helpful_votes": 8
+    },
+    {
+      "id": "review-010282",
+      "stay_id": "stay-10281",
+      "user_name": "Guest1775",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-01-12",
+      "helpful_votes": 2
+    },
+    {
+      "id": "review-010283",
+      "stay_id": "stay-10281",
+      "user_name": "Guest5978",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-01-20",
+      "helpful_votes": 3
+    },
+    {
+      "id": "review-010284",
+      "stay_id": "stay-10281",
+      "user_name": "Guest2622",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-07-26",
+      "helpful_votes": 12
+    },
+    {
+      "id": "review-010285",
+      "stay_id": "stay-10281",
+      "user_name": "Guest3566",
+      "rating": 2,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-05-04",
+      "helpful_votes": 5
+    },
+    {
+      "id": "review-010286",
+      "stay_id": "stay-10281",
+      "user_name": "Guest4123",
+      "rating": 3,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-04-04",
+      "helpful_votes": 9
+    },
+    {
+      "id": "review-010287",
+      "stay_id": "stay-10281",
+      "user_name": "Guest2941",
+      "rating": 2,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-02-28",
+      "helpful_votes": 2
+    },
+    {
+      "id": "review-010288",
+      "stay_id": "stay-10281",
+      "user_name": "Guest8271",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-01-17",
+      "helpful_votes": 18
+    },
+    {
+      "id": "review-010289",
+      "stay_id": "stay-10281",
+      "user_name": "Guest7951",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-08-24",
+      "helpful_votes": 5
+    },
+    {
+      "id": "review-010290",
+      "stay_id": "stay-10281",
+      "user_name": "Guest4926",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-11-26",
+      "helpful_votes": 0
+    },
+    {
+      "id": "review-010291",
+      "stay_id": "stay-10281",
+      "user_name": "Guest3003",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-01-09",
+      "helpful_votes": 0
+    },
+    {
+      "id": "review-010326",
+      "stay_id": "stay-10325",
+      "user_name": "Guest2909",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-08-16",
+      "helpful_votes": 9
+    },
+    {
+      "id": "review-010327",
+      "stay_id": "stay-10325",
+      "user_name": "Guest2133",
+      "rating": 2,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-08-27",
+      "helpful_votes": 6
+    },
+    {
+      "id": "review-010328",
+      "stay_id": "stay-10325",
+      "user_name": "Guest2059",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-02-25",
+      "helpful_votes": 15
+    },
+    {
+      "id": "review-010329",
+      "stay_id": "stay-10325",
+      "user_name": "Guest1995",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-02-13",
+      "helpful_votes": 0
+    },
+    {
+      "id": "review-010330",
+      "stay_id": "stay-10325",
+      "user_name": "Guest1131",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-05-26",
+      "helpful_votes": 17
+    },
+    {
+      "id": "review-010331",
+      "stay_id": "stay-10325",
+      "user_name": "Guest5550",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-12-26",
+      "helpful_votes": 0
+    },
+    {
+      "id": "review-010332",
+      "stay_id": "stay-10325",
+      "user_name": "Guest6807",
+      "rating": 3,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-01-10",
+      "helpful_votes": 10
+    },
+    {
+      "id": "review-010333",
+      "stay_id": "stay-10325",
+      "user_name": "Guest4009",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-09-03",
+      "helpful_votes": 3
+    },
+    {
+      "id": "review-010334",
+      "stay_id": "stay-10325",
+      "user_name": "Guest6719",
+      "rating": 3,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-06-11",
+      "helpful_votes": 7
+    },
+    {
+      "id": "review-010335",
+      "stay_id": "stay-10325",
+      "user_name": "Guest4835",
+      "rating": 2,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-01-28",
+      "helpful_votes": 3
+    },
+    {
+      "id": "review-010375",
+      "stay_id": "stay-10374",
+      "user_name": "Guest8128",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-05-25",
+      "helpful_votes": 5
+    },
+    {
+      "id": "review-010376",
+      "stay_id": "stay-10374",
+      "user_name": "Guest3234",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-04-06",
+      "helpful_votes": 2
+    },
+    {
+      "id": "review-010377",
+      "stay_id": "stay-10374",
+      "user_name": "Guest7776",
+      "rating": 3,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-08-01",
+      "helpful_votes": 9
+    },
+    {
+      "id": "review-010378",
+      "stay_id": "stay-10374",
+      "user_name": "Guest8189",
+      "rating": 2,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-07-04",
+      "helpful_votes": 6
+    },
+    {
+      "id": "review-010379",
+      "stay_id": "stay-10374",
+      "user_name": "Guest4777",
+      "rating": 3,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-07-23",
+      "helpful_votes": 3
+    },
+    {
+      "id": "review-010380",
+      "stay_id": "stay-10374",
+      "user_name": "Guest7022",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-08-18",
+      "helpful_votes": 15
+    },
+    {
+      "id": "review-010381",
+      "stay_id": "stay-10374",
+      "user_name": "Guest5707",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-07-24",
+      "helpful_votes": 7
+    },
+    {
+      "id": "review-010382",
+      "stay_id": "stay-10374",
+      "user_name": "Guest9603",
+      "rating": 3,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-12-09",
+      "helpful_votes": 1
+    },
+    {
+      "id": "review-010383",
+      "stay_id": "stay-10374",
+      "user_name": "Guest1420",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-06-18",
+      "helpful_votes": 15
+    },
+    {
+      "id": "review-010384",
+      "stay_id": "stay-10374",
+      "user_name": "Guest1321",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-03-03",
+      "helpful_votes": 0
+    },
+    {
+      "id": "review-010423",
+      "stay_id": "stay-10422",
+      "user_name": "Guest7111",
+      "rating": 3,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-05-10",
+      "helpful_votes": 19
+    },
+    {
+      "id": "review-010424",
+      "stay_id": "stay-10422",
+      "user_name": "Guest7498",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-06-14",
+      "helpful_votes": 1
+    },
+    {
+      "id": "review-010425",
+      "stay_id": "stay-10422",
+      "user_name": "Guest5755",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-09-05",
+      "helpful_votes": 18
+    },
+    {
+      "id": "review-010426",
+      "stay_id": "stay-10422",
+      "user_name": "Guest2860",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-06-17",
+      "helpful_votes": 16
+    },
+    {
+      "id": "review-010427",
+      "stay_id": "stay-10422",
+      "user_name": "Guest3162",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-04-21",
+      "helpful_votes": 20
+    },
+    {
+      "id": "review-010428",
+      "stay_id": "stay-10422",
+      "user_name": "Guest2571",
+      "rating": 2,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-01-25",
+      "helpful_votes": 4
+    },
+    {
+      "id": "review-010429",
+      "stay_id": "stay-10422",
+      "user_name": "Guest4543",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-02-23",
+      "helpful_votes": 5
+    },
+    {
+      "id": "review-010430",
+      "stay_id": "stay-10422",
+      "user_name": "Guest9581",
+      "rating": 5,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-07-01",
+      "helpful_votes": 16
+    },
+    {
+      "id": "review-010431",
+      "stay_id": "stay-10422",
+      "user_name": "Guest4373",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-12-08",
+      "helpful_votes": 12
+    },
+    {
+      "id": "review-010432",
+      "stay_id": "stay-10422",
+      "user_name": "Guest8056",
+      "rating": 3,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-04-25",
+      "helpful_votes": 13
+    },
+    {
+      "id": "review-010471",
+      "stay_id": "stay-10470",
+      "user_name": "Guest4619",
+      "rating": 1,
+      "comment": "Great stay, highly recommended!",
+      "date": "2024-12-03",
+      "helpful_votes": 11
+    },
+    {
+      "id": "review-010472",
+      "stay_id": "stay-10470",
+      "user_name": "Guest6921",
+      "rating": 4,
+      "comment": "Great stay, highly recommended!",
+      "date": "2025-06-24",
+      "helpful_votes": 10
+    }
+  ]
+}

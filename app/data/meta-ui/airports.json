@@ -1,19 +1,3 @@
-[
-  {"id": "apt-lhe", "code": "LHE", "name": "Allama Iqbal International", "city": "Lahore", "country": "Pakistan", "lat": 31.5214, "lng": 74.4037},
-  {"id": "apt-jfk", "code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "USA", "lat": 40.6413, "lng": -73.7781},
-  {"id": "apt-lax", "code": "LAX", "name": "Los Angeles International", "city": "Los Angeles", "country": "USA", "lat": 33.9416, "lng": -118.4085},
-  {"id": "apt-mia", "code": "MIA", "name": "Miami International", "city": "Miami", "country": "USA", "lat": 25.7959, "lng": -80.2870},
-  {"id": "apt-lhr", "code": "LHR", "name": "London Heathrow", "city": "London", "country": "UK", "lat": 51.4700, "lng": -0.4543},
-  {"id": "apt-cdg", "code": "CDG", "name": "Charles de Gaulle", "city": "Paris", "country": "France", "lat": 49.0097, "lng": 2.5478},
-  {"id": "apt-dxb", "code": "DXB", "name": "Dubai International", "city": "Dubai", "country": "UAE", "lat": 25.2532, "lng": 55.3657},
-  {"id": "apt-hnd", "code": "HND", "name": "Haneda", "city": "Tokyo", "country": "Japan", "lat": 35.5494, "lng": 139.7798},
-  {"id": "apt-sin", "code": "SIN", "name": "Changi", "city": "Singapore", "country": "Singapore", "lat": 1.3644, "lng": 103.9915},
-  {"id": "apt-syd", "code": "SYD", "name": "Kingsford Smith", "city": "Sydney", "country": "Australia", "lat": -33.9399, "lng": 151.1753},
-  {"id": "apt-fra", "code": "FRA", "name": "Frankfurt", "city": "Frankfurt", "country": "Germany", "lat": 50.0379, "lng": 8.5622},
-  {"id": "apt-hkg", "code": "HKG", "name": "Hong Kong International", "city": "Hong Kong", "country": "China", "lat": 22.3080, "lng": 113.9185},
-  {"id": "apt-ist", "code": "IST", "name": "Istanbul", "city": "Istanbul", "country": "Turkey", "lat": 41.2751, "lng": 28.7519},
-  {"id": "apt-bcn", "code": "BCN", "name": "Barcelona-El Prat", "city": "Barcelona", "country": "Spain", "lat": 41.2974, "lng": 2.0833},
-  {"id": "apt-nrt", "code": "NRT", "name": "Narita International", "city": "Tokyo", "country": "Japan", "lat": 35.7720, "lng": 140.3929},
-  {"id": "apt-lga", "code": "LGA", "name": "LaGuardia", "city": "New York", "country": "USA", "lat": 40.7769, "lng": -73.8740},
-  {"id": "apt-fll", "code": "FLL", "name": "Fort Lauderdale-Hollywood International", "city": "Fort Lauderdale", "country": "USA", "lat": 26.0742, "lng": -80.1506}
-]
+version https://git-lfs.github.com/spec/v1
+oid sha256:7738d009c18aa4135dc0b711fe8e17044c75bc9301d93047c18b78f7c5ec8569
+size 2346

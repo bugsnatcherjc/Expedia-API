@@ -1,20 +1,3 @@
-{
-    "things_to_do": [
-        {
-            "id": "ttd-1",
-            "name": "Universal Studios Hollywood Skip-the-Line Ticket",
-            "location": "Los Angeles, California",
-            "category": "Theme Parks",
-            "price": 109.99,
-            "rating": 4.7,
-            "reviews_count": 2845,
-            "duration": "1 day",
-            "highlights": [
-                "Skip-the-line admission",
-                "Access to all rides and attractions",
-                "Live shows and entertainment"
-            ],
-            "available_dates": ["2025-08-15", "2025-08-16", "2025-08-17"]
-        }
-    ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:57d2f37ffcaf19eb7ba3888e5c32d26d7057f81cb93dbce8be6bfd8bbdf092bb
+size 627

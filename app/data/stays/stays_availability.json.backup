@@ -1,0 +1,3564 @@
+{
+  "availability": [
+    {
+      "id": "avail-010019",
+      "stay_id": "stay-10000",
+      "check_in": "2025-08-21",
+      "check_out": "2025-08-25",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010020",
+      "stay_id": "stay-10000",
+      "check_in": "2025-08-22",
+      "check_out": "2025-08-25",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010021",
+      "stay_id": "stay-10000",
+      "check_in": "2025-08-23",
+      "check_out": "2025-08-30",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010022",
+      "stay_id": "stay-10000",
+      "check_in": "2025-08-24",
+      "check_out": "2025-08-31",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010023",
+      "stay_id": "stay-10000",
+      "check_in": "2025-08-25",
+      "check_out": "2025-08-28",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010024",
+      "stay_id": "stay-10000",
+      "check_in": "2025-08-26",
+      "check_out": "2025-08-28",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010025",
+      "stay_id": "stay-10000",
+      "check_in": "2025-08-27",
+      "check_out": "2025-08-28",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": false,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010026",
+      "stay_id": "stay-10000",
+      "check_in": "2025-08-28",
+      "check_out": "2025-08-29",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010027",
+      "stay_id": "stay-10000",
+      "check_in": "2025-08-29",
+      "check_out": "2025-09-01",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010028",
+      "stay_id": "stay-10000",
+      "check_in": "2025-08-30",
+      "check_out": "2025-09-06",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010029",
+      "stay_id": "stay-10000",
+      "check_in": "2025-08-31",
+      "check_out": "2025-09-07",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010030",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-01",
+      "check_out": "2025-09-05",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010031",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-02",
+      "check_out": "2025-09-04",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010032",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-03",
+      "check_out": "2025-09-08",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": false,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010033",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-04",
+      "check_out": "2025-09-07",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010034",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-05",
+      "check_out": "2025-09-08",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010035",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-06",
+      "check_out": "2025-09-07",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": false,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010036",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-07",
+      "check_out": "2025-09-12",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010037",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-08",
+      "check_out": "2025-09-09",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010038",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-09",
+      "check_out": "2025-09-12",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": false,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010039",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-10",
+      "check_out": "2025-09-11",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010040",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-11",
+      "check_out": "2025-09-16",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010041",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-12",
+      "check_out": "2025-09-19",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010042",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-13",
+      "check_out": "2025-09-14",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": false,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010043",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-14",
+      "check_out": "2025-09-16",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010044",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-15",
+      "check_out": "2025-09-21",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": false,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010045",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-16",
+      "check_out": "2025-09-23",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010046",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-17",
+      "check_out": "2025-09-23",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010047",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-18",
+      "check_out": "2025-09-24",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010048",
+      "stay_id": "stay-10000",
+      "check_in": "2025-09-19",
+      "check_out": "2025-09-20",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1089.41,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 1502.07,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 2333.74,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 2027.59,
+          "currency": "SGD"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 3593.12,
+          "currency": "SGD"
+        }
+      ]
+    },
+    {
+      "id": "avail-010065",
+      "stay_id": "stay-10049",
+      "check_in": "2025-08-21",
+      "check_out": "2025-08-22",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010066",
+      "stay_id": "stay-10049",
+      "check_in": "2025-08-22",
+      "check_out": "2025-08-24",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010067",
+      "stay_id": "stay-10049",
+      "check_in": "2025-08-23",
+      "check_out": "2025-08-29",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010068",
+      "stay_id": "stay-10049",
+      "check_in": "2025-08-24",
+      "check_out": "2025-08-29",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010069",
+      "stay_id": "stay-10049",
+      "check_in": "2025-08-25",
+      "check_out": "2025-08-27",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010070",
+      "stay_id": "stay-10049",
+      "check_in": "2025-08-26",
+      "check_out": "2025-08-29",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010071",
+      "stay_id": "stay-10049",
+      "check_in": "2025-08-27",
+      "check_out": "2025-08-30",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": false,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010072",
+      "stay_id": "stay-10049",
+      "check_in": "2025-08-28",
+      "check_out": "2025-09-03",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010073",
+      "stay_id": "stay-10049",
+      "check_in": "2025-08-29",
+      "check_out": "2025-09-01",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010074",
+      "stay_id": "stay-10049",
+      "check_in": "2025-08-30",
+      "check_out": "2025-09-01",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": false,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010075",
+      "stay_id": "stay-10049",
+      "check_in": "2025-08-31",
+      "check_out": "2025-09-06",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010076",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-01",
+      "check_out": "2025-09-04",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": false,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010077",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-02",
+      "check_out": "2025-09-03",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010078",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-03",
+      "check_out": "2025-09-09",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010079",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-04",
+      "check_out": "2025-09-10",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010080",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-05",
+      "check_out": "2025-09-12",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010081",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-06",
+      "check_out": "2025-09-11",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": false,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010082",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-07",
+      "check_out": "2025-09-12",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": false,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010083",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-08",
+      "check_out": "2025-09-13",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010084",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-09",
+      "check_out": "2025-09-12",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010085",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-10",
+      "check_out": "2025-09-15",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010086",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-11",
+      "check_out": "2025-09-12",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": false,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010087",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-12",
+      "check_out": "2025-09-17",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010088",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-13",
+      "check_out": "2025-09-16",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010089",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-14",
+      "check_out": "2025-09-20",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010090",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-15",
+      "check_out": "2025-09-19",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010091",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-16",
+      "check_out": "2025-09-18",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": false,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010092",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-17",
+      "check_out": "2025-09-18",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": true,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010093",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-18",
+      "check_out": "2025-09-24",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": false,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010094",
+      "stay_id": "stay-10049",
+      "check_in": "2025-09-19",
+      "check_out": "2025-09-22",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 1780.76,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 2358.65,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 4039.0,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 3459.44,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-005",
+          "available": false,
+          "price_per_night": 5139.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010113",
+      "stay_id": "stay-10095",
+      "check_in": "2025-08-21",
+      "check_out": "2025-08-24",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010114",
+      "stay_id": "stay-10095",
+      "check_in": "2025-08-22",
+      "check_out": "2025-08-26",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010115",
+      "stay_id": "stay-10095",
+      "check_in": "2025-08-23",
+      "check_out": "2025-08-26",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010116",
+      "stay_id": "stay-10095",
+      "check_in": "2025-08-24",
+      "check_out": "2025-08-30",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010117",
+      "stay_id": "stay-10095",
+      "check_in": "2025-08-25",
+      "check_out": "2025-08-29",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010118",
+      "stay_id": "stay-10095",
+      "check_in": "2025-08-26",
+      "check_out": "2025-08-27",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010119",
+      "stay_id": "stay-10095",
+      "check_in": "2025-08-27",
+      "check_out": "2025-08-29",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010120",
+      "stay_id": "stay-10095",
+      "check_in": "2025-08-28",
+      "check_out": "2025-08-31",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010121",
+      "stay_id": "stay-10095",
+      "check_in": "2025-08-29",
+      "check_out": "2025-09-04",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010122",
+      "stay_id": "stay-10095",
+      "check_in": "2025-08-30",
+      "check_out": "2025-09-02",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010123",
+      "stay_id": "stay-10095",
+      "check_in": "2025-08-31",
+      "check_out": "2025-09-02",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010124",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-01",
+      "check_out": "2025-09-02",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010125",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-02",
+      "check_out": "2025-09-06",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010126",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-03",
+      "check_out": "2025-09-04",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010127",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-04",
+      "check_out": "2025-09-10",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010128",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-05",
+      "check_out": "2025-09-06",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010129",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-06",
+      "check_out": "2025-09-08",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010130",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-07",
+      "check_out": "2025-09-14",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010131",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-08",
+      "check_out": "2025-09-12",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010132",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-09",
+      "check_out": "2025-09-16",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010133",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-10",
+      "check_out": "2025-09-12",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010134",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-11",
+      "check_out": "2025-09-15",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010135",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-12",
+      "check_out": "2025-09-13",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010136",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-13",
+      "check_out": "2025-09-16",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010137",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-14",
+      "check_out": "2025-09-18",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010138",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-15",
+      "check_out": "2025-09-18",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010139",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-16",
+      "check_out": "2025-09-17",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010140",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-17",
+      "check_out": "2025-09-18",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010141",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-18",
+      "check_out": "2025-09-21",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010142",
+      "stay_id": "stay-10095",
+      "check_in": "2025-09-19",
+      "check_out": "2025-09-26",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 493.7,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 678.66,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 840.32,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 785.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010157",
+      "stay_id": "stay-10143",
+      "check_in": "2025-08-21",
+      "check_out": "2025-08-26",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 640.64,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 729.86,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 994.22,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 929.43,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010158",
+      "stay_id": "stay-10143",
+      "check_in": "2025-08-22",
+      "check_out": "2025-08-26",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 640.64,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 729.86,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 994.22,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 929.43,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010159",
+      "stay_id": "stay-10143",
+      "check_in": "2025-08-23",
+      "check_out": "2025-08-25",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 640.64,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 729.86,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 994.22,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 929.43,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010160",
+      "stay_id": "stay-10143",
+      "check_in": "2025-08-24",
+      "check_out": "2025-08-29",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 640.64,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 729.86,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 994.22,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": false,
+          "price_per_night": 929.43,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010161",
+      "stay_id": "stay-10143",
+      "check_in": "2025-08-25",
+      "check_out": "2025-08-26",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 640.64,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 729.86,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": false,
+          "price_per_night": 994.22,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 929.43,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010162",
+      "stay_id": "stay-10143",
+      "check_in": "2025-08-26",
+      "check_out": "2025-09-02",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 640.64,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 729.86,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 994.22,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 929.43,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010163",
+      "stay_id": "stay-10143",
+      "check_in": "2025-08-27",
+      "check_out": "2025-08-29",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 640.64,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 729.86,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 994.22,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 929.43,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010164",
+      "stay_id": "stay-10143",
+      "check_in": "2025-08-28",
+      "check_out": "2025-09-02",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": false,
+          "price_per_night": 640.64,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 729.86,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 994.22,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 929.43,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010165",
+      "stay_id": "stay-10143",
+      "check_in": "2025-08-29",
+      "check_out": "2025-09-05",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 640.64,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": true,
+          "price_per_night": 729.86,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 994.22,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 929.43,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "avail-010166",
+      "stay_id": "stay-10143",
+      "check_in": "2025-08-30",
+      "check_out": "2025-09-01",
+      "rooms": [
+        {
+          "room_id": "room-001",
+          "available": true,
+          "price_per_night": 640.64,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-002",
+          "available": false,
+          "price_per_night": 729.86,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-003",
+          "available": true,
+          "price_per_night": 994.22,
+          "currency": "EUR"
+        },
+        {
+          "room_id": "room-004",
+          "available": true,
+          "price_per_night": 929.43,
+          "currency": "EUR"
+        }
+      ]
+    }
+  ]
+}

@@ -1,12 +1,3 @@
-[
-  {"id": "loc-lax", "city": "Los Angeles", "state": "California", "country": "USA", "type": ["Airport", "City"], "airport_code": "LAX", "lat": 33.9416, "lng": -118.4085},
-  {"id": "loc-mia", "city": "Miami", "state": "Florida", "country": "USA", "type": ["Airport", "City"], "airport_code": "MIA", "lat": 25.7959, "lng": -80.2870},
-  {"id": "loc-nyc", "city": "New York", "state": "New York", "country": "USA", "type": ["Airport", "City"], "airport_code": "JFK", "lat": 40.6413, "lng": -73.7781},
-  {"id": "loc-las", "city": "Las Vegas", "state": "Nevada", "country": "USA", "type": ["Airport", "City"], "airport_code": "LAS", "lat": 36.0840, "lng": -115.1537},
-  {"id": "loc-orl", "city": "Orlando", "state": "Florida", "country": "USA", "type": ["Airport", "City"], "airport_code": "MCO", "lat": 28.4312, "lng": -81.3081},
-  {"id": "loc-san", "city": "San Diego", "state": "California", "country": "USA", "type": ["Airport", "City"], "airport_code": "SAN", "lat": 32.7338, "lng": -117.1933},
-  {"id": "loc-muc", "city": "Munich", "state": "Bavaria", "country": "Germany", "type": ["Airport", "City"], "airport_code": "MUC", "lat": 48.3537, "lng": 11.7860},
-  {"id": "loc-bcn", "city": "Barcelona", "state": "Catalonia", "country": "Spain", "type": ["Airport", "City"], "airport_code": "BCN", "lat": 41.2974, "lng": 2.0833},
-  {"id": "loc-cdg", "city": "Paris", "state": "Île-de-France", "country": "France", "type": ["Airport", "City"], "airport_code": "CDG", "lat": 49.0097, "lng": 2.5478},
-  {"id": "loc-lhr", "city": "London", "state": null, "country": "UK", "type": ["Airport", "City"], "airport_code": "LHR", "lat": 51.4700, "lng": -0.4543}
-]
+version https://git-lfs.github.com/spec/v1
+oid sha256:1b4e32fddbb1d15cc153e41a2c4bfc515adbb4432eeda293746b3701a5684cc6
+size 1653

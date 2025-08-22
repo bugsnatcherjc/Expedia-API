@@ -1,22 +1,3 @@
-[
-  {
-    "id": 901,
-    "title": "Romantic Paris Getaway",
-    "destination": "Paris, France",
-    "package_type": "honeymoon",
-    "price": { "amount": 2500, "currency": "USD" },
-    "rating": 4.9,
-    "popularity": 500,
-    "thumbnail": "https://via.placeholder.com/640x360"
-  },
-  {
-    "id": 902,
-    "title": "Family Fun in Orlando",
-    "destination": "Orlando, USA",
-    "package_type": "family",
-    "price": { "amount": 1800, "currency": "USD" },
-    "rating": 4.6,
-    "popularity": 650,
-    "thumbnail": "https://via.placeholder.com/640x360"
-  }
-]
+version https://git-lfs.github.com/spec/v1
+oid sha256:15b91c957ff81596ce689d61af34170b86b1d5a60b2e0a318f7c8fdf83e1505e
+size 560
