@@ -38,7 +38,8 @@ router = APIRouter(prefix="/things-to-do", tags=["Things To Do"])
                                 "rating": 4.7,
                                 "reviews_count": 2845,
                                 "duration": "1 day",
-                                "highlights": ["Skip-the-line admission", "Access to all rides"]
+                                "highlights": ["Skip-the-line admission", "Access to all rides"],
+                                "imageUrl": "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&h=600&fit=crop"
                             }
                         ]
                     }
@@ -132,11 +133,125 @@ async def search_things_to_do(
             price_max=price_max
         )
         
+        # Add imageUrl to each result
+        for result in results:
+            result["imageUrl"] = things_to_do_service._get_activity_image(
+                result["id"], result["name"], result["category"]
+            )
+        
         if not results:
             raise HTTPException(
                 status_code=404, 
                 detail=f"No activities found for location '{location}' on {date}' with the specified filters."
             )
+        
+        return results
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+@router.get("/by-category",
+    summary="Get Things to Do by Category",
+    description="""
+    Retrieve activities organized by category. This endpoint groups activities by their category
+    and returns a structured response that makes it easy to browse activities by type.
+    
+    **Features:**
+    - Get all activities organized by category
+    - Filter by specific category if needed
+    - Structured response with category groups
+    - Includes pricing, ratings, and availability information
+    - High-quality Unsplash images for each activity
+    
+    **Example Usage:**
+    - Get all activities by category: `/by-category`
+    - Get specific category: `/by-category?category=Theme Parks`
+    - Get outdoor activities: `/by-category?category=Outdoor Activities`
+    """,
+    response_description="Activities organized by category",
+    responses={
+        200: {
+            "description": "Successful response with activities grouped by category",
+            "content": {
+                "application/json": {
+                    "example": [
+                        {
+                            "category": "Theme Parks",
+                            "items": [
+                                {
+                                    "id": 1,
+                                    "title": "Universal Studios Hollywood Skip-the-Line Ticket",
+                                    "rating": 4.7,
+                                    "reviewsCount": 2845,
+                                    "duration": "1 day",
+                                    "price": 109.99,
+                                    "originalPrice": None,
+                                    "currency": "USD",
+                                    "imageUrl": "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&h=600&fit=crop",
+                                    "tags": ["Skip-the-line", "Free cancellation"],
+                                    "memberPrice": False
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        400: {"description": "Invalid category parameter"},
+        404: {"description": "No activities found for the specified category"}
+    }
+)
+async def get_things_to_do_by_category(
+    category: Optional[str] = Query(
+        None,
+        description="Filter by specific category. If not provided, returns all categories.",
+        example="Theme Parks",
+        enum=["Theme Parks", "Museums", "Tours", "Outdoor Activities", "Cultural Experiences", "Adventure Sports", "Food & Dining", "Entertainment", "Shopping", "Wellness & Spa"]
+    )
+):
+    """
+    Get activities organized by category with optional filtering.
+    
+    **Parameters:**
+    - `category` (optional): Filter by specific category. If not provided, returns all categories.
+    
+    **Response Structure:**
+    - Returns an array of category objects
+    - Each category contains an array of activity items
+    - Items include pricing, ratings, duration, and availability information
+    - High-quality Unsplash images for visual appeal
+    
+    **Available Categories:**
+    - **Theme Parks**: Amusement parks and entertainment venues
+    - **Museums**: Art galleries, science museums, history museums
+    - **Tours**: Guided tours, city tours, food tours
+    - **Outdoor Activities**: Hiking, biking, water sports, nature activities
+    - **Cultural Experiences**: Local festivals, cultural shows, heritage sites
+    - **Adventure Sports**: Extreme sports, adventure activities
+    - **Food & Dining**: Food tours, cooking classes, dining experiences
+    - **Entertainment**: Shows, concerts, nightlife
+    - **Shopping**: Shopping tours, markets, retail experiences
+    - **Wellness & Spa**: Spa treatments, wellness activities, relaxation
+    
+    **Use Cases:**
+    - Browse activities by type for trip planning
+    - Filter activities for specific interests
+    - Compare activities within the same category
+    - Discover new activity types in a destination
+    """
+    try:
+        results = things_to_do_service.get_things_to_do_by_category(category)
+        
+        if not results:
+            if category:
+                raise HTTPException(
+                    status_code=404,
+                    detail=f"No activities found for category '{category}'."
+                )
+            else:
+                raise HTTPException(
+                    status_code=404,
+                    detail="No activities found."
+                )
         
         return results
     except ValueError as e:
@@ -154,6 +269,7 @@ async def search_things_to_do(
     - Important information and restrictions
     - Cancellation policies
     - Available time slots
+    - High-quality activity image
     
     **Use Case:**
     After finding an activity through search, use this endpoint to get full details
@@ -184,7 +300,8 @@ async def search_things_to_do(
                         "cancellation_policy": {
                             "free_cancellation_before": "24h",
                             "refund_percentage": 100
-                        }
+                        },
+                        "imageUrl": "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&h=600&fit=crop"
                     }
                 }
             }
@@ -213,6 +330,7 @@ async def get_thing_details(
     - **Practical Info**: Address, available times, what's included/excluded
     - **Policies**: Cancellation policy, important restrictions
     - **Reviews**: Rating and review count
+    - **Image**: High-quality Unsplash image for the activity
     
     **Example IDs:**
     - `ttd-1`: Universal Studios Hollywood
@@ -231,6 +349,11 @@ async def get_thing_details(
                 status_code=404, 
                 detail=f"Activity with ID '{thing_id}' not found. Please check the ID and try again."
             )
+        
+        # Add imageUrl to the details
+        details["imageUrl"] = things_to_do_service._get_activity_image(
+            details["id"], details["name"], details["category"]
+        )
         
         return details
     except ValueError as e:
